@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="web/css/style.php" type="text/css" media="all" />
 <link rel="stylesheet" href="web/css/slider-styles.css" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="http://localhost/exemplo4/js/jquery.js"></script>
+<script src="http://localhost/templatesiteclientesabore/js/jquery.js"></script>
 <script type="text/javascript" src="web/js/slider.js"></script>
 
 </head>

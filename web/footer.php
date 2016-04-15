@@ -2,37 +2,39 @@
     <div class="wrap">
             <div class="footer-grids">
                 <div class="footer-grid1">
-                    <h3>INFORMATION</h3>
+                    <h3>INFORMAÇÕES</h3>
                     <ul>
-                        <li><a href="">Our Store</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Fale conosco</a></li>
+                        <li><a href="">Acompanhe seu pedido</a></li>
                         <li><a href="">Delivery</a></li>
-                        <li><a href="">Legal Notice</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="">Sobre nós</a></li>
                     </ul>
                 </div>
+
+
                 <div class="footer-grid1">
-                    <h3>OUR OFFERS</h3>
+                    <h3>SUAS INFORMAÇÕES</h3>
                     <ul>
-                        <li><a href="">specials</a></li>
-                        <li><a href="">New Products</a></li>
-                        <li><a href="">Top Sellers</a></li>
-                        <li><a href="">Manufacures</a></li>
-                        <li><a href="">Suplliers</a></li>
+                        <li><a href="">Sua conta</a></li>
+                        <li><a href="">Seus pedidos</a></li>
+                        
                     </ul>
                 </div>
+
+
                 <div class="footer-grid1">
-                    <h3>YOURACCOUNT</h3>
+
+
+                    <h3>NOSSA LOCALIZAÇÃO</h3>
                     <ul>
-                        <li><a href="">Your Orders</a></li>
-                        <li><a href="">Your cradit slips</a></li>
-                        <li><a href="">Your Address</a></li>
-                        <li><a href="">Your personalinfo</a></li>
-                        <li><a href="">Your vochers</a></li>
+                        <li><a href="">Nos encontre em Santa isabel,<br> Bairro Pedroso II,<br> Rua: Benjamim Paulo,<br> Número 550.</a></li>
+                        <!--AQUI NESSE HREF, COLOCA LIGANDO NO GOOGLE MAPS COM ESSE ENDEREÇO -->
                     </ul>
                 </div>
+
+
                 <div class="footer-grid2">
-                    <h3>FALLOWS US</h3>
+                    <h3>NOS SIGA</h3>
                     <ul>
                         <li><a href=""><img src="web/images/facebook.png" title="facebook"/></a></li>
                         <li><a href=""><img src="web/images/twitter.png" title="twitter"></a></li>
@@ -42,7 +44,6 @@
             </div>
             <div class="clear"> </div>
             <div class="copy">
-        <p>&copy; 2013 rights Reseverd | Design by <a href="#">W3Layouts.com</a></p>
     </div>
 </div>
         <div class="clear">

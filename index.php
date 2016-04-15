@@ -22,11 +22,11 @@ elseif ($page_name=='about.php') {
 elseif ($page_name=='single.html') {
 	include $browser_t.'/single.php';
 	}
-elseif ($page_name=='gallery.html') {
+elseif ($page_name=='gallery.php') {
 	include $browser_t.'/gallery.php';
 	}
 elseif ($page_name=='contact.html') {
-	include $browser_t.'/contact.php';
+	include $browser_t.'/contact.html';
 	}
 elseif ($page_name=='contact-post.php') {
 	include 'app/contact.php';

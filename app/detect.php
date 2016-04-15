@@ -204,6 +204,6 @@ $browser_t = "web";
 $_SESSION['style'] = 'vermelho';
 
 //testar funcionalidades em outras plataformas
-//$browser_t = 'web';
+$browser_t = 'web';
 
 	 ?>

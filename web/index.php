@@ -4,83 +4,104 @@
 	
 	<div class="grids">
 		<ul>
-			<h4>To day-Items</h4>
+			<h4>Pizzas mais compradas</h4>
 		<li>
-			<h3>Ipsum simply</h3>
-			<img src="web/images/thumb-1.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>Pizza de calabresa</h3>
+			<img src="web/images/thumb-1.png">
+			<p>Calabresa, molho, tomate, queijo</p>
+			<button>R$40.00</button>
 		</li>
 		<li>
-			<h3>Lorem Ipsum</h3>
-			<img src="web/images/thumb-2.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>Frango com catupiry</h3>
+			<img src="web/images/thumb-2.png">
+			<p>Frango, molho, catupiry, queijo</p>
+			<button>R$30.00</button>
 		</li>
 		<li>
-			<h3>Ipsum simply</h3>
-			<img src="web/images/thumb-3.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>Pizza escarola</h3>
+			<img src="web/images/thumb-1.png">
+			<p>Escarola molho, queijo, pizzas</p>
+			<button>R$40.00</button>
 		</li>
-		<a href="#">View all</a>
+		<a href="#">Veja todas</a>
 		<div class="clear"> </div>
 		
-		<h4>Latest-Items</h4>
+
+
+
+
+		<h4>Sugestões para você</h4>
 		<li>
-			<h3>Ipsum simply</h3>
-			<img src="web/images/thumb-5.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>Pizza 1</h3>
+			<img src="web/images/thumb-2.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
 		</li>
 		<li>
-			<h3> Lorem Ipsum</h3>
-			<img src="web/images/thumb-6.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>pizza 2 </h3>
+			<img src="web/images/thumb-1.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
 		</li>
 		<li class="last">
-			<h3>Lorem simply</h3>
-			<img src="web/images/thumb-4.jpg">
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>$12.58</button>
+			<h3>pizza 3</h3>
+			<img src="web/images/thumb-2.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
 		</li>
-		<a href="#">View all</a>
+		<a href="#">Veja todas as pizzas</a>
 		</ul>
 		<div class="clear"> </div>
 	</div>
+
+
+
 	<div class="boxes">
 		<div class="order">
 		<ul>
+		<!--
 			<li>
-			<h3>ORDER</h3>
-			<h4>No Products</h4>
-			<p>shoping &nbsp;&nbsp;<span>$0:00</span></p>
-			<p>Total &nbsp;&nbsp;<span>$0:00</span></p>
-			<h5>Pricee and tax-include</h5>
-			<h6><a href="#">Check-out</a></h6>
-			<h6><a href="#">cart</a></h6>
+			<h3>Pedidos</h3>
+			<h4>Sem nenhum produto adicionado</h4>
+			<p>Descontos  <span>R$0:00</span></p>
+			<p>Total  <span>R$0:00</span></p>
+			<h5>Tarifa de entrega incluída</h5>
+			<h6><a href="#">Pedidos</a></h6>
+			<h6><a href="#">Comprar</a></h6>
+		-->
+			<li>
+			<h3>Pedidos</h3>
+			<h4>1-Pizza Calabresa<br> 1-Pizza Mussarela<br>1-Pizza Frango Catupiry</h4>
+			<p>Descontos  <span>R$0.00</span></p>
+			<p>Total  <span>R$40.00</span></p>
+			<h5>Tarifa de entrega incluída</h5>
+			<h6><a href="#">Pedidos</a></h6>
+			<h6><a href="#">Comprar</a></h6>
 		</li>
 		</ul>
 		</div>
 		<div class="clear"> </div>
 		<ul>
 			<li>
-			<h3>Restaurants Hours</h3>
-			<h4>Breakfast </h4>
-			<p>Monday - Friday &nbsp;&nbsp; 11 am - 03 pm</p>
-			<p>Saturaday - Sunday &nbsp;&nbsp; 11 am - 04 pm</p>
+			<h3>Horario de funcionamento</h3>
+			<h4>Pizzarias </h4>
+			<p>Terça a sexta  11:00 - 22:30</p>
+			<p>Sábado e domingo 11:00 - 00:00</p>
+
+			<!--	CASO DE TER ALMOÇO
 			<h4>Lunch </h4>
 			<p>Monday - Friday &nbsp;&nbsp; 11 am - 03 pm</p>
 			<p>Saturaday - Sunday &nbsp;&nbsp; 11 am - 04 pm</p>
+			-->
+
 		</li>
 		<li>
-			<h3>News And Events</h3>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>Read more</button>
-			<h3>Lorem Ipsum is simply</h3>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-			<button>Read more</button>
+			<h3>Novidades e promoção</h3>
+			<p>As melhores pizzas da região para todos os cidadão de santa isabel</p>
+			<button>Confira já</button>
+			<h3>Quem somos</h3>
+			<p>Confira aqui, quem somos nós, de onde viemos, e algumas outras informações</p>
+			<button>Leia mais</button>
 		</li>
 		<div class="clear"> </div>
 		</ul>

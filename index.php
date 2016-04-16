@@ -25,8 +25,8 @@ elseif ($page_name=='single.html') {
 elseif ($page_name=='gallery.php') {
 	include $browser_t.'/gallery.php';
 	}
-elseif ($page_name=='contact.html') {
-	include $browser_t.'/contact.html';
+elseif ($page_name=='contato.php') {
+	include $browser_t.'/contato.php';
 	}
 elseif ($page_name=='contact-post.php') {
 	include 'app/contact.php';

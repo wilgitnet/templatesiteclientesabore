@@ -61,7 +61,7 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Pedidos</a></li>
             <li><a href="#">Pizzas</a></li>
-            <li><a href="contact.html">contato</a></li>
+            <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>
         </ul>
     </div>

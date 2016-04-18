@@ -27,13 +27,9 @@
         
 	        <ul>
 
-
-
-                <form class="form-inline">
-                <input type="text" class="input-small" placeholder="Email" required autofocus>
-                <input type="password" class="input-small" placeholder="Senha" required><li><a href="#">  Logar</a></li></input>
-                </form>
-
+                    <li><a href="login.php">Login  </a></li>
+                    <li><a href="#">Registro </a></li>
+                    <li><a href="contato.php">Contato </a></li>
 
 	         <!--              CASO ESTEJA LOGADO 
                 <li class="active"><a href="index.html">Bem vindo Lucas,</a></li>

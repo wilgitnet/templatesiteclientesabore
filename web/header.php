@@ -27,7 +27,7 @@
         
 	        <ul>
 
-                    <li><a href="login.php">Login  </a></li>
+                    <li><a href="#">Login  </a></li>
                     <li><a href="#">Registro </a></li>
                     <li><a href="contato.php">Contato </a></li>
 

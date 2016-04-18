@@ -28,6 +28,12 @@ elseif ($page_name=='gallery.php') {
 elseif ($page_name=='contato.php') {
 	include $browser_t.'/contato.php';
 	}
+elseif ($page_name=='login.php') {
+	include $browser_t.'/login.php';
+	}
+elseif ($page_name=='registro.php') {
+	include $browser_t.'/registro.php';
+	}
 elseif ($page_name=='contact-post.php') {
 	include 'app/contact.php';
 	}

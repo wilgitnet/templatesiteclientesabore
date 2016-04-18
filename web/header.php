@@ -17,7 +17,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="http://localhost/templatesiteclientesabore/js/jquery.js"></script>
 <script type="text/javascript" src="web/js/slider.js"></script>
-
+    
+    <script type="text/javascript">
+ .pagination-centered {
+                 text-align: center;
+}
+    </script>
 </head>
 <body>
 <div class="wrap">
@@ -27,8 +32,8 @@
         
 	        <ul>
 
-                    <li><a href="#">Login  </a></li>
-                    <li><a href="#">Registro </a></li>
+                    <li><a href="login.php">Login  </a></li>
+                    <li><a href="registro.php">Registro </a></li>
                     <li><a href="contato.php">Contato </a></li>
 
 	         <!--              CASO ESTEJA LOGADO 

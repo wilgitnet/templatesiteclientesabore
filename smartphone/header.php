@@ -18,10 +18,9 @@
 	<div class="top-head">
 		<div class="top-nav">
 	        <ul>
-	            <li><a href="index.html">Home</a></li>
-	            <li><a href="#">Login</a></li>
-	            <li><a href="#">Pedidos</a></li>
-	            <li><a href="contact.html">Contato</a></li>
+	            <li><a href="login.php">Login</a></li>
+	            <li><a href="registro.php">Registro</a></li>
+	            <li><a href="contato.php">Contato</a></li>
 	        </ul>
 	    </div>
 	    <div class="clear"> </div>
@@ -42,7 +41,7 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Pedidos</a></li>
             <li><a href="#">Pizzas</a></li>
-            <li><a href="#">contato</a></li>
+            <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>
         </ul>
     </div>

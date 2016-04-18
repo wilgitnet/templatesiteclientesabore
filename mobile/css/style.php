@@ -445,6 +445,16 @@ body{
     outline: none;
     -webkit-appearance: none;
 }
+.feedback input[type="password"]{
+    width:95%;
+    padding:5px;
+    font-size:12px;
+    color:#333;
+    background:#eee;
+    border:none;
+    outline: none;
+    -webkit-appearance: none;
+}
 .feedback textarea{
     width:95%;
     height:100px;

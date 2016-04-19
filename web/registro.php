@@ -1,70 +1,66 @@
 
 <?php require_once('header.php'); ?>
 
-<html>
-<head>
-<style>
-#geral {
-position: relative;
-left:50%;
-margin-left:-250px;
-}
-#p1 {
-font-size: 11px;
-}
-</style>
-<script>
-    $( document ).ready(function() {
+
+
+
+<script src="http://localhost/templatesiteclientesabore/js/registro.js"></script>
+
+<script type="text/javascript">
+  
+
+ $( document ).ready(function() {
         $("#documento").focus();
     });
 </script>
 <body>
-</body>
-</html>
+
+
+
+
 
 
 <div class="container">
-    <form>
+    <form id="formularioRegistro" method="post">
 	<div class="feedback" id="geral">
         <h1>Realize seu cadastro</h1><br>
          <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
    <br>        	<div>
-            	<input type="text" id="documento" value="" placeholder="CPF ou CNPJ" />
+            	<input type="text" value="" placeholder="CPF ou CNPJ" id="documento" name="documento" />
             <br><br>
-            	<input type="text" value="" placeholder="Usuário" />
+            	<input type="text" value="" placeholder="Usuário" name="usuario" />
             <br><br>
-                <input type="password" class="" value="" placeholder="Senha" />
+                <input type="password" value="" placeholder="Senha" name="senha" />
             <br><br>
-                <input type="password" value="" placeholder="Repita sua senha" />
+                <input type="password" value="" placeholder="Repita sua senha" name="senha1" />
             <br><br>
-                <input type="text" value="" placeholder="Nome completo" />
+                <input type="text" value="" placeholder="Nome completo" name="nome" />
             <br><br>
 
-                <input type="text" value="" placeholder="Endereço de email" />
+                <input type="text" value="" placeholder="Endereço de email" name="email" />
             <br><br>
-                <span><input type="text" value="" placeholder="Endereço residencial" />
+                <span><input type="text" value="" placeholder="Endereço residencial" name="endereco" />
             <br><br>
-                <span><input type="text" value="" placeholder="Número" />
+                <span><input type="text" value="" placeholder="Número" name="numero" />
             <br><br>
-                <span><input type="text" value="" placeholder="Bairro" />
+                <span><input type="text" value="" placeholder="Bairro" name="bairro" />
             <br><br>
-                <span><input type="text" value="" placeholder="Cidade" />
+                <span><input type="text" value="" placeholder="Cidade" name="cidade" />
             <br><br>
-                <span><input type="text" value="" placeholder="Estado" />
+                <span><input type="text" value="" placeholder="Estado" name="estado" />
             <br><br>
-                <span><input type="text" value="" placeholder="CEP" />
+                <span><input type="text" value="" placeholder="CEP" name="cep" />
             <br><br>
-                <span><input type="text" value="" placeholder="Telefone residencial" />
+                <span><input type="text" value="" placeholder="Telefone residencial" name="telefone" />
             <br><br>
-                <span><input type="text" value="" placeholder="Telefone celular" />
+                <span><input type="text" value="" placeholder="Telefone celular" name="celular" />
             <br><br>Sexo:
-
-            <label class="radio-inline"><input type="radio" name="optradio">Masculino</label>
-            <label class="radio-inline"><input type="radio" name="optradio">Feminino</label>
+            <input type="radio" name="optradio">Masculino
+            <input type="radio" name="optradio">Feminino
 
             <br><br>
-                <input type="checkbox">Deseja receber Promoções em seu email?</input><br><br>
-                <input type="submit" value="Cadastrar" />
+                <input type="checkbox" >Deseja receber Promoções em seu email?</input><br><br>
+                <input class="submit" type="submit" value="Cadastrar" />
                 	
                 
             </div>
@@ -80,4 +76,3 @@ font-size: 11px;
     </div>
 
 <?php require_once('footer.php'); ?>
-

@@ -1,39 +1,28 @@
 
 	<?php require_once('header.php'); ?>
 
-    <style>
-#geral {
-position: relative;
-left:50%;
-margin-left:-250px;
-}
-#p1 {
-font-size: 11px;
-}
-
-</style>
+ 
 <script>
     $( document ).ready(function() {
         $("#usuario").focus();
     });
 </script>
+<script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
 <div class="feed">
 	<div class="feedback">
-                       <form>
+                       <form id="formLogin">
         <h1>Entre utilizando sua conta       </h1><br>
          
             <div>
-                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" />
+                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" name="login" />
             <br><br>
-                <input type="password" class="" value="" placeholder="Senha" />
+                <input type="password" class="" value="" placeholder="Senha" name="senha" />
             <br>
                 <a id="p1" href="registro.php">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
-                <input type="submit" value="Entrar">
-
-                <img src="images/faceb.png"><br>
-
-                <a id="p1" href="#">Esqueceu sua senha ?<a><br>
-                
+               <div> <input type="submit" value="Entrar">
+                <a id="p1" href="#">Esqueceu sua senha ?</a>
+               </div>
+                <a href="index.html"><img src="mobile/images/facebook1.png"  alt="Favorita" height="46" width="135" /></a>
             </div>
                     
                 

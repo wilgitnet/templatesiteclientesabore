@@ -4,6 +4,7 @@
 <head>
 <title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="smartphone/css/slider-styles.css" type="text/css" media="all" />
 <link rel="stylesheet" href="smartphone/css/style.php" type="text/css" media="all" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -12,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta name="keywords" content="Food-Point Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script src="http://localhost/templatesiteclientesabore/js/validate.js"></script>
 </head>
 <body>
 <div class="wrap">

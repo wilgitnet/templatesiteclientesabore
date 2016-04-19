@@ -1,26 +1,32 @@
 
 <?php require_once('header.php'); ?>
+<style type="text/css">
 
+</style>
+<script src="http://localhost/templatesiteclientesabore/js/contato.js"></script>
 <script>
+
     $( document ).ready(function() {
         $("#nome").focus();
     });
 </script>
+
+
 <div class="feed">
 	<div class="feedback">
         <h1>Feedback</h1>
-        <form>
+        <form id="formularioContato" method="post">
         	<div>
             	<span><label>Nome</label></span>
-            	<span><input type="text" id="nome" value="" /></span>
+            	<span><input type="text" id="nome" value="" name="nome" /></span>
             </div>
             <div>
             	<span><label>Email</label></span>
-            	<span><input type="text" value="" /></span>
+            	<span><input type="text" value="" name="email" /></span>
             </div>
         	<div>
             	<span><label>O que deseja nos falar?</label></span>
-            	<span><textarea></textarea></span>
+            	<span><textarea name="mensagem"></textarea></span>
             </div>
         	<div>
             	<span><input type="submit" value="Enviar" /></span>

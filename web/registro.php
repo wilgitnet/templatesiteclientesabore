@@ -13,6 +13,11 @@ margin-left:-250px;
 font-size: 11px;
 }
 </style>
+<script>
+    $( document ).ready(function() {
+        $("#documento").focus();
+    });
+</script>
 <body>
 </body>
 </html>
@@ -21,10 +26,10 @@ font-size: 11px;
 <div class="container">
     <form>
 	<div class="feedback" id="geral">
-        <h1>Crie sua conta       </h1><br>
+        <h1>Realize seu cadastro</h1><br>
          <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
    <br>        	<div>
-            	<input type="text" value="" placeholder="CPF ou CNPJ" />
+            	<input type="text" id="documento" value="" placeholder="CPF ou CNPJ" />
             <br><br>
             	<input type="text" value="" placeholder="Usuário" />
             <br><br>

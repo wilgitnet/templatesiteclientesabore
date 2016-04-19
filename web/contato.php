@@ -1,14 +1,18 @@
 
 <?php require_once('header.php'); ?>
 
-
+<script>
+    $( document ).ready(function() {
+        $("#nome").focus();
+    });
+</script>
 <div class="feed">
 	<div class="feedback">
         <h1>Feedback</h1>
         <form>
         	<div>
             	<span><label>Nome</label></span>
-            	<span><input type="text" value="" /></span>
+            	<span><input type="text" id="nome" value="" /></span>
             </div>
             <div>
             	<span><label>Email</label></span>

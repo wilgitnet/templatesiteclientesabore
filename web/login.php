@@ -13,6 +13,11 @@ margin-left:-250px;
 font-size: 11px;
 }
 </style>
+<script>
+    $( document ).ready(function() {
+        $("#usuario").focus();
+    });
+</script>
 <body>
 </body>
 </html>
@@ -21,10 +26,10 @@ font-size: 11px;
 <div class="container">
     <form>
 	<div class="feedback" id="geral">
-        <h1>Entre utilizando sua conta       </h1>
+        <h1>Entre utilizando sua conta</h1>
             <br>
         	<div>
-                <input type="text" value="" placeholder="Endereço de email" />
+                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" />
             <br><br>
                 <input type="password" class="" value="" placeholder="Senha" />
             <br>

@@ -146,7 +146,7 @@ body{
 .nav li {
     display:inline-block;
     float: left;
-    border-right:1px solid #000; 
+    border-right:0px solid #000; 
 }
 .nav li a {
     color:#867070;
@@ -375,6 +375,9 @@ body{
 }
 /*--boxes--*/
 .boxes{
+    
+    height: 336px;
+
     margin: 15px 0;
     border-top: 1px solid #EEE;
     padding-top: 15px;
@@ -398,7 +401,19 @@ body{
     margin: 0 21px 0 0;
     background: white;
     padding-bottom: 10px;
+    border-radius: .3em;    
+}
+.boxes li-boxes{
+    float: left;
+    display: inline;
+    margin: 0 21px 0 0;
+    background: white;
+    padding-bottom: 10px;
     border-radius: .3em;
+    padding-top: 10px;
+    height: 35px;
+    padding-bottom: 11px;
+    margin-bottom: 0px;    
 }
 .boxes li:first-child{
     margin-left: 0;
@@ -413,6 +428,22 @@ body{
     font-size: 14px;
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
+}
+.boxes-cardapio h3{
+    color: <?php echo $ColorBack; ?>;
+    margin-top: 67px;
+    padding-right: 0px;
+    padding-left: 10px;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+
+
+    
+
 }
 .boxes h4{
     color: #888;

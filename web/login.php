@@ -27,7 +27,7 @@
                 </div>
               
                 
-                 <a href="index.html"><img src="web/images/facebook1.png"  alt="Logar" height="52" width="162" /><br>
+                 <a href="index.html"><img src="web/images/facebook1.png"  alt="Logar" height="55" width="166" /><br>
             </div>
             </form>
         </div>

@@ -1,7 +1,7 @@
 $(document).ready( function() {
   $("#formLogin").validate({
     rules:{
-      login:{
+      usuario:{
         required: true
       },
       senha:{
@@ -11,7 +11,7 @@ $(document).ready( function() {
 
 
     messages:{
-      login:{
+      usuario:{
         required: "Digite o seu login",
       },
       senha:{

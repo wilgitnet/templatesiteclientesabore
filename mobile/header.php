@@ -4,8 +4,8 @@
 <head>
 <title>La Favoritta</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="mobile/css/style.php" type="text/css" media="all" />
+<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="http://localhost/templatesiteclientesabore/js/jquery.js"></script>
 <script src="http://localhost/templatesiteclientesabore/js/validate.js"></script>

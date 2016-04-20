@@ -4,7 +4,7 @@
 
 <script>
     $( document ).ready(function() {
-        $("#login").focus();
+        $("#usuario").focus();
     });
 </script>
 <script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
@@ -14,7 +14,7 @@
         <h1>Entre utilizando sua conta       </h1><br>
          
             <div>
-                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" name="login" id="login" />
+                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" name="usuario" id="usuario" />
             <br><br>
                 <input type="password" class="" value="" placeholder="Senha" name="senha" id="senha" />
             <br>

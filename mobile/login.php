@@ -14,7 +14,7 @@
         <h1>Entre utilizando sua conta       </h1><br>
          
             <div>
-                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" name="login" />
+                <input type="text" value="" id="usuario" placeholder="Usuário ou Email" name="usuario" />
             <br><br>
                 <input type="password" class="" value="" placeholder="Senha" name="senha" />
             <br>

@@ -5,9 +5,9 @@
 <title>La Favoritta</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="web/css/style.php" type="text/css" media="all" />
 <link rel="stylesheet" href="web/css/slider-styles.css" type="text/css" media="all" /> 
+<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="signin.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">

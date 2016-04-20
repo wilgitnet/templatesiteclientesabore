@@ -4,9 +4,9 @@
 <head>
 <title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="smartphone/css/slider-styles.css" type="text/css" media="all" />
 <link rel="stylesheet" href="smartphone/css/style.php" type="text/css" media="all" />
+<link rel="stylesheet" href="http://localhost/templatesiteclientesabore/css/style.css" type="text/css" media="all" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="smartphone/js/slider.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>

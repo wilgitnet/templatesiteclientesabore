@@ -10,7 +10,7 @@
 
 <div class="feed">
 	<div class="feedback">
-        <h1>Contato</h1>
+        <h1>Entre em contato</h1>
         <form id="formularioContato">
         	<div>
             	<span><input type="text" placeholder="Nome" id="nome" value="" name="nome" /></span>

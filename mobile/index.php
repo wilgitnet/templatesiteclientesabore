@@ -26,7 +26,7 @@
 	<div class="order">	
 		<ul>
 			<li>
-				<h3 id="pedido">Pedidos</h3>
+				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
 					<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
 					<p>Descontos  <span>R$0.00</span></p>

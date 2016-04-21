@@ -89,7 +89,7 @@
 
 	<div class="grids">
 		<ul>
-			<h4>Pizzas mais compradas</h4>
+			<h4>Pizzas</h4>
 		<li>
 			<h3>Pizza de calabresa</h3>
 			<img src="mobile/images/thumb-1.png">

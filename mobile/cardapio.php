@@ -45,8 +45,9 @@
 <div class="boxes-cardapio">
 	<div class="order">	
 		<ul>
+		
 			<li>
-				<h3 id="cardapio">Cardapio</h3>
+				<h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
 				<div id="cardapio-expand" style="display: none">
 					<h5>Bebidas</h5><hr>
 					<h5>Bebidas</h5><hr>
@@ -57,7 +58,7 @@
 					<h5>Sobremesas</h5><hr>
 					<h5>Sobremesas</h5>
 				</div>		
-				<h3 id="pedido">Pedidos</h3>
+				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
 					<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
 					<p>Descontos  <span>R$0.00</span></p>

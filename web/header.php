@@ -50,7 +50,7 @@
 	    <div class="clear"> </div>
     </div>
 	<div class="header">
-	<div class="logo"><a href="index.html"><img src="web/images/logo.png"  alt="Favorita"/></a></div>
+	<div class="logo"><a href="index.html"><img src="<?php echo $_SESSION['logo']; ?>"  alt="Favorita"/></a></div>
     <div class="search">
     	<form>
     		<input type="text" value="" placeholder="Pesquise aqui" />

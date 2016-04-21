@@ -1,5 +1,6 @@
 
-	<?php require_once('header.php'); ?>
+<?PHP echo '<Pre>';print_r($dados_dominio); ?>
+	<?php require_once('header.php'); ?>    
 <script>
     $( document ).ready(function() {
         $("#nome").focus();

@@ -1,5 +1,11 @@
 <?php
 session_start();
+require_once('function.php');
+
+##alterar para pegar dominio dinamico
+$dominio = 'templatesiteclientesabore';
+
+$id_cliente = 0;
 $userBrowser = $_SERVER['HTTP_ACCEPT']; 
 if(stristr($userBrowser, 'application/vnd.wap.xhtml+xml')) 
 {
@@ -199,11 +205,25 @@ else
 $_SESSION['Browser_d'] = "web";
 $browser_t = "web";
 }   
-	}
+}
+
+
+##buscando dados de cliente atraves do dominio
+if(empty($_SESSION['id_cliente']))
+{    
+    ##realizar busca por dados de cliente aqui
+    $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/buscar');            
+    if($dadosDominio['success'] && !empty($dadosDominio['dados']['Cliente']['id']))
+    {
+        $_SESSION['id_cliente'] = $dadosDominio['dados']['Cliente']['id'];
+        $_SESSION['logo']       = $dadosDominio['dados']['Cliente']['logo'];                
+        $_SESSION['dominio']    = $dominio;                                
+    }
+}
+
 
 $_SESSION['style'] = 'padrao';
-
 //testar funcionalidades em outras plataformas
-$browser_t = 'web';
+//$browser_t = 'web';
 
 	 ?>

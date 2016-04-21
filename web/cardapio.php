@@ -4,55 +4,93 @@
 	
 	<div class="grids">
 		<ul>
-			<h4>Pizzas mais compradas</h4>
+			<h4>Pizzas</h4>
 		<li>
-			<h3>Pizza de calabresa</h3>
+			<h3>Calabresa</h3>
 			<img src="web/images/thumb-1.png">
 			<p>Calabresa, molho, tomate, queijo</p>
 			<button>R$40.00</button>
+			<a href="#">Comprar</a>
 		</li>
 		<li>
 			<h3>Frango com catupiry</h3>
 			<img src="web/images/thumb-2.png">
 			<p>Frango, molho, catupiry, queijo</p>
 			<button>R$30.00</button>
+			<a href="#">Comprar</a>
 		</li>
 		<li>
-			<h3>Pizza escarola</h3>
+			<h3>Escarola</h3>
 			<img src="web/images/thumb-1.png">
 			<p>Escarola molho, queijo, pizzas</p>
 			<button>R$40.00</button>
+			<a href="#">Comprar</a>
+
 		</li>
-		<a href="#">Veja todas</a>
 		<div class="clear"> </div>
 		
 
 
-
-
-		<h4>Sugestões para você</h4>
 		<li>
-			<h3>Pizza 1</h3>
+			<h3>Calabresa</h3>
 			<img src="web/images/thumb-2.png">
 			<p>Descrição da pizza - Ingredientes</p>
 			<button>R$40.00</button>
+			<a href="#">Comprar</a>
 		</li>
 		<li>
-			<h3>pizza 2 </h3>
+			<h3>Calabresa </h3>
 			<img src="web/images/thumb-1.png">
 			<p>Descrição da pizza - Ingredientes</p>
 			<button>R$40.00</button>
+			<a href="#">Comprar</a>
 		</li>
 		<li class="last">
-			<h3>pizza 3</h3>
+			<h3>Frango com catupiry</h3>
 			<img src="web/images/thumb-2.png">
 			<p>Descrição da pizza - Ingredientes</p>
 			<button>R$40.00</button>
-		</li>
-		<a href="#">Veja todas as pizzas</a>
+			<a href="#">Comprar</a>
+		</li>	
 		</ul>
 		<div class="clear"> </div>
+
+
+
+		<li>
+			<h3>Calabresa</h3>
+			<img src="web/images/thumb-2.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
+			<a href="#">Comprar</a>
+		</li>
+		<li>
+			<h3>Calabresa</h3>
+			<img src="web/images/thumb-1.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
+			<a href="#">Comprar</a>
+		</li>
+		<li class="last">
+			<h3>Calabresa</h3>
+			<img src="web/images/thumb-2.png">
+			<p>Descrição da pizza - Ingredientes</p>
+			<button>R$40.00</button>
+			<a href="#">Comprar</a>
+		</li>	
+		</ul>
+		<div class="clear"> </div>
+
 	</div>
+
+
+
+
+
+
+
+
+
 	<div class="boxes">
 		<div class="order">
 			<ul>

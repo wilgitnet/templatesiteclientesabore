@@ -328,9 +328,123 @@ body{
 .order li a:hover{
     text-decoration:underline;
 }
+/*-----order-cardapio------*/
+.order-cardapio h4,.order p{
+    border-bottom:1px solid silver;
+    padding:10px 0px;
+    font-size:16px;
+}
+.order-cardapio span{
+    color: <?PHP echo $ColorBack; ?>;
+}
+.order-cardapio h5{
+    font-size:12px;
+    color:#888;
+    margin:5px 0px;
+}
+.order-cardapio h5:hover{
+    color: <?PHP echo $ColorBack; ?>;
+    cursor: pointer;
+}
+.order-cardapio li h3{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: url(../images/nav-bg.jpg);
+}
+.order-cardapio li a{
+    font-size: 12px;
+    margin: 0px 8px 10px 0px;
+    text-transform: normal;
+    background-color: <?PHP echo $ColorBack; ?>;
+    padding: 5px 7px;
+    color: white;
+    margin-top:20px;
+    float:right;
+}
+.order-cardapio li a:hover{
+    text-decoration:underline;
+}
 /*--boxes--*/
 .boxes{
+    margin-bottom: 2px;
+    padding-bottom: 0px;
     margin: 15px 0;
+    border-top: 1px solid #EEE;
+    padding-top: 10px;
+    padding: 10px;
+}
+.boxes-cardapio{
+    margin: 0px 0;
+    border-top: 1px solid #EEE;
+    padding-top: 0px;
+    padding: 0px;
+}
+.prev{
+    float: left;
+}
+.prev img{
+    width: 150px;
+    padding-right: 10px;
+}
+.text{
+    float: right;
+    width: 138px;
+}
+.boxes li{
+    display: inline;
+    margin: 0 21px 0 0;
+    background: white;
+    padding-bottom: 10px;
+    border-radius: .3em;
+}
+.boxes li:first-child{
+    margin-left: 0;
+}
+.boxes li.last{
+    margin-right: 0;
+}
+.boxes h3{
+    color: <?PHP echo $ColorBack; ?>;
+    background: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.boxes h4{
+    color: #888;
+    padding: 5px 0 5px 0;
+    background: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.boxes p{
+    color: #888;
+    font-size: 12px;
+    background: #fff;
+    line-height: 1.8em;
+}
+.boxes button{
+    color: #888;
+    border: none;
+    margin:8px 0;
+    font-size: 10px;
+    padding: 0;
+    font-weight: bold;
+    background: none;
+}
+.boxes button:hover{
+    color: #34A300;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*--boxes-cardapio--*/
+.boxes-cardapio{
+    margin: 0px 0;
     border-top: 1px solid #EEE;
     padding-top: 10px;
     padding: 10px;
@@ -393,6 +507,7 @@ body{
     cursor: pointer;
     text-decoration: underline;
 }
+
 /*--gallery--*/
 .grids-gallery{
     margin: 15px 0;

@@ -22,7 +22,8 @@
                <div> <input type="submit" value="Entrar">
                 <a id="p1" href="#">Esqueceu sua senha ?</a>
                </div>
-                <a href="index.html"><img src="mobile/images/facebook1.png"  alt="Favorita" height="46" width="135" /></a>
+               <br>
+                <a href="index.html"><img src="mobile/images/facebook1.png"  alt="Favorita" width="150px" height= "30px";/></a>
             </div>
                     
                 

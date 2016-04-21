@@ -1,6 +1,47 @@
 
 	<?php require_once('header.php'); ?>
 
+<script type="text/javascript">
+	
+				pedido_situacao = 'close';
+		$(document).ready( function() {
+
+			$("#pedido").click(function() {
+				if(pedido_situacao == 'close')
+				{
+					$("#pedido-expand").show();	
+					pedido_situacao = 'open';
+				}
+				else
+				{
+					$("#pedido-expand").hide();	
+					pedido_situacao = 'close';	
+				}
+				
+			});
+		});
+</script>
+
+
+<div class="boxes-cardapio">
+	<div class="order">	
+		<ul>
+			<li>
+				<h3 id="pedido">Pedidos</h3>
+				<div id="pedido-expand" style="display: none">
+					<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
+					<p>Descontos  <span>R$0.00</span></p>
+					<p>Total  <span>R$40.00</span></p>
+					<h5>Tarifa de entrega incluída</h5>
+					<h6><a href="#">Finalizar</a></h6>
+					<h6><a href="#">Limpar</a></h6>					
+					<br><br> 	
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>	
+
 	<div class="grids">
 		<ul>
 			<h4>Pizzas mais compradas</h4>
@@ -38,8 +79,6 @@
 		<div class="clear"> </div>
 </div>
 	<div class="boxes">
-		<div class="order">
-				<ul>
 		<!--
 			<li>
 			<h3>Pedidos</h3>
@@ -50,20 +89,8 @@
 			<h6><a href="#">Pedidos</a></h6>
 			<h6><a href="#">Comprar</a></h6>
 		-->
-			<li>
-			<h3>Pedidos</h3>
-			<h4>1-Pizza Calabresa<br> 1-Pizza Mussarela<br>1-Pizza Frango Catupiry</h4>
-			<p>Descontos  <span>R$0.00</span></p>
-			<p>Total  <span>R$40.00</span></p>
-			<h5>Tarifa de entrega incluída</h5>
-			<h6><a href="#">Pedidos</a></h6>
-			<h6><a href="#">Comprar</a></h6>
-		</li>
-		</ul>
-		</div>
-
-
-		<div class="clear"> </div>
+			
+	<div class="clear"> </div>
 		<ul>
 			<li>
 			<h3>Horario de funcionamento</h3>

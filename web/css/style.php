@@ -259,6 +259,16 @@ body{
     padding:5px 7px;
     color:#fff;
 }
+.grids a-2{
+    float: right;
+    font-size: 12px;
+    margin:0px 8px 10px 0px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform:normal;
+    background-color: <?php echo $ColorBack; ?>;
+    padding:5px 7px;
+    color:#fff;
+}
 .grids a:hover{
     text-decoration:underline;
 }

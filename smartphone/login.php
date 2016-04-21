@@ -25,7 +25,7 @@
                 </div><br>
 
                 
-            <a href="index.html"><img src="smartphone/images/facebook1.png"  alt="Favorita" height="46" width="135" /></a>    
+            <a href="index.html"><img src="mobile/images/facebook1.png"  alt="Favorita" width="150px" height= "35px";/></a><br>    
             </div> 
                     
                 

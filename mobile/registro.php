@@ -56,8 +56,8 @@ font-size: 11px;
                 <span><input type="text" value="" placeholder="Telefone celular" name="celular" />
             <br><br>Sexo:
 
-            <label class="radio-inline"><input type="radio" name="optradio">Masculino</label>
-            <label class="radio-inline"><input type="radio" name="optradio">Feminino</label>
+            <input type="radio" name="optradio">Masculino
+            <input type="radio" name="optradio">Feminino
 
             <br><br>
                 <input type="checkbox">Deseja receber Promoções em seu email?</input><br><br>

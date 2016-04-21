@@ -37,17 +37,19 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Pedidos</a></li>
-            <li><a href="#">Pizzas</a></li>
+            <li><a href="cardapio.php">Pizzas</a></li>
             <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>
         </ul>
     </div>
 
     <div class="main-body">
-        <div id="slider">
-            <a href="#" target="_blank">
-                <img src="mobile/images/slider-1.jpg" alt="Mini Ninjas" />
-            </a>
-        </div>
+        <?php if($banner){ ?>
+            <div id="slider">
+                <a href="#" target="_blank">
+                    <img src="mobile/images/slider-1.jpg" alt="Mini Ninjas" />
+                </a>
+            </div>
+        <?php } ?>
 
 

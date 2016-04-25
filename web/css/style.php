@@ -26,7 +26,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
@@ -498,6 +498,12 @@ body{
     margin-bottom:30px;
     font-family: 'Istok Web', sans-serif;
 }
+.feed2{
+    padding:0px 0;
+    margin-bottom:30px;
+    width: 906px;
+    font-family: 'Istok Web', sans-serif;
+}
 .feedback{
     font-size:16px;
     padding-bottom:10px;
@@ -505,10 +511,68 @@ body{
     margin:0 0 0 30px;
     float:left;
 }
+.feedback table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.feedback th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    width: 70px;
+}
+.feedback2{
+    font-size:16px;
+    padding-bottom:0;
+    color:#464646;
+    margin:0 0 0 30px;
+}
+.feedback2 table img{
+    padding: 2px;
+    box-shadow: 0px 0px 2px #CDCDCD;
+}
+
+.feedback2 h4{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    background-color:<?php echo $ColorBack; ?>
+}
+
+.feedback2 h3{
+    color: <?php echo $ColorBack; ?>;
+    padding: 10px 0 10px 0;
+    background: #fff;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+}
+.feedback2 table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.feedback2 td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.feedback2 th {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
 .feedback h1{
     font-size:28px;
     padding-bottom:10px;
     color:#464646;
+}
+.feedback2 h1{
+    font-size:20px;
+    padding-bottom:10px;
+    color:#464646;
+    width: 400px;
 }
 .feedback div{
     padding:10px;
@@ -570,9 +634,56 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+.feedback2 input[type="submit"]{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#95a5a6;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button2{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button1{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#c0392b;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+
+
 .feedback input[type="submit"]:hover{
     background:#2E1A19;
     color: #fff;
+}
+.feedback2 tr:nth-child(even){
+    background-color: #f2f2f2;
 }
 .map{
     float: right;

@@ -46,6 +46,10 @@ elseif ($page_name=='cardapio.php') {
 	$banner = false;
 	include $browser_t.'/cardapio.php';
 	}	
+elseif ($page_name=='carrinho.php') {
+	$banner = false;
+	include $browser_t.'/carrinho.php';
+	}
 elseif ($page_name=='contact-post.php') {
 	$banner = true;
 	include 'app/contact.php';

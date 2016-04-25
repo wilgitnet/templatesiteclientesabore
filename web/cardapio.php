@@ -126,7 +126,7 @@
 					<p>Descontos  <span>R$0.00</span></p>
 					<p>Total  <span>R$40.00</span></p>
 					<h5>Tarifa de entrega incluída</h5>
-					<h6><a href="#">Ver todos</a></h6>
+					<h6><a href="carrinho.php">Ver todos</a></h6>
 					<h6><a href="#">Limpar</a></h6>															
 				</li>	
 			</ul>

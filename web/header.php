@@ -19,6 +19,8 @@
 <script src="http://localhost/templatesiteclientesabore/js/jquery.js"></script>
 <script type="text/javascript" src="web/js/slider.js"></script>
 <script src="http://localhost/templatesiteclientesabore/js/validate.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
  .pagination-centered {
@@ -62,7 +64,7 @@
 	<div class="nav">
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Pedidos</a></li>
+            <li><a href="carrinho.php">Pedidos</a></li>
             <li><a href="cardapio.php">Pizzas</a></li>
             <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>

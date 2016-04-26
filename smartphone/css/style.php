@@ -450,7 +450,20 @@ body{
 	outline: none;
 	font-family: 'Istok Web', sans-serif;
 	-webkit-appearance: none;
-}.feedback input[type="text"]{
+}
+.feedback input[type="text"]{
+	width:95%;
+	padding:8px;
+	font-size:13px;
+	color:#333;
+	background:#eee;
+	box-shadow: 0 0 6px #aaa;
+	border:none;
+	outline: none;
+	font-family: 'Istok Web', sans-serif;
+	-webkit-appearance: none;
+}
+.feedback select{
 	width:95%;
 	padding:8px;
 	font-size:13px;

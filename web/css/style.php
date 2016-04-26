@@ -599,6 +599,17 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
+.feedback select{
+    width:450px;
+    padding:8px;
+    font-size:16px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
 .feedback input[type="password"]{
     width:450px;
     padding:8px;

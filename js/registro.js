@@ -1,6 +1,40 @@
 
 $(document).ready( function() {
+
+  $('#cep').bind('keydown',soNums); 
+  $("#documento").focus();
+
+  //busca por cep ajax
+  $('#cep').blur(function()
+  {
+    $("#loading").show(); 
+    $.ajax({
+          url : 'app/controller/registro_controller.php', 
+          type : 'POST', 
+          data: 'cep=' + $('#cep').val()+'&search=true', 
+          dataType: 'json', 
+          success: function(data)
+          {
+              if(data.success == 1)
+              {                             
+                  $('#endereco').val(data.dados.logradouro);
+                  $('#bairro').val(data.dados.bairro);
+                  $('#cidade').val(data.dados.cidade);
+                  $('#estado').val(data.dados.uf);
+                  $('#numero').focus();                  
+                  $("#loading").hide(); 
+              }
+              else
+              {
+                alert('Informar um CEP válido');                
+                $("#loading").hide(); 
+              }
+          }
+     });      
+     return false;
+  });  
   
+  //validacao de formulario
   $("#formularioRegistro").validate({
       rules:{
         documento:{
@@ -34,7 +68,7 @@ $(document).ready( function() {
           required: true, minlength: 2
         },
         estado:{
-          required: true, minlength : 2
+          required: true
         },
         cep:{
           required: true, minlength : 2
@@ -88,8 +122,7 @@ $(document).ready( function() {
           minLength: "A sua cidade deve conter, no mínimo, 2 caracteres"
         },
         estado:{
-          required: "Digite o seu Estado",
-          minLength: "O seu Estado deve conter, no mínimo, 2 caracteres"
+          required: "Digite o seu Estado"          
         },
         cep:{
           required: "Digite o seu CEP",
@@ -106,3 +139,29 @@ $(document).ready( function() {
       }
     });
 });
+
+// funcao para somente numeros no input
+function soNums(e){
+ 
+    //teclas adicionais permitidas (tab,delete,backspace,setas direita e esquerda)
+    keyCodesPermitidos = new Array(8,9,37,39,46);
+     
+    //numeros e 0 a 9 do teclado alfanumerico
+    for(x=48;x<=57;x++){
+        keyCodesPermitidos.push(x);
+    }
+     
+    //numeros e 0 a 9 do teclado numerico
+    for(x=96;x<=105;x++){
+        keyCodesPermitidos.push(x);
+    }
+     
+    //Pega a tecla digitada
+    keyCode = e.which; 
+     
+    //Verifica se a tecla digitada é permitida
+    if ($.inArray(keyCode,keyCodesPermitidos) != -1){
+        return true;
+    }    
+    return false;
+}

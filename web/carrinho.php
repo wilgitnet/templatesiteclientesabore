@@ -34,7 +34,7 @@
     <td></td>
     <td>R$100</td>
     <td></td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 5px; width: 5px;"></a></td>
+    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
     <td></td>
   </tr>
   <tr>
@@ -44,7 +44,7 @@
     <td></td>
     <td>R$150</td>
     <td></td>
-    <td><a href="#"><img src="web/images/x.png" style="height: 5px; width: 5px;"></a></td>
+    <td><a href="#"><img src="web/images/x.png" style="height: 10px; width: 10px;"></a></td>
     <td></td>
   </tr>
   <tr>
@@ -54,7 +54,7 @@
     <td></td>
     <td>R$300</td>
     <td></td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 5px; width: 5px;"></a></td>
+    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
     <td></td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@
     <td></td>
     <td>R$250</td>
     <td></td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 5px; width: 5px;"></a></td>
+    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
     <td></td>
   </tr>
 
@@ -77,10 +77,10 @@
 
 		<tr>
 			<th>
-				<h1 align="left">Total : </h1><br>
+				<h1 align="left">Total : R$500,00 </h1><br>
 			</th>
 			<th>
-				<h1 align="left">R$500,00</h1><br>
+				<h1 align="left"></h1><br>
 			</th>
 		</tr>
 

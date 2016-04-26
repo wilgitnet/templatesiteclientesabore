@@ -182,6 +182,10 @@ body{
     font-size: 13px;
     text-transform: uppercase;
 }
+.h3St
+{
+    color: <?php echo $ColorBack; ?>;
+}
 .grids p{
     color: #888;
     font-size: 12px;

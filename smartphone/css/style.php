@@ -62,6 +62,10 @@ body{
 	padding-top:9px; 
 	text-align: center;
 }
+.h3St
+{
+    color: <?php echo $ColorBack; ?>;
+}
 .top-nav li a {
 	color: #867070;
 	font-size: 12px;

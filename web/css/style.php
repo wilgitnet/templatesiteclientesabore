@@ -680,7 +680,10 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
-
+.feedback2 input[type="submit"]:hover{
+    background:#2E1A19;
+    color: #fff;
+}
 
 .feedback input[type="submit"]:hover{
     background:#2E1A19;

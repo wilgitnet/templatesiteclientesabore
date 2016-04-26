@@ -15,7 +15,7 @@ if ($page_name=='') {
 	$banner = true;
 	include $browser_t.'/index.php';
 	}
-elseif ($page_name=='index.html') {
+elseif ($page_name=='index.php') {
 	$banner = true;
 	include $browser_t.'/index.php';
 	}

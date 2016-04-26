@@ -220,6 +220,10 @@ body{
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
 }
+.h3St
+{
+    color: <?php echo $ColorBack; ?>;
+}
 .grids p{
     color: #888;
     font-size: 12px;

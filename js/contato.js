@@ -1,4 +1,6 @@
-$(document).ready( function() {
+$(document).ready( function() {  
+  $("#nome").focus();
+
   $("#formularioContato").validate({
     // Define as regras
     rules:{

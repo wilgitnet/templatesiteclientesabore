@@ -55,5 +55,6 @@
     $('#slider').coinslider();
 </script>
 
+
 </body>
 </html>

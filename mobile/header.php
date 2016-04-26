@@ -39,7 +39,7 @@
 	<div class="nav">
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Pedidos</a></li>
+            <li><a href="carrinho.php">Pedidos</a></li>
             <li><a href="cardapio.php">Pizzas</a></li>
             <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>

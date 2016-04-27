@@ -45,7 +45,7 @@
             <br><br>
                 <input type="text" value="<?PHP if(!empty($_POST['cep']))echo $_POST['cep']; ?>" placeholder="CEP" name="cep" id="cep" maxlength="9" />                
                 <div id="loading" style="display:none">
-                    <img src="images/loading.gif">
+                    <img src="images/loading.gif" width="25" height="25" align="right">
                 </div>
             <br><br>
                 <select name="estado" id="estado">

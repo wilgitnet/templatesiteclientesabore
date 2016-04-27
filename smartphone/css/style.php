@@ -138,7 +138,10 @@ body{
 }
 .main-body{
 	background: #fff;
-	padding:16px;
+	padding-left: 0px;
+    padding-top: 16px;
+    padding-right: 5px;
+    padding-bottom: 16px;
 }
 .content{
 	float:left;
@@ -299,6 +302,129 @@ body{
 	display: inline-block;
 }
 /*-----end of footer-----*/
+
+
+.feed2{
+    padding:0px 0;
+    margin-bottom:30px;
+    width: 906px;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2{
+    font-size:16px;
+    padding-bottom:0;
+    color:#464646;
+    margin:30px 0 0 30px;
+    margin-
+}
+.feedback2 input[type="submit"]:hover{
+    background:#2E1A19;
+    color: #fff;
+}
+    #button2{
+    width:150px;
+    padding:15px 8px;
+    font-size:20px;
+    background:#27ae60;
+    border:none;
+    font-size:17px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button1{
+    width:150px;
+    padding:15px 8px;
+    font-size:20px;
+    background:#c0392b;
+    border:none;
+    font-size:17px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+.feedback2 input[type="submit"]{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#95a5a6;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+.table>tbody>tr>td, 
+.table>tbody>tr>th{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid 
+}
+.feedback2 h1{
+    font-size:18px;
+    padding-bottom:10px;
+    color:#464646;
+    width: 400px;
+}
+.feedback2 table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.feedback2 td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.feedback2 th {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.feedback2{
+	vertical-align: middle;
+    font-size:16px;
+    padding-bottom:0;
+    color:#464646;
+    margin:0 0 0 0px;
+
+}
+.feedback2 table img{
+    padding: 2px;
+    box-shadow: 0px 0px 2px #CDCDCD;
+}
+
+.feedback2 h4{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    background-color:<?php echo $ColorBack; ?>
+}
+
+.feedback2 h3{
+    color: <?php echo $ColorBack; ?>;
+    padding: 10px 0 10px 0;
+    background: #fff;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+}
+
+
+
+
 /*-----order------*/
 .order h4,.order p{
 	border-bottom:1px solid silver;

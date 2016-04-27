@@ -53,6 +53,7 @@
     </div>
 
     <div class="main-body">
+            <?php if($banner){ ?>
         <div id="slider">
                 <a href="#" target="_blank">
                     <img src="smartphone/images/slider-1.jpg" alt="Pizza 1" />
@@ -64,3 +65,4 @@
                     <img src="smartphone/images/slider-3.jpg" alt="Pizza 3" />
                 </a>
         </div>
+        <?php } ?>

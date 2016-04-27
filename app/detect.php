@@ -238,7 +238,7 @@ if($buscarDominio)
 
 $_SESSION['style'] = 'padrao';
 //testar funcionalidades em outras plataformas
-//$browser_t = 'mobile';
+//$browser_t = 'smartphone';
 
 
 	 ?>

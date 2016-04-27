@@ -7,7 +7,7 @@
 <div class="feed">
 	<div class="feedback">        
         <?php 
-            if(!empty($mensagem))
+            if(!empty($mensagem) && !$error)
             {
                 echo "<h3 class='h3St'>{$mensagem}</h3>";
             }
@@ -15,6 +15,14 @@
             {
                 echo "<br>";
             }
+
+            if($error)
+            {
+                echo "<div class='alert'>
+                          {$mensagem}.
+                      </div>";
+            }
+
         ?>
         
         <h1>Entre em contato</h1>        

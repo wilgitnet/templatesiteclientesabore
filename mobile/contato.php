@@ -5,11 +5,19 @@
 
 <div class="feed">
 	<div class="feedback">
-        <?php 
-            if(!empty($mensagem))
+       <?php 
+            if(!empty($mensagem) && !$error)
             {
                 echo "<h3 class='h3St'>{$mensagem}</h3>";
-            }            
+            }
+            
+            if($error)
+            {
+                echo "<div class='alert'>
+                          {$mensagem}.
+                      </div>";
+            }
+
         ?>
         <h1>Entre em contato</h1>
         <form id="formularioContato" method="post" action="contato.php">

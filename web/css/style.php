@@ -48,6 +48,18 @@ table{border-collapse:collapse;border-spacing:0;}
   src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+.warning {
+    padding: 20px;
+    background-color: #ff9800; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
 /* start editing from here */
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */

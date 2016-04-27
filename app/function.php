@@ -10,8 +10,7 @@ function GoCURL($campos, $url)
 
     $token = GenerateToken();
     
-    $campos['TokenRequest'] = $token;
-    
+    $campos['TokenRequest'] = $token;    
 
     $string_campos = '';
     foreach($campos as $name => $valor) {

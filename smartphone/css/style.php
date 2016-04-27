@@ -57,6 +57,18 @@ body{
 	font-size:100%;
 	background:url(../images/header-bg-<?PHP echo $_SESSION['style']; ?>.jpg) repeat-x;
 }
+.alert {
+    padding: 5px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 8px;
+}
+.warning {
+    padding: 5px;
+    background-color: #ff9800; /* Red */
+    color: white;
+    margin-bottom: 8px;
+}
 .top-nav{
 	padding: 16px;
 	padding-top:9px; 

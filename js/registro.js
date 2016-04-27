@@ -69,7 +69,7 @@ $(document).ready( function() {
   $("#formularioRegistro").validate({
       rules:{
         documento:{
-          required: true, minlength: 14
+          required: true, minlength: 11
         },
         usuario:{
           required: true, minlength: 2

@@ -62,6 +62,18 @@ body{
 .top-nav{
     text-align: center;
 }
+.alert {
+    padding: 5px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 8px;
+}
+.warning {
+    padding: 5px;
+    background-color: #ff9800; /* Red */
+    color: white;
+    margin-bottom: 8px;
+}
 .top-nav li a {
     color: #867070;
     font-size: 12px;

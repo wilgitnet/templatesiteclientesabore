@@ -1,4 +1,5 @@
 <?php
+$error = false;
 ##enviando email
 if(!empty($_POST['nome']))
 {
@@ -20,6 +21,7 @@ if(!empty($_POST['nome']))
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	if(!mail($to, $subject, $message, $headers)){
+	 $error = true;
      $mensagem='Ocorreu um erro no envio da mensagem. Tente novamente';		
   }else{
   	 $mensagem='Mensagem enviada com sucesso :) ';		

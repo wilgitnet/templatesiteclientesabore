@@ -10,19 +10,23 @@
         <h1>Realize seu cadastro</h1><br>
          <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
    <br> <div>
-            	<input type="text" value="" placeholder="CPF ou CNPJ" id="documento" name="documento" />
+            	<input type="text" value="" placeholder="CPF ou CNPJ" id="documento" name="documento" maxlength="14" />
             <br><br>
-            	<input type="text" value="" placeholder="Usuário" name="usuario" />
+                <input type="text" value="" placeholder="Telefone celular" name="celular" id="celular" maxlength="30" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
             <br><br>
-                <input type="password" value="" placeholder="Senha" name="senha" />
+            	<input type="text" value="" placeholder="Usuário" name="usuario" id="usuario" maxlength="40" />
             <br><br>
-                <input type="password" value="" placeholder="Repita sua senha" name="senha1" />
+                <input type="password" value="" placeholder="Senha" name="senha" id="senha" maxlength="20" />
             <br><br>
-                <input type="text" value="" placeholder="Nome completo" name="nome" />
+                <input type="password" value="" placeholder="Repita sua senha" name="senha1" id="senha1" maxlength="20" />
             <br><br>
-                <input type="text" value="" placeholder="Endereço de email" name="email" />
+                <input type="text" value="" placeholder="Nome" name="nome" id="nome" maxlength="50" />
             <br><br>
-                <input type="text" value="" placeholder="CEP" name="cep" id="cep" maxlength="8" />                
+                <input type="text" value="" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />
+            <br><br>
+                <input type="text" value="" placeholder="Endereço de email" name="email" id="email" maxlength="30" />
+            <br><br>
+                <input type="text" value="" placeholder="CEP" name="cep" id="cep" maxlength="9" />                
                 <div id="loading" style="display:none">
                     <img src="images/loading.gif">
                 </div>
@@ -58,19 +62,17 @@
                     <option value="TO">Tocantis</option>
                 </select> 
             <br><br>
-                <input type="text" value="" placeholder="Cidade" name="cidade" id="cidade" />
+                <input type="text" value="" placeholder="Cidade" name="cidade" id="cidade" maxlength="50"/>
             <br><br>
-                <input type="text" value="" placeholder="Bairro" name="bairro" id="bairro" />
+                <input type="text" value="" placeholder="Bairro" name="bairro" id="bairro" maxlength="50" />
             <br><br>
-                <input type="text" value="" placeholder="Endereço residencial" name="endereco" id="endereco" />
+                <input type="text" value="" placeholder="Endereço residencial" name="endereco" id="endereco" maxlength="150" />
+            <br><br>                
+                <input type="text" value="" placeholder="Número" name="numero" id="numero" maxlength="10" />                                    
             <br><br>
-                <input type="text" value="" placeholder="Complemento" name="complemento" id="complemento" />
+                <input type="text" value="" placeholder="Complemento" name="complemento" id="complemento" maxlength="150" />
             <br><br>
-                <input type="text" value="" placeholder="Número" name="numero" id="numero" />                                    
-            <br><br>
-                <input type="text" value="" placeholder="Telefone residencial" name="telefone" />
-            <br><br>
-                <input type="text" value="" placeholder="Telefone celular" name="celular" />
+                <input type="text" value="" placeholder="Telefone residencial" name="telefone" id="telefone" maxlength="30" />            
             <br><br>Sexo:
             <input type="radio" name="optradio">Masculino
             <input type="radio" name="optradio">Feminino

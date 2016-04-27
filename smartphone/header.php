@@ -17,6 +17,7 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta name="keywords" content="Food-Point Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script src="http://localhost/templatesiteclientesabore/js/validate.js"></script>
+<script src="http://localhost/templatesiteclientesabore/js/mask.js"></script>
 </head>
 <body>
 <div class="wrap">

@@ -1,37 +1,68 @@
 
 $(document).ready( function() {
-
-  $('#cep').bind('keydown',soNums); 
   $("#documento").focus();
+  
+  $('#documento').bind('keydown',soNums); 
+
+  //Inicio Mascara Telefone
+  $.mask.definitions['~']='[+-]';  
+  $('#celular').focusout(function(){
+    var phone, element;
+    element = $(this);
+    element.unmask();
+    phone = element.val().replace(/\D/g, '');
+    if(phone.length > 10) {
+      element.mask("(99) 99999-999?9");
+    } else {
+      element.mask("(99) 9999-9999?9");
+    }
+  }).trigger('focusout');
+  //finalizando mascara de telefone
+  $("#telefone").mask("(99) 9999-9999");
+  $("#cep").mask("99999-999");
+
+  $('#senha1').blur(function()
+  {
+    if($('#senha1').val() != $('#senha').val())
+    {
+      alert('Confirmação de senha incorreta');
+      $("#senha1").val('');
+      $("#senha").val('');
+      $("#senha").focus();
+    }
+  });
 
   //busca por cep ajax
   $('#cep').blur(function()
-  {
-    $("#loading").show(); 
-    $.ajax({
-          url : 'app/controller/registro_controller.php', 
-          type : 'POST', 
-          data: 'cep=' + $('#cep').val()+'&search=true', 
-          dataType: 'json', 
-          success: function(data)
-          {
-              if(data.success == 1)
-              {                             
-                  $('#endereco').val(data.dados.logradouro);
-                  $('#bairro').val(data.dados.bairro);
-                  $('#cidade').val(data.dados.cidade);
-                  $('#estado').val(data.dados.uf);
-                  $('#numero').focus();                  
+  {    
+    if($('#cep').val() != '')
+    {        
+      $("#loading").show(); 
+      $.ajax({
+            url : 'app/controller/registro_controller.php', 
+            type : 'POST', 
+            data: 'cep=' + $('#cep').val()+'&search=true', 
+            dataType: 'json', 
+            success: function(data)
+            {
+                if(data.success == 1)
+                {                             
+                    $('#endereco').val(data.dados.logradouro);
+                    $('#bairro').val(data.dados.bairro);
+                    $('#cidade').val(data.dados.cidade);
+                    $('#estado').val(data.dados.uf);
+                    $('#numero').focus();                  
+                    $("#loading").hide(); 
+                }
+                else
+                {
+                  alert('Informar um CEP válido');                
                   $("#loading").hide(); 
-              }
-              else
-              {
-                alert('Informar um CEP válido');                
-                $("#loading").hide(); 
-              }
-          }
-     });      
-     return false;
+                }
+            }
+        });      
+        return false;
+      }
   });  
   
   //validacao de formulario
@@ -71,14 +102,11 @@ $(document).ready( function() {
           required: true
         },
         cep:{
-          required: true, minlength : 2
-        },
-        telefone:{
-          required: true, minlength : 2 
+          required: true
         },
         celular:{
-          required: true, minlength : 2
-        },
+          required: true, minlength : 2 
+        },        
       },
       messages:{
         documento:{
@@ -125,17 +153,12 @@ $(document).ready( function() {
           required: "Digite o seu Estado"          
         },
         cep:{
-          required: "Digite o seu CEP",
-          minLength: "O seu CEP deve conter, no mínimo, 2 caracteres"
-        },
-        telefone:{
-          required: "Digite o seu Telefone residencial",
-          minLength: "O telefone residencial deve conter, no mínimo, 2 caracteres"
+          required: "Digite o seu CEP"          
         },
         celular:{
-          required: "Digite o seu telefone celular",
-          minLength: "O telefone celular deve conter, no mínimo, 2 caracteres"
-        },
+          required: "Digite o seu Celular",
+          minLength: "O Celular deve conter, no mínimo, 2 caracteres"
+        },        
       }
     });
 });

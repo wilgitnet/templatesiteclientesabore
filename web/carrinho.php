@@ -2,14 +2,23 @@
 
 <div class="feed2">
 <div class="feedback2">
-
+<script type="text/javascript">
+  function Nova()
+{
+location.href="compra.php"
+}
+  function Nova1()
+{
+location.href="cardapio.php"
+}
+</script>
 	<table>
 		<tr>
 			<th>
 				<h1>Confira os itens de sua compra</h1>
 			</th>
 			<th>
-				<input type="submit" href="index.php" value="Continuar comprando"></input>
+				<input type="submit" onclick="Nova1()" value="Continuar comprando"></input>
 			</th>
 		</tr>
 	</table>
@@ -90,7 +99,7 @@
 				<input type="submit" href="#" value="Limpar carrinho" align="left" id="button1"></input>
 			</th>
 			<th>
-				<input type="submit" href="#" value="Continuar compra" id="button2" ></input>
+				<input type="submit" onclick="Nova()" value="Continuar compra" id="button2" ></input>
 			</th>
 		</tr>
 

@@ -542,12 +542,27 @@ body{
     color:#464646;
     margin:0 0 0 30px;
 }
+.feedback3{
+    font-size:16px;
+    padding-bottom:0;
+    color:#464646;
+    margin:0 0 0 30px;
+}
 .feedback2 table img{
     padding: 2px;
     box-shadow: 0px 0px 2px #CDCDCD;
 }
 
 .feedback2 h4{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    background-color:<?php echo $ColorBack; ?>
+}
+.feedback3 h4{
     color: #fff;
     padding: 10px 0 10px 10px;
     background: white;
@@ -611,9 +626,79 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
+.feedback2 input[type="text"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+#complemento{
+    width:100px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+#numero{
+    width:80px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2 input[type="password"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
 .feedback select{
     width:450px;
     padding:8px;
+    font-size:16px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2 select{
+    width:250px;
+    padding:8px;
+        margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
     font-size:16px;
     color:#333;
     background:#eee;
@@ -682,6 +767,36 @@ body{
     background:#27ae60;
     border:none;
     font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button3{
+    width:250px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+     margin-left: 170px;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button4{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    margin-left: 0px;
+    border:none;
+    font-size:16px;
     color:#fff;
     cursor:pointer;
     font-family: 'Istok Web', sans-serif;

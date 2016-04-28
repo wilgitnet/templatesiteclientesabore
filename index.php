@@ -38,6 +38,10 @@ elseif ($page_name=='login.php') {
 	$banner = false;
 	include $browser_t.'/login.php';
 	}
+elseif ($page_name=='compra.php') {
+	$banner = false;
+	include $browser_t.'/compra.php';
+	}
 elseif ($page_name=='registro.php') {
 	$banner = false;
 	include $browser_t.'/registro.php';

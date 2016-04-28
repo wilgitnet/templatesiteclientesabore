@@ -48,7 +48,7 @@
 	    <div class="clear"> </div>
     </div>
 	<div class="header">
-	<div class="logo"><a href="index.html"><img src="<?php echo $_SESSION['logo']; ?>"  alt="Favorita"/></a></div>
+	<div class="logo"><a href="index.php"><img src="<?php echo $_SESSION['logo']; ?>"  alt="Favorita"/></a></div>
     <div class="search">
     	<form>
     		<input type="text" value="" placeholder="Pesquise aqui" />
@@ -59,9 +59,14 @@
 	</div>
 	<div class="nav">
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="carrinho.php">Pedidos</a></li>
-            <li><a href="cardapio.php">Pizzas</a></li>
+            <?php 
+                if($_SESSION['menu_principal'])
+                {
+                    echo "<li><a href=\"cardapio.php\">{$_SESSION['menu_principal']}</a></li>";
+                }
+            ?>            
             <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>
         </ul>
@@ -70,15 +75,30 @@
     <div class="main-body">
     <?php if($banner){ ?>
         <div id="slider">
-                <a href="#" target="_blank">
-                    <img src="web/images/slider-1.jpg" alt="Pizza 1" />
-                </a>
-                <a href="#" target="_blank">
-                    <img src="web/images/slider-2.jpg" alt="Pizza 2" />
-                </a>
-                <a href="#" target="_blank">
-                    <img src="web/images/slider-3.jpg" alt="Pizza 3" />
-                </a>
+                <?php 
+                    if(!empty($_SESSION['banner1']))
+                    {                    
+                 ?>
+                    <a href="<?PHP echo $_SESSION['link1']; ?>" target="_blank">
+                        <img src="<?PHP echo $_SESSION['banner1']; ?>" alt="Pizza 1" />
+                    </a>
+                <?php } ?>
+                <?php 
+                    if(!empty($_SESSION['banner2']))
+                    {                    
+                 ?>
+                    <a href="<?PHP echo $_SESSION['link2']; ?>" target="_blank">
+                        <img src="<?PHP echo $_SESSION['banner2']; ?>" alt="Pizza 1" />
+                    </a>
+                <?php } ?>
+                <?php 
+                    if(!empty($_SESSION['banner3']))
+                    {                    
+                 ?>
+                    <a href="<?PHP echo $_SESSION['link3']; ?>" target="_blank">
+                        <img src="<?PHP echo $_SESSION['banner3']; ?>" alt="Pizza 1" />
+                    </a>
+                <?php } ?>
         </div>
     <?php } ?>
 

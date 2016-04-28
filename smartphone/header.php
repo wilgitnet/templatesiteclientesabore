@@ -33,7 +33,7 @@
      <div class="clear"> </div>
     </div>
 	<div class="header">
-	<div class="logo"><a href="index.html"><img src="web/images/logo.png"  alt="Favorita"/></a></div>
+	<div class="logo"><a href="index.php"><img src="web/images/logo.png"  alt="Favorita"/></a></div>
     <div class="search">
     	<form>
     		<input type="text" value="" placeholder="Pesquise aqui" />
@@ -44,25 +44,29 @@
 	</div>
 	<div class="nav">
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Pedidos</a></li>
-            <li><a href="cardapio.php">Pizzas</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="carrinho.php">Pedidos</a></li>
+            <?php 
+                if($_SESSION['menu_principal'])
+                {
+                    echo "<li><a href=\"cardapio.php\">{$_SESSION['menu_principal']}</a></li>";
+                }
+            ?>  
             <li><a href="contato.php">contato</a></li>
             <div class="clear"> </div>
         </ul>
     </div>
 
     <div class="main-body">
-            <?php if($banner){ ?>
+            <?php if($banner && !empty($_SESSION['smart_banner1'])){ ?>
         <div id="slider">
-                <a href="#" target="_blank">
-                    <img src="smartphone/images/slider-1.jpg" alt="Pizza 1" />
-                </a>
-                <a href="#" target="_blank">
-                    <img src="smartphone/images/slider-2.jpg" alt="Pizza 2" />
-                </a>
-                <a href="#" target="_blank">
-                    <img src="smartphone/images/slider-3.jpg" alt="Pizza 3" />
-                </a>
+                <?php 
+                    if(!empty($_SESSION['smart_banner1']))
+                    {                    
+                 ?>
+                    <a href="javascript:void(0);">
+                        <img src="<?PHP echo $_SESSION['smart_banner1']; ?>" alt="Pizza 1"/>
+                    </a>
+                <?php } ?>                
         </div>
         <?php } ?>

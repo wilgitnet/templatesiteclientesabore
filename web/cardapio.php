@@ -82,28 +82,9 @@
 		<div class="clear"> </div>
 
 	</div>
-
-
-
-
-
-
-
-
-
 	<div class="boxes">
 		<div class="order">
-			<ul>
-			<!--
-				<li>
-				<h3>Pedidos</h3>
-				<h4>Sem nenhum produto adicionado</h4>
-				<p>Descontos  <span>R$0:00</span></p>
-				<p>Total  <span>R$0:00</span></p>
-				<h5>Tarifa de entrega incluída</h5>
-				<h6><a href="#">Pedidos</a></h6>
-				<h6><a href="#">Comprar</a></h6>
-			-->
+			<ul>			
 				<li>
 					<h3>Cardápio</h3>
 					<h5>Bebidas</h5><hr>
@@ -121,13 +102,11 @@
 		<div class="order">
 			<ul>
 				<li>
-					<h3 class="h3.boxes">Pedidos</h3>
-		    		<h4>1-Pizza Calabresa<br> 1-Pizza Mussarela<br>1-Pizza Frango Catupiry</h4>
-					<p>Descontos  <span>R$0.00</span></p>
-					<p>Total  <span>R$40.00</span></p>
-					<h5>Tarifa de entrega incluída</h5>
-					<h6><a href="carrinho.php">Ver todos</a></h6>
-					<h6><a href="#">Limpar</a></h6>															
+					<li>
+					<?PHP 
+					require_once('pedido.php');
+					?>
+				</li>															
 				</li>	
 			</ul>
 		</div>

@@ -222,23 +222,61 @@ if(empty($_SESSION['id_cliente']))
     $buscarDominio = true;
 }
 
-if($buscarDominio)
+##busca informacoes quando troca o dominio ou quando esta na pagina index.php
+if($buscarDominio || ($page_name == '' || $page_name == 'index.php'))
 {
     ##realizar busca por dados de cliente aqui
     $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');            
+
     if($dadosDominio['success'] && !empty($dadosDominio['dados']['Cliente']['id']))
-    {
-        $_SESSION['id_cliente'] = $dadosDominio['dados']['Cliente']['id'];
-        $_SESSION['logo']       = $dadosDominio['dados']['Cliente']['logo'];                
-        $_SESSION['dominio']    = $dominio;                                
+    {        
+        $_SESSION['nome_fantasia']      = $dadosDominio['dados']['Cliente']['nome_fantasia'];
+        $_SESSION['id_cliente']         = $dadosDominio['dados']['Cliente']['id'];
+        $_SESSION['logo']               = $dadosDominio['dados']['Cliente']['logo'];                
+        $_SESSION['banner1']            = false;
+        $_SESSION['banner2']            = false;
+        $_SESSION['banner3']            = false;
+        $_SESSION['smart_banner1']      = false;
+        $_SESSION['dominio']            = $dominio;                
+        $_SESSION['menu_principal']     = false;
+        $_SESSION['style']              = $dadosDominio['dados']['Cliente']['cor'];
+        $_SESSION['funcionamento']      = explode('---', $dadosDominio['dados']['Cliente']['funcionamento']);        
+        $_SESSION['quem_somos']         = $dadosDominio['dados']['Cliente']['quem_somos'];
+
+        if(!empty($dadosDominio['dados']['Cliente']['menu_principal']))
+        {
+            $_SESSION['menu_principal'] = $dadosDominio['dados']['Cliente']['menu_principal'];        
+            $_SESSION['categoria_id']   = $dadosDominio['dados']['Cliente']['categoria_id'];        
+        }
+
+        ##banner
+        if(!empty($dadosDominio['dados']['Cliente']['banner1'])){
+            $_SESSION['banner1']    = $dadosDominio['dados']['Cliente']['banner1'];        
+            $_SESSION['link1']      = $dadosDominio['dados']['Cliente']['link_banner1'];        
+        }
+            
+        if(!empty($dadosDominio['dados']['Cliente']['banner2'])){
+            $_SESSION['link2']      = $dadosDominio['dados']['Cliente']['link_banner2'];        
+            $_SESSION['banner2']    = $dadosDominio['dados']['Cliente']['banner2'];        
+        }
+            
+        if(!empty($dadosDominio['dados']['Cliente']['banner3']))
+        {
+            $_SESSION['link3']    = $dadosDominio['dados']['Cliente']['link_banner3'];           
+            $_SESSION['banner3']    = $dadosDominio['dados']['Cliente']['banner3'];        
+        }
+
+        if(!empty($dadosDominio['dados']['Cliente']['smart_banner1']))
+        {
+            $_SESSION['smart_banner1']    = $dadosDominio['dados']['Cliente']['smart_banner1'];                       
+        }
+            
     }
 }
 
 
-
-$_SESSION['style'] = 'padrao';
 //testar funcionalidades em outras plataformas
-//$browser_t = 'mobile';
+//$browser_t = 'smartphone';
 
 
 	 ?>

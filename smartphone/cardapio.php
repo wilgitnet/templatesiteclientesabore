@@ -58,13 +58,9 @@
 				</div>		
 				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
-					<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
-					<p>Descontos  <span>R$0.00</span></p>
-					<p>Total  <span>R$40.00</span></p>
-					<h5>Tarifa de entrega incluída</h5>
-					<h6><a href="#">Finalizar</a></h6>
-					<h6><a href="#">Limpar</a></h6>					
-					<br><br> 	
+					<?PHP 
+						require_once('pedido.php');
+					?>	
 				</div>
 			</li>
 		</ul>

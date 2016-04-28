@@ -1,5 +1,6 @@
 
-	<?php require_once('header.php'); ?>
+<?php require_once('header.php'); ?>
+<?php require_once('app/controller/index_controller.php'); ?>
 
 <script type="text/javascript">
 	
@@ -29,13 +30,9 @@
 			<li>
 				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i> Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
-					<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
-					<p>Descontos  <span>R$0.00</span></p>
-					<p>Total  <span>R$40.00</span></p>
-					<h5>Tarifa de entrega incluída</h5>
-					<h6><a href="#">Finalizar</a></h6>
-					<h6><a href="#">Limpar</a></h6>					
-					<br><br> 	
+					<?PHP 
+						require_once('pedido.php');
+					?>
 				</div>
 			</li>
 		</ul>
@@ -45,36 +42,34 @@
 	<div class="grids">
 		<ul>
 			<h4>Pizzas mais compradas</h4>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-1.png" width=280px> 
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-		</li>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-		</li>
+		<?php 
+			foreach ($pizzasHome['dados']['destaques'] as $pizza) 
+			{				
+		?>			
+			<li>
+				<h3><?PHP echo $pizza['Produto']['nome']; ?></h3>
+				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
+				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
+				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
+			</li>
+		<?PHP } ?>
 		
-		<a href="#">Veja todas</a>
+		<a href="#">Ver todas</a>
 		<div class="clear"> </div>
 		<br>
 		<h4>Sugestões para você</h4>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-1.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-		</li>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-		</li>
-		<a href="#">Veja todas</a>
+		<?php 
+			foreach ($pizzasHome['dados']['aleatorios'] as $pizza) 
+			{				
+		?>			
+			<li>
+				<h3><?PHP echo $pizza['Produto']['nome']; ?></h3>
+				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
+				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
+				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
+			</li>
+		<?PHP } ?>
+		<a href="#">Ver todas</a>
 		</ul>
 		<div class="clear"> </div>
 </div>
@@ -94,15 +89,19 @@
 		<ul>
 			<li>
 			<h3>Horario de funcionamento</h3>
-			<h4>Pizzarias </h4>
-			<p>Terça a sexta  11:00 - 22:30</p>
-			<p>Sábado e domingo 11:00 - 00:00</p>
-
-			<!--	CASO DE TER ALMOÇO
-			<h4>Lunch </h4>
-			<p>Monday - Friday &nbsp;&nbsp; 11 am - 03 pm</p>
-			<p>Saturaday - Sunday &nbsp;&nbsp; 11 am - 04 pm</p>
-			-->
+			<h4><?php echo $_SESSION['nome_fantasia']; ?></h4>
+			<?PHP 
+				if(!empty($_SESSION['funcionamento'][0]))
+				{
+					echo "<p>{$_SESSION['funcionamento'][0]}</p>";
+				}
+			?>			
+			<?PHP 
+				if(!empty($_SESSION['funcionamento'][1]))
+				{
+					echo "<p>{$_SESSION['funcionamento'][1]}</p>";
+				}
+			?>	
 
 		</li>
 		<div class="clear"> </div>

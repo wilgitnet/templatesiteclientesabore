@@ -150,9 +150,9 @@ body{
 }
 .main-body{
 	background: #fff;
-	padding-left: 0px;
+	padding-left: 16px;
     padding-top: 16px;
-    padding-right: 5px;
+    padding-right: 16px;
     padding-bottom: 16px;
 }
 .content{
@@ -333,13 +333,120 @@ body{
     background:#2E1A19;
     color: #fff;
 }
-    #button2{
-    width:150px;
+.feedback2 input[type="text"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback5 input[type="text"]{
+    width:60%;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.feedback2 input[type="password"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2 select{
+    width:250px;
+    padding:8px;
+        margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:16px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+#complement{
+    width:120px;
+    padding:8px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+#number{
+    width:80px;
+    padding:8px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+
+    #button3{
+    width:250px;
     padding:15px 8px;
-    font-size:20px;
+    font-size:16px;
+    margin-right: 40px;
     background:#27ae60;
     border:none;
-    font-size:17px;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button4{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button2{
+    padding:10px 8px;
+    font-size:14px;
+    background:#27ae60;
+    border:none;
+    font-size:14px;
     color:#fff;
     cursor:pointer;
     font-family: 'Istok Web', sans-serif;
@@ -348,12 +455,11 @@ body{
             border-radius:.3em;
 }
     #button1{
-    width:150px;
-    padding:15px 8px;
-    font-size:20px;
+    padding:10px 8px;
+    font-size:14px;
     background:#c0392b;
     border:none;
-    font-size:17px;
+    font-size:14px;
     color:#fff;
     cursor:pointer;
     font-family: 'Istok Web', sans-serif;
@@ -408,7 +514,12 @@ body{
     padding-bottom:0;
     color:#464646;
     margin:0 0 0 0px;
-
+}
+.feedback5{
+    font-size:16px;
+    padding-bottom:0;
+    color:#464646;
+    margin:0 0 0 0px;
 }
 .feedback2 table img{
     padding: 2px;
@@ -416,6 +527,15 @@ body{
 }
 
 .feedback2 h4{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    background-color:<?php echo $ColorBack; ?>
+}
+.feedback5 h4{
     color: #fff;
     padding: 10px 0 10px 10px;
     background: white;

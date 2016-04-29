@@ -111,15 +111,20 @@
                 </select>
         <br>
             <input type="text" value="<?PHP if(!empty($_POST['cidade']))echo $_POST['cidade']; ?>" placeholder="Cidade" name="cidade" id="cidade" maxlength="50"/>
+
             <input type="text" value="<?PHP if(!empty($_POST['bairro']))echo $_POST['bairro']; ?>" placeholder="Bairro" name="bairro" id="bairro" maxlength="50" />
+
         <br>
             <input type="text" value="<?PHP if(!empty($_POST['endereco']))echo $_POST['endereco']; ?>" placeholder="Endereço residencial" name="endereco" id="endereco" maxlength="150" />
-            <input type="text" value="<?PHP if(!empty($_POST['numero']))echo $_POST['numero']; ?>" placeholder="Número" name="numero" id="numero" maxlength="10" />
-            <input type="text" value="<?PHP if(!empty($_POST['complemento']))echo $_POST['complemento']; ?>" placeholder="Complemento" name="complemento" id="complemento" maxlength="150" /><br>
+
+            <input type="text" value="<?PHP if(!empty($_POST['numero']))echo $_POST['numero']; ?>" placeholder="Número" name="numero" id="number" maxlength="10" />
+
+            <input type="text" value="<?PHP if(!empty($_POST['complemento']))echo $_POST['complemento']; ?>" placeholder="Complemento" name="complemento" id="complement" maxlength="150" /><br>
 			
            
 		</div>
-	</form>	 <button type="submit" id="button3" value="Prosseguir para pagamento" />Continuar compra</button>	
+	</form>	 
+	<button type="submit" id="button3" value="Prosseguir para pagamento" />Continuar compra</button>	
 </div>
 
 
@@ -148,7 +153,6 @@
 		<div class="feedback3" style="display: none" id="dinheiro_expand" align="center">
 			<div class="feedback2" align="center">
 			<br>
-
 				<h3>Sera necessário Troco ? Digite a baixo o valor </h3>
 				<input type="text" placeholder="EXEMPLO:R$18,70"></input>
 				<button type="submit" id="button4"/>Finalizar pedido</button> 
@@ -184,35 +188,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="boxes">
 		<div class="order">
 			<ul>
 				<li>
-					<h3 class="h3.boxes">Pedidos</h3>
-		    		<h4>1-Pizza Calabresa<br> 1-Pizza Mussarela<br>1-Pizza Frango Catupiry</h4>
-					<p>Descontos  <span>R$0.00</span></p>
-					<p>Total  <span>R$40.00</span></p>
-					<h5>Tarifa de entrega incluída</h5>
-					<h6><a href="cardapio.php">Continue comprando</a></h6>															
+					<li>
+					<?PHP 
+					require_once('pedido.php');
+					?>
+				</li>															
 				</li>	
 			</ul>
 		</div>
-</div>
+	</div>
 
 
 

@@ -594,12 +594,55 @@ body{
     margin:30px 0 0 30px;
     margin-
 }
+.feedback2 input[type="text"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2 input[type="password"]{
+    width:250px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+.feedback2 select{
+    width:250px;
+    padding:8px;
+        margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size:16px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+
 .feedback2 input[type="submit"]:hover{
     background:#2E1A19;
     color: #fff;
 }
     #button2{
-    width:175px;
+    width:200px;
     padding:15px 8px;
     font-size:16px;
     background:#27ae60;
@@ -612,8 +655,60 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+#complement{
+    width:120px;
+    padding:8px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+#number{
+    width:80px;
+    padding:8px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
+
+    #button3{
+    width:250px;
+    padding:15px 8px;
+    font-size:16px;
+    margin-right: 40px;
+    background:#27ae60;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button4{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
     #button1{
-    width:175px;
+    width:200px;
     padding:15px 8px;
     font-size:16px;
     background:#c0392b;

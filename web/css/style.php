@@ -640,7 +640,7 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
-#complemento{
+#complement{
     width:100px;
     padding:8px;
     margin-top: 10px;
@@ -654,7 +654,7 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
-#numero{
+#number{
     width:80px;
     padding:8px;
     margin-top: 10px;

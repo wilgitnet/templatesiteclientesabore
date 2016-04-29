@@ -1,6 +1,6 @@
 
 <?php require_once('header.php'); ?>
-
+<?php require_once('app/controller/login_controller.php'); ?>
 <script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
 <script type="text/javascript">
     $( document ).ready(function() {
@@ -9,30 +9,72 @@
 </script>
 
 
+<?PHP if(!empty($_GET['esqueceu-sua-senha'])) {?>
+    <div class="container">
+        <form id="formLogin" method="post" action="login.php?esqueceu-sua-senha=true">
+           <div class="feedback" id="geral">                
+            <h1>Digite seu email para realizar troca de senha</h1>
+            <?php 
+                if($error)
+                {
+                    echo "<div class='alert'>
+                          <strong>Ops! </strong>{$mensagem}.
+                        </div>
+                        ";            
+                }
 
-<div class="container">
-    <form id="formLogin" method="post">
-	<div class="feedback" id="geral">
-        <h1>Entre utilizando sua conta</h1>
-            <br>
-        	<div>
-                <input type="text" value=""  placeholder="Usuário ou Email" name="usuario" id="usuario" />
-            <br><br>
-                <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
-            <br>
-                <a id="p1" href="registro.php">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
+                if($success)
+                {
+                    echo "<div class='success'>
+                          {$mensagem}.
+                        </div>
+                        ";            
+                }
+            ?>
+                <br>
                 <div>
-                <input type="submit" value="Entrar"><br>
-              <a id="p1" href="#">Esqueceu sua senha ?</a>
+                    <input type="text" value=""  placeholder="Usuário ou Email" name="email_troca" id="email_troca" />
+                    <input type="hidden" name="submit_email" value="true">
+                <br><br>                                        
+                    <div>
+                    <input type="submit" value="Entrar"><br>                  
+                    </div>                            
                 </div>
-
-                
-                 <a href="index.html"><img src="web/images/facebook1.png"  alt="Favorita" width="150px" height= "35px";/></a><br>
-            </div>
             </form>
         </div>
-
     </div>
+<?PHP }else{?>
+
+    <div class="container">
+        <form id="formLogin" method="post" action="login.php">
+    	   <div class="feedback" id="geral">                
+            <h1>Entre utilizando sua conta</h1>
+            <?php 
+                if($error)
+                {
+                    echo "<div class='alert'>
+                          <strong>Ops! </strong>{$mensagem}.
+                        </div>
+                        ";            
+                }
+            ?>
+                <br>
+            	<div>
+                    <input type="text" value=""  placeholder="Usuário ou Email" name="usuario" id="usuario" />
+                <br><br>
+                    <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
+                <br>
+                    <input type="hidden" value="true" name="submit">
+                    <a id="p1" href="registro.php">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
+                    <div>
+                    <input type="submit" value="Entrar"><br>
+                    <a id="p1" href="login.php?esqueceu-sua-senha=true">Esqueceu sua senha ?</a>
+                    </div>                            
+                </div>
+            </form>
+        </div>
+    </div>
+<?PHP } ?>
 
     <div class="clear"></div>
 </div>

@@ -60,6 +60,12 @@ table{border-collapse:collapse;border-spacing:0;}
     color: white;
     margin-bottom: 15px;
 }
+.success {
+    padding: 20px;
+    background-color: #228B22; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
 /* start editing from here */
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */

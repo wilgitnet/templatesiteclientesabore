@@ -10,10 +10,9 @@ if(!empty($_POST['nome']))
 	$to=$_POST['email_to'];
 
 	$subject = "Message from ".$userName; 
-	$message = '<html><head><title>'.$subject.'</title></head><body><table><tr><td>Email id :  </td><td> '.$userEmail.'</td></tr>
-	<tr><td>Name : </td><td> '.$userName.'</td></tr><tr><td>Says : </td><td> '.$userMsg.'</td>
-	</tr></table></body></html>';
-	
+	$message = '<html><head><title>'.$subject.'</title></head><body><table><tr><td>Email:  </td><td> '.$userEmail.'</td></tr>
+	<tr><td>Nome : </td><td> '.$userName.'</td></tr><tr><td>Mensagem : </td><td> '.$userMsg.'</td>
+	</tr></table></body></html>';	
 	
 	$headers = "From: " . strip_tags($userEmail) . "\r\n";
 	$headers .= "Reply-To: ". strip_tags($userEmail) . "\r\n";

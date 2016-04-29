@@ -27,7 +27,7 @@
                 <h1>Realize seu cadastro</h1><br>
          <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
    <br> <div>
-            	<input type="text" value="<?PHP if(!empty($_POST['documento']))echo $_POST['documento']; ?>" placeholder="CPF ou CNPJ" id="documento" name="documento" maxlength="14" />
+            	<input type="text" value="<?PHP if(!empty($_POST['documento']))echo $_POST['documento']; ?>" placeholder="CPF ou CNPJ (Somente Numeros)" id="documento" name="documento" maxlength="14" />
             <br><br>
                 <input type="text" value="<?PHP if(!empty($_POST['celular']))echo $_POST['celular']; ?>" placeholder="Telefone celular" name="celular" id="celular" maxlength="30" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
             <br><br>

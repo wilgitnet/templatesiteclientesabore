@@ -63,6 +63,12 @@ body{
     color: white;
     margin-bottom: 8px;
 }
+.success {
+    padding: 5px;
+    background-color: #228B22; /* Red */
+    color: white;
+    margin-bottom: 8px;
+}
 .warning {
     padding: 5px;
     background-color: #ff9800; /* Red */

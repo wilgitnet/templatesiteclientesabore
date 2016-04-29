@@ -20,10 +20,16 @@
 	<div class="top-head">
 		<div class="top-nav">
 	        <ul>
-	            <li><a href="login.php">Login</a></li>
-	            <li><a href="registro.php">Registro</a></li>
-	            <li><a href="contato.php">Contato</a></li>
-	        </ul>
+            <?PHP if(!empty($_SESSION['Usuario'])){ ?>                
+                <li class="active"><a href="index.html">Bem Vindo <?PHP echo $_SESSION['Usuario']['nome']; ?>,</a></li>
+                <li><a href="carrinho.php">Pedidos</a></li>
+                <li><a href="login.php?sair=true">Sair</a></li> 
+            <?PHP }else{ ?>
+                <li><a href="login.php">Login  </a></li>
+                <li><a href="registro.php">Registro </a></li>
+                <li><a href="contato.php">Contato </a></li>                            
+              <?PHP } ?>
+            </ul>
 	    </div>
   <div class="clear"> </div>
     </div>

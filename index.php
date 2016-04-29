@@ -10,6 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 include "app/config.php";
 include "app/detect.php";
 $banner = true;
+$array = explode('?', $page_name);
+$page_name = $array[0];
 
 if ($page_name=='') {
 	$banner = true;
@@ -57,6 +59,10 @@ elseif ($page_name=='carrinho.php') {
 elseif ($page_name=='contact-post.php') {
 	$banner = true;
 	include 'app/contact.php';
+	}
+elseif ($page_name=='senha.php') {
+	$banner = false;
+	include $browser_t.'/senha.php';
 	}
 else
 	{

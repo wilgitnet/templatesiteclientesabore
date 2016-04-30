@@ -1,16 +1,14 @@
 <?php
 $insertError = false;
-if(empty($_POST['estado']))
-	$_POST['estado'] = '';
 
 ##buscando CEP
 if(!empty($_POST['search']))
-{
+{	
 	require_once('../function.php');
 	$cep = $_POST['cep'];
 
 	##realizar busca por cep
-	$endereco = GoCURL(array('cep'=>$cep), 'cliente/cep');            	
+	$endereco = GoCURL(array('cep'=>$cep, 'cliente_id'=>$_POST['cliente_id'], 'calcula_distancia'=>'true'), 'cliente/cep');            	
 	echo json_encode($endereco);
 	exit;
 }

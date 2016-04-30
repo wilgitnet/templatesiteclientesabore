@@ -36,12 +36,12 @@ $(document).ready( function() {
   $('#cep').blur(function()
   {    
     if($('#cep').val() != '')
-    {        
+    {                    
       $("#loading").show(); 
       $.ajax({
             url : 'app/controller/registro_controller.php', 
             type : 'POST', 
-            data: 'cep=' + $('#cep').val()+'&search=true', 
+            data: 'cep=' + $('#cep').val()+'&search=true&cliente_id='+$('#cliente_id').val(), 
             dataType: 'json', 
             success: function(data)
             {
@@ -56,7 +56,12 @@ $(document).ready( function() {
                 }
                 else
                 {
-                  alert('Informar um CEP válido');                
+                  alert(data.message);                
+                  $('#endereco').val('');
+                  $('#bairro').val('');
+                  $('#cidade').val('');
+                  $('#estado').val('');
+                  $('#cep').focus();                                    
                   $("#loading").hide(); 
                 }
             }
@@ -160,7 +165,7 @@ $(document).ready( function() {
           minLength: "O Celular deve conter, no mínimo, 2 caracteres"
         },        
       }
-    });
+    });  
 });
 
 // funcao para somente numeros no input

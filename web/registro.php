@@ -48,38 +48,9 @@
                     <img src="images/loading.gif" width="25" height="25" align="right">
                 </div>
             <br><br>
-                <select name="estado" id="estado">
-                    <option value="">Selecione o Estado</option>                    
-                    <option value="AC" <?PHP if($_POST['estado'] == 'AC')echo"selected"; ?>>Acre</option>
-                    <option value="AL" <?PHP if($_POST['estado'] == 'AL')echo"selected"; ?>>Alagoas</option>
-                    <option value="AP" <?PHP if($_POST['estado'] == 'AP')echo"selected"; ?>>Amapá</option>
-                    <option value="AM" <?PHP if($_POST['estado'] == 'AM')echo"selected"; ?>>Amazonas</option>
-                    <option value="BA" <?PHP if($_POST['estado'] == 'BA')echo"selected"; ?>>Bahia</option>
-                    <option value="CE" <?PHP if($_POST['estado'] == 'CE')echo"selected"; ?>>Ceará</option>
-                    <option value="DF" <?PHP if($_POST['estado'] == 'DF')echo"selected"; ?>>Distrito Federal</option>
-                    <option value="ES" <?PHP if($_POST['estado'] == 'ES')echo"selected"; ?>>Espirito Santo</option>
-                    <option value="GO" <?PHP if($_POST['estado'] == 'GO')echo"selected"; ?>>Goiás</option>
-                    <option value="MA" <?PHP if($_POST['estado'] == 'MA')echo"selected"; ?>>Maranhão</option>
-                    <option value="MT" <?PHP if($_POST['estado'] == 'MT')echo"selected"; ?>>Mato Grosso</option>
-                    <option value="MS" <?PHP if($_POST['estado'] == 'MS')echo"selected"; ?>>Mato Grosso do Sul</option>
-                    <option value="MG" <?PHP if($_POST['estado'] == 'MG')echo"selected"; ?>>Minas Gerais</option>
-                    <option value="PA" <?PHP if($_POST['estado'] == 'PA')echo"selected"; ?>>Pará</option>
-                    <option value="PB" <?PHP if($_POST['estado'] == 'PB')echo"selected"; ?>>Paraiba</option>
-                    <option value="PR" <?PHP if($_POST['estado'] == 'PR')echo"selected"; ?>>Paraná</option>
-                    <option value="PE" <?PHP if($_POST['estado'] == 'PE')echo"selected"; ?>>Pernambuco</option>
-                    <option value="PI" <?PHP if($_POST['estado'] == 'PI')echo"selected"; ?>>Piauí</option>
-                    <option value="RJ" <?PHP if($_POST['estado'] == 'RJ')echo"selected"; ?>>Rio de Janeiro</option>
-                    <option value="RN" <?PHP if($_POST['estado'] == 'RN')echo"selected"; ?>>Rio Grande do Norte</option>
-                    <option value="RS" <?PHP if($_POST['estado'] == 'RS')echo"selected"; ?>>Rio Grande do Sul</option>
-                    <option value="RO" <?PHP if($_POST['estado'] == 'RO')echo"selected"; ?>>Rondônia</option>
-                    <option value="RR" <?PHP if($_POST['estado'] == 'RR')echo"selected"; ?>>Roraima</option>
-                    <option value="SC" <?PHP if($_POST['estado'] == 'SC')echo"selected"; ?>>Santa Catarina</option>
-                    <option value="SP" <?PHP if($_POST['estado'] == 'SP')echo"selected"; ?>>São Paulo</option>
-                    <option value="SE" <?PHP if($_POST['estado'] == 'SE')echo"selected"; ?>>Sergipe</option>
-                    <option value="TO" <?PHP if($_POST['estado'] == 'TO')echo"selected"; ?>>Tocantis</option>
-                </select> 
+                <input type="text" value="<?PHP if(!empty($_POST['estado']))echo $_POST['estado']; ?>" placeholder="Estado" Readonly="Readonly" name="estado" id="estado">
             <br><br>
-                <input type="text" value="<?PHP if(!empty($_POST['cidade']))echo $_POST['cidade']; ?>" placeholder="Cidade" name="cidade" id="cidade" maxlength="50"/>
+                <input type="text" value="<?PHP if(!empty($_POST['cidade']))echo $_POST['cidade']; ?>" placeholder="Cidade" Readonly="Readonly" name="cidade" id="cidade" maxlength="50"/>
             <br><br>
                 <input type="text" value="<?PHP if(!empty($_POST['bairro']))echo $_POST['bairro']; ?>" placeholder="Bairro" name="bairro" id="bairro" maxlength="50" />
             <br><br>
@@ -95,6 +66,7 @@
             <input type="radio" name="sexo" value="F">Feminino
             <input type="hidden" name="submit" value="true">
             <br><br>
+                <input type="hidden" name="cliente_id" id="cliente_id" value="<?PHP echo $_SESSION['id_cliente']; ?>"
                 <input type="checkbox" name="receber_promocao" value="S">Deseja receber Promoções em seu email?<br><br>
                 <input class="submit" type="submit" value="Cadastrar" />                	               
             </div>

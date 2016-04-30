@@ -276,7 +276,7 @@ if($buscarDominio || ($page_name == '' || $page_name == 'index.php'))
 
 
 //testar funcionalidades em outras plataformas
-//$browser_t = 'mobile';
+//$browser_t = 'smartphone';
 
 
 	?>

@@ -29,25 +29,37 @@ location.href="<?PHP echo $host; ?>/categoria"
       </tr>
 
       <tr>
-        <td>1/2</td>
+    <td>
+     <input type="radio" name="tamanho" value="1">Inteira<br>
+     <input type="radio" name="tamanho" value="1/5">Meia
+     </td>
         <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
         <td>R$50.00</td>
         <td><a><img src="smartphone/images/x.png" width="15" height="15"></a></td>
       </tr>
       <tr>
-        <td>2</td>
+    <td>
+     <input type="radio" name="tamanho1" value="1">Inteira<br>
+     <input type="radio" name="tamanho1" value="1/5">Meia
+     </td>
         <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
         <td>R$50.00</td>
         <td><img src="smartphone/images/x.png" width="15" height="15"></td>
       </tr>
       <tr>
-        <td>1/2</td>
+    <td>
+     <input type="radio" name="tamanho2" value="1">Inteira<br>
+     <input type="radio" name="tamanho2" value="1/5">Meia
+     </td>
         <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
         <td>R$50.00</td>
         <td><img src="smartphone/images/x.png" width="15" height="15"></td>
       </tr>
       <tr>
-        <td>2</td>
+    <td>
+     <input type="radio" name="tamanho3" value="1">Inteira<br>
+     <input type="radio" name="tamanho3" value="1/5">Meia
+     </td>
         <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
         <td>R$50.00</td>
         <td><a><img src="smartphone/images/x.png" width="15" height="15"></a></td>

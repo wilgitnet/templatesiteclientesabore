@@ -228,6 +228,7 @@ body{
             border-radius:.3em;
 }
     #button1{
+    width: 40%
     padding:10px 8px;
     font-size:14px;
     background:#c0392b;

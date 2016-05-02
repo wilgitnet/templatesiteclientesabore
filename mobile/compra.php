@@ -1,6 +1,5 @@
 
 <?php require_once('header.php'); ?>
-<script src="<?PHP echo $host; ?>/js/registro.js"></script>
 
 
 <script type="text/javascript">

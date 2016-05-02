@@ -1,7 +1,5 @@
 
 <?php require_once('header.php'); ?>
-<script src="<?PHP echo $host; ?>/js/registro.js"></script>
-
 
 <script type="text/javascript">
 	
@@ -84,7 +82,7 @@
 
 <div class="grids" id="compra_expand" align="center">
 	<h4>Endereço</h4>
-	<form id="endereco" method="GET">
+	<form id="endereco" method="GET" >
 	
 		<div class="feedback2" align="center">
 		<h3> Complete para continuar a compra </h3><br>
@@ -158,9 +156,9 @@
 	<form id="pagamento" method="GET">
 			<table width="100%">
 				<tr>
-					<th id="dinheiro"><img src="smartphone/images/icondinheiro.png" height="100" width="140"><h3>Dinheiro</h3></th>
-					<th id="cartaocredito"><img src="smartphone/images/credito.png" height="100" width="140"><h3>Cartão de crédito</h3></th>
-					<th id="cartaodebito"><img src="smartphone/images/debito.png" height="100" width="140"><h3>Cartão de débito</h3></th>
+					<th id="dinheiro"><img src="smartphone/images/icondinheiro.png"  width="130" height="90"><h3 align="center">Dinheiro</h3></th>
+					<th id="cartaocredito"><img src="smartphone/images/credito.png"  width="130" height="90"><h3 align="center">Cartão de crédito</h3></th>
+					<th id="cartaodebito"><img src="smartphone/images/debito.png"  width="130" height="90"><h3 align="center">Cartão de débito</h3></th>
 				</tr>
 			</table>
 

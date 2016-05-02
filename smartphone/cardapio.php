@@ -105,6 +105,7 @@
 			<img src="smartphone/images/thumb-1.png">
 			<p>Frango, molho, catupiry, queijo</p>
 			<span>R$30.00</span>
+			<a href="#">Comprar</a>
 		</li>
 		<li>
 			<h3>Frango com catupiry</h3>

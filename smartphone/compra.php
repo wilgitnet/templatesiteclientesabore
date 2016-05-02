@@ -1,68 +1,28 @@
 
 <?php require_once('header.php'); ?>
 
-<script type="text/javascript">
-	
-		$(document).ready( function() {
-			pedido_situacao = 'close'
-			compra_situacao = 'open';
-			pagamento_situacao = 'close';
-			dinheiro_situacao = 'close';
-			ctcredito_situacao = 'close';
+ <script src="<?PHP echo $host; ?>/js/compra.js"></script>
 
-			$("#button3").click(function() {
-				if(compra_situacao == 'open')
-				{
-					$("#compra_expand").hide();	
-					compra_situacao = 'close';
-				}
-			});
+ <script>
+ 	$(document).ready( function() {
+ 		
+ 		$("#dinheiro").click(function() 
+	      {       
+	        $("#button4").focus();
+	      });
 
-			$("#pedido").click(function() {
-				if(pedido_situacao == 'close')
-				{
-					$("#pedido-expand").show();	
-					pedido_situacao = 'open';
-				}
-				else
-				{
-					$("#pedido-expand").hide();	
-					pedido_situacao = 'close';	
-				}		
-			});
+ 		$("#cartaocredito").click(function() 
+	      {       
+	        $("#button5").focus();
+	      });
 
-			$("#button3").click(function() {
-				if(pagamento_situacao == 'close')
-				{
-					$("#pagamento_expand").show();	
-					pagamento_situacao = 'open';
-				}
-				
-			});
-				
+	    $("#cartaodebito").click(function() 
+	      {       
+	        $("#button6").focus();
+	      });
 
-			$("#dinheiro").click(function() 
-			{				
-				$("#ctcredito_expand").hide();					
-				$("#ctdebito_expand").hide();	
-				$("#dinheiro_expand").show();	
-			});
-
-			$("#cartaocredito").click(function() 
-			{				
-				$("#ctcredito_expand").show();					
-				$("#ctdebito_expand").hide();	
-				$("#dinheiro_expand").hide();	
-			});
-
-			$("#cartaodebito").click(function() {
-				$("#ctcredito_expand").hide();					
-				$("#ctdebito_expand").show();	
-				$("#dinheiro_expand").hide();	
-			});
-		});	
-</script>
-
+ 	});
+ </script>
 
 
 	<div class="order">
@@ -102,34 +62,34 @@
 				<input type="text" placeholder="CEP" name="cep" id="cep" maxlength="9" />                
 
 	            <select name="estado" id="estado">
-	                    <option value="">Selecione o Estado</option>                    
-	                    <option value="AC" <?PHP if($_POST['estado'] == 'AC')echo"selected"; ?>>Acre</option>
-	                    <option value="AL" <?PHP if($_POST['estado'] == 'AL')echo"selected"; ?>>Alagoas</option>
-	                    <option value="AP" <?PHP if($_POST['estado'] == 'AP')echo"selected"; ?>>Amapá</option>
-	                    <option value="AM" <?PHP if($_POST['estado'] == 'AM')echo"selected"; ?>>Amazonas</option>
-	                    <option value="BA" <?PHP if($_POST['estado'] == 'BA')echo"selected"; ?>>Bahia</option>
-	                    <option value="CE" <?PHP if($_POST['estado'] == 'CE')echo"selected"; ?>>Ceará</option>
-	                    <option value="DF" <?PHP if($_POST['estado'] == 'DF')echo"selected"; ?>>Distrito Federal</option>
-	                    <option value="ES" <?PHP if($_POST['estado'] == 'ES')echo"selected"; ?>>Espirito Santo</option>
-	                    <option value="GO" <?PHP if($_POST['estado'] == 'GO')echo"selected"; ?>>Goiás</option>
-	                    <option value="MA" <?PHP if($_POST['estado'] == 'MA')echo"selected"; ?>>Maranhão</option>
-	                    <option value="MT" <?PHP if($_POST['estado'] == 'MT')echo"selected"; ?>>Mato Grosso</option>
-	                    <option value="MS" <?PHP if($_POST['estado'] == 'MS')echo"selected"; ?>>Mato Grosso do Sul</option>
-	                    <option value="MG" <?PHP if($_POST['estado'] == 'MG')echo"selected"; ?>>Minas Gerais</option>
-	                    <option value="PA" <?PHP if($_POST['estado'] == 'PA')echo"selected"; ?>>Pará</option>
-	                    <option value="PB" <?PHP if($_POST['estado'] == 'PB')echo"selected"; ?>>Paraiba</option>
-	                    <option value="PR" <?PHP if($_POST['estado'] == 'PR')echo"selected"; ?>>Paraná</option>
-	                    <option value="PE" <?PHP if($_POST['estado'] == 'PE')echo"selected"; ?>>Pernambuco</option>
-	                    <option value="PI" <?PHP if($_POST['estado'] == 'PI')echo"selected"; ?>>Piauí</option>
-	                    <option value="RJ" <?PHP if($_POST['estado'] == 'RJ')echo"selected"; ?>>Rio de Janeiro</option>
-	                    <option value="RN" <?PHP if($_POST['estado'] == 'RN')echo"selected"; ?>>Rio Grande do Norte</option>
-	                    <option value="RS" <?PHP if($_POST['estado'] == 'RS')echo"selected"; ?>>Rio Grande do Sul</option>
-	                    <option value="RO" <?PHP if($_POST['estado'] == 'RO')echo"selected"; ?>>Rondônia</option>
-	                    <option value="RR" <?PHP if($_POST['estado'] == 'RR')echo"selected"; ?>>Roraima</option>
-	                    <option value="SC" <?PHP if($_POST['estado'] == 'SC')echo"selected"; ?>>Santa Catarina</option>
-	                    <option value="SP" <?PHP if($_POST['estado'] == 'SP')echo"selected"; ?>>São Paulo</option>
-	                    <option value="SE" <?PHP if($_POST['estado'] == 'SE')echo"selected"; ?>>Sergipe</option>
-	                    <option value="TO" <?PHP if($_POST['estado'] == 'TO')echo"selected"; ?>>Tocantis</option>
+	                                       <option value="">Selecione o Estado</option>                    
+                    <option value="AC" >Acre</option>
+                    <option value="AL" >Alagoas</option>
+                    <option value="AP" >Amapá</option>
+                    <option value="AM" >Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE" >Ceará</option>
+                    <option value="DF" >Distrito Federal</option>
+                    <option value="ES" >Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA" >Maranhão</option>
+                    <option value="MT" >Mato Grosso</option>
+                    <option value="MS" >Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraiba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantis</option>
 	                </select>
 	        <br>
 	            <input type="text" value="<?PHP if(!empty($_POST['cidade']))echo $_POST['cidade']; ?>" placeholder="Cidade" name="cidade" id="cidade" maxlength="50"/>
@@ -154,13 +114,9 @@
 <div class="grids" id="pagamento_expand" style="display: none">
 	<h4>Escolha seu método de pagamento</h4><br>
 	<form id="pagamento" method="GET">
-			<table width="100%">
-				<tr>
-					<th id="dinheiro"><img src="smartphone/images/icondinheiro.png"  width="130" height="90"><h3 align="center">Dinheiro</h3></th>
-					<th id="cartaocredito"><img src="smartphone/images/credito.png"  width="130" height="90"><h3 align="center">Cartão de crédito</h3></th>
-					<th id="cartaodebito"><img src="smartphone/images/debito.png"  width="130" height="90"><h3 align="center">Cartão de débito</h3></th>
-				</tr>
-			</table>
+				<div id="dinheiro" align="center"><img src="smartphone/images/icondinheiro.png"  width="130" height="90"><h3>Dinheiro</h3><br></div>
+				<div id="cartaocredito" align="center"><img src="smartphone/images/credito.png"  width="130" height="90"><h3>Cartão de crédito</h3><br></div>
+				<div id="cartaodebito" align="center" ><img src="smartphone/images/debito.png"  width="130" height="90"><h3>Cartão de débito</h3><br></div>
 
 
 
@@ -179,7 +135,7 @@
 
 		<div class="feedback3" style="display: none" id="ctcredito_expand" align="center"><br>
 			<h3> Cartão de crédito ? Clique para finalizar e Finalizarmos seu pedido</h3><br>
-			<button type="submit" id="button4"/>Finalizar pedido</button> 
+			<button type="submit" id="button5"/>Finalizar pedido</button> 
 		</div>
 
 
@@ -188,7 +144,7 @@
 		<div class="feedback3" style="display: none" id="ctdebito_expand" align="center"><br>
 
 			<h3>Cartão de Débito ? Clique para finalizar e Finalizarmos seu pedido</h3><br>
-			<button type="submit" id="button4"/>Finalizar pedido</button> 
+			<button type="submit" id="button6"/>Finalizar pedido</button> 
 		</div>
 	</form>	
 </div>

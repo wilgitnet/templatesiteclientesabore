@@ -275,7 +275,6 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
 
 
 //testar funcionalidades em outras plataformas
-$browser_t = 'web';
-
+$browser_t = 'smartphone';
 
 	?>

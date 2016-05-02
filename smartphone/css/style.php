@@ -448,6 +448,34 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+    #button5{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #button6{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
     #button2{
     padding:10px 8px;
     font-size:14px;

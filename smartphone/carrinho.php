@@ -22,50 +22,71 @@ location.href="<?PHP echo $host; ?>/categoria"
 <table class="table table-action">
     
       <tr>  
-        <th class="t-small"><h3>Qnt</h3></th>
+        <th class="t-small"><h3>Tipo</h3></th>
         <th class="t-medium"><h3>Item</h3></th>
         <th><h3>Preço</h3></th>
         <th class="t-medium"><h3>Remover</h3></th>
       </tr>
 
+
       <tr>
     <td>
-     <input type="radio" name="tamanho" value="1">Inteira<br>
-     <input type="radio" name="tamanho" value="1/5">Meia
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Meia</label>
+        <label><input type="checkbox" value="">Broto</label> 
+        <label><input type="checkbox" value="">Borda</label> Recheada?
+      </div>
      </td>
-        <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
-        <td>R$50.00</td>
-        <td><a><img src="smartphone/images/x.png" width="15" height="15"></a></td>
-      </tr>
-      <tr>
-    <td>
-     <input type="radio" name="tamanho1" value="1">Inteira<br>
-     <input type="radio" name="tamanho1" value="1/5">Meia
-     </td>
-        <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
-        <td>R$50.00</td>
-        <td><img src="smartphone/images/x.png" width="15" height="15"></td>
-      </tr>
-      <tr>
-    <td>
-     <input type="radio" name="tamanho2" value="1">Inteira<br>
-     <input type="radio" name="tamanho2" value="1/5">Meia
-     </td>
-        <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
-        <td>R$50.00</td>
-        <td><img src="smartphone/images/x.png" width="15" height="15"></td>
-      </tr>
-      <tr>
-    <td>
-     <input type="radio" name="tamanho3" value="1">Inteira<br>
-     <input type="radio" name="tamanho3" value="1/5">Meia
-     </td>
-        <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >Broto mussarela</td>
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela </td>    
         <td>R$50.00</td>
         <td><a><img src="smartphone/images/x.png" width="15" height="15"></a></td>
       </tr>
 
+
+      <tr>
+     <td>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Meia</label>
+        <label><input type="checkbox" value="">Broto</label> 
+        <label><input type="checkbox" value="">Borda</label> Recheada?
+      </div>
+     </td>
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela </td>     
+        <td>R$50.00</td>
+        <td><img src="smartphone/images/x.png" width="15" height="15"></td>
+      </tr>
+
+
+      <tr>
+    <td>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Meia</label>
+        <label><input type="checkbox" value="">Broto</label> 
+        <label><input type="checkbox" value="">Borda</label> Recheada?
+      </div>
+     </td>
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela </td>     
+       <td>R$50.00</td> 
+       <td><img src="smartphone/images/x.png" width="15" height="15"></td>   
+      </tr>
+
+
+      <tr>
+    <td>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Meia</label>
+        <label><input type="checkbox" value="">Broto</label> 
+        <label><input type="checkbox" value="">Borda</label> Recheada?
+      </div>
+     </td>
+        <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela </td>
+        <td>R$50.00</td>
+        <td><a><img src="smartphone/images/x.png" width="15" height="15"></a></td>
+      </tr>
+
+
     <tr>
+        <td></td>
         <td></td>
         <td></td>
         <th> Total : R$500,00 </th>
@@ -75,7 +96,7 @@ location.href="<?PHP echo $host; ?>/categoria"
 </div>
     <div class="container" align="center">
       <button id="button2" value="Limpar" class="btn btn-responsive" onclick="Nova()">Continuar compra</button>
-      <button id="button1" value="Limpar" class="btn btn-responsive">Limpar carrinho.php</button>
+      <button id="button1" value="Limpar" class="btn btn-responsive">Limpar carrinho</button>
       
     </div>
     <br>

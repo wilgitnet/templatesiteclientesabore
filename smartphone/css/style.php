@@ -396,7 +396,7 @@ body{
     font-family: 'Istok Web', sans-serif;
 }
 #complement{
-    width:120px;
+    width:110px;
     padding:8px;
     font-size:14px;
     color:#333;
@@ -410,6 +410,7 @@ body{
     width:80px;
     padding:8px;
     font-size:14px;
+    margin-right: 49px;
     color:#333;
     background:#eee;
     box-shadow: 0 0 6px #aaa;
@@ -419,7 +420,7 @@ body{
 }
 
     #button3{
-    width:250px;
+    width:100%;
     padding:15px 8px;
     font-size:16px;
     margin-right: 40px;

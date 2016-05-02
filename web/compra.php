@@ -1,7 +1,5 @@
 
 <?php require_once('header.php'); ?>
-<script src="http://localhost/templatesiteclientesabore/js/registro.js"></script>
-
 
 <script type="text/javascript">
 	

@@ -49,6 +49,7 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
+				<a href="carrinho.php"> Comprar </a>
 			</li>
 		<?PHP } ?>			
 		<a href="#">Ver todas</a>
@@ -64,6 +65,7 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
+				<a href="carrinho.php"> Comprar </a>
 			</li>
 		<?PHP } ?>	
 		<a href="#">Ver todas</a>

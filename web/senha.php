@@ -2,7 +2,7 @@
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/senha_controller.php'); ?>
 
-<script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
+<script src="<?PHP echo $host; ?>/js/login.js"></script>
 <script type="text/javascript">
     $( document ).ready(function() {
         $("#senha").focus();
@@ -10,7 +10,7 @@
 </script>
 
 <div class="container">
-    <form id="frm_senha" method="post" action="senha.php?token=<?PHP echo $token; ?>">
+    <form id="frm_senha" method="post" action="<?PHP echo $host ?>/trocar-senha/token/<?PHP echo $token; ?>">
         <div class="feedback" id="geral">                
             <h1>Informe sua nova Senha</h1>
             <?php 

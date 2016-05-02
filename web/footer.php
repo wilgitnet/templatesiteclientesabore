@@ -36,9 +36,9 @@
                 <div class="footer-grid2">
                     <h3>NOS SIGA</h3>
                     <ul>
-                        <li><a href=""><img src="web/images/facebook.png" title="facebook"/></a></li>
-                        <li><a href=""><img src="web/images/twitter.png" title="twitter"></a></li>
-                        <li><a href=""><img src="web/images/rss.png" title="rss"></a></li>
+                        <li><a href=""><img src="<?PHP echo $host; ?>/web/images/facebook.png" title="facebook"/></a></li>
+                        <li><a href=""><img src="<?PHP echo $host; ?>/web/images/twitter.png" title="twitter"></a></li>
+                        <li><a href=""><img src="<?PHP echo $host; ?>/web/images/rss.png" title="rss"></a></li>
                     </ul>
                 </div>
             </div>

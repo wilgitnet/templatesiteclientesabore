@@ -7,11 +7,11 @@
         $("#usuario").focus();
     });
 </script>
-<script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
+<script src="<?PHP echo $host; ?>/js/login.js"></script>
 
 <div class="feed">
     <div class="feedback">
-        <form id="frm_senha" method="post" action="senha.php?token=<?PHP echo $token; ?>">
+        <form id="frm_senha" method="post" action="<?PHP echo $host ?>/trocar-senha/token/<?PHP echo $token; ?>">
             <h1>Informe sua nova Senha</h1>
             <?php 
             if($error)

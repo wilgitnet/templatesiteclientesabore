@@ -17,7 +17,7 @@ font-size: 11px;
         $("#documento").focus();
     });
 </script>
-    <script src="http://localhost/templatesiteclientesabore/js/registro.js"></script>
+    <script src="<?PHP echo $host; ?>/js/registro.js"></script>
 	<div class="feed">
 	<div class="feedback">
         <?php 
@@ -36,9 +36,9 @@ font-size: 11px;
                 }
             }
         ?>
-        <form id="formularioRegistro" action="registro.php" method="post">
+        <form id="formularioRegistro" action="<?PHP echo $host; ?>/registro" method="post">
         <h1>Crie sua conta      </h1><br>
-         <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
+         <a id="p1" href="<?PHP echo $host; ?>/login" >Já tem sua conta ? Clique para logar</a>
    <br>         <div>
                 <input type="text" value="<?PHP if(!empty($_POST['documento']))echo $_POST['documento']; ?>" placeholder="CPF ou CNPJ (Somente Numeros)" id="documento" name="documento" maxlength="14" />
             <br><br>

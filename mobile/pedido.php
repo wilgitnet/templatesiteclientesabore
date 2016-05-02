@@ -7,12 +7,12 @@
 	<p>Descontos  <span>R$0.00</span></p>
 	<p>Total  <span>R$40.00</span></p>
 	<h5>Tarifa de entrega incluída</h5>
-	<h6><a href="carrinho.php">Ver Pedido</a></h6>
+	<h6><a href="<?PHP echo $host; ?>/carrinho">Ver Pedido</a></h6>
 	<h6><a href="pagamento.php">Finalizar</a></h6>					
 	<br><br> 	
 <?PHP }else{ ?>
-	<h5>Seu carrinho esta vazio :(</h4>	
+	<h5>Seu carrinho.php esta vazio :(</h4>	
 	<p>Total  <span>R$0,00</span></p>	
-	<h6><a href="cardapio.php">Realizar Pedido</a></h6>	
+	<h6><a href="<?PHP echo $host; ?>/categoria">Realizar Pedido</a></h6>	
 	<br><br> 	
 <?PHP } ?>

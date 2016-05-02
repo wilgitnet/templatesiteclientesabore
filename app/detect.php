@@ -4,7 +4,6 @@ session_start();
 require_once('function.php');
 
 ##alterar para pegar dominio dinamico
-$dominio = 'templatesiteclientesabore';
 $buscarDominio = false;
 
 $userBrowser = $_SERVER['HTTP_ACCEPT']; 
@@ -223,7 +222,7 @@ if(empty($_SESSION['id_cliente']))
 }
 
 ##busca informacoes quando troca o dominio ou quando esta na pagina index.php
-if($buscarDominio || ($page_name == '' || $page_name == 'index.php'))
+if($buscarDominio || ($page_name == '' || $page_name == 'home'))
 {
     ##realizar busca por dados de cliente aqui
     $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');            

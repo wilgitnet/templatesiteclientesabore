@@ -1,7 +1,7 @@
 
 	<?php require_once('header.php'); ?>
     <?php require_once('app/controller/contato_controller.php'); ?>
-    <script src="http://localhost/templatesiteclientesabore/js/contato.js"></script>
+    <script src="<?PHP echo $host; ?>/js/contato.js"></script>
 	<div class="feed">
 	<div class="feedback">
         <?php 
@@ -19,7 +19,7 @@
 
         ?>
         <h1>Entre em contato</h1>
-        <form id="formularioContato" method="post" action="contato.php">
+        <form id="formularioContato" method="post" action="<?PHP echo $host; ?>/contato">
         	<div>
             	
             	<span><input type="text" placeholder="Nome" value="" name="nome" /></span>

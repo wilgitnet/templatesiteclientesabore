@@ -23,9 +23,9 @@
 				<div class="footer-grid2">
 					<h3>NOS SIGA</h3>
 					<ul>
-						<li><a href=""><img src="smartphone/images/facebook.png" title="facebook"/></a></li>
-						<li><a href=""><img src="smartphone/images/twitter.png" title="twitter"></a></li>
-						<li><a href=""><img src="smartphone/images/rss.png" title="rss"></a></li>
+						<li><a href=""><img src="<?PHP echo $host; ?>/smartphone/images/facebook.png" title="facebook"/></a></li>
+						<li><a href=""><img src="<?PHP echo $host; ?>/smartphone/images/twitter.png" title="twitter"></a></li>
+						<li><a href=""><img src="<?PHP echo $host; ?>/smartphone/images/rss.png" title="rss"></a></li>
 					</ul>
 				</div>
 

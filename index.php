@@ -10,57 +10,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 include "app/config.php";
 include "app/detect.php";
 $banner = true;
-$array = explode('?', $page_name);
-$page_name = $array[0];
 
 if ($page_name=='') {
 	$banner = true;
 	include $browser_t.'/index.php';
 	}
-elseif ($page_name=='index.php') {
+elseif ($page_name=='home') {
 	$banner = true;
 	include $browser_t.'/index.php';
 	}
-elseif ($page_name=='about.php') {
+elseif ($page_name=='quem-somos') {
 	$banner = true;
 	include $browser_t.'/about.php';
 	}
-elseif ($page_name=='single.html') {
-	$banner = true;
-	include $browser_t.'/single.php';
-	}
-elseif ($page_name=='gallery.php') {
-	include $browser_t.'/gallery.php';
-	}
-elseif ($page_name=='contato.php') {
+elseif ($page_name=='contato') {
 	$banner = true;
 	include $browser_t.'/contato.php';
 	}
-elseif ($page_name=='login.php') {
-	$banner = false;
+elseif ($page_name=='login') {
+	$banner = false;	
 	include $browser_t.'/login.php';
 	}
-elseif ($page_name=='compra.php') {
+elseif ($page_name=='compra') {
 	$banner = false;
 	include $browser_t.'/compra.php';
 	}
-elseif ($page_name=='registro.php') {
+elseif ($page_name=='registro') {
 	$banner = false;
 	include $browser_t.'/registro.php';
 	}
-elseif ($page_name=='cardapio.php') {
+elseif ($page_name=='categoria') {
 	$banner = false;
 	include $browser_t.'/cardapio.php';
 	}	
-elseif ($page_name=='carrinho.php') {
+elseif ($page_name=='carrinho') {
 	$banner = false;
 	include $browser_t.'/carrinho.php';
 	}
-elseif ($page_name=='contact-post.php') {
-	$banner = true;
-	include 'app/contact.php';
-	}
-elseif ($page_name=='senha.php') {
+elseif ($page_name=='trocar-senha') {
 	$banner = false;
 	include $browser_t.'/senha.php';
 	}

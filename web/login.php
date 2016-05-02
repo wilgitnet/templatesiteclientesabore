@@ -1,7 +1,7 @@
 
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/login_controller.php'); ?>
-<script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
+<script src="<?PHP echo $host; ?>/js/login.js"></script>
 <script type="text/javascript">
     $( document ).ready(function() {
         $("#usuario").focus();
@@ -9,9 +9,9 @@
 </script>
 
 
-<?PHP if(!empty($_GET['esqueceu-sua-senha'])) {?>
+<?PHP if($part_url[2] == 'esqueci-minha-senha') {?>
     <div class="container">
-        <form id="formLogin" method="post" action="login.php?esqueceu-sua-senha=true">
+        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login/esqueci-minha-senha">
            <div class="feedback" id="geral">                
             <h1>Digite seu email para realizar troca de senha</h1>
             <?php 
@@ -46,7 +46,7 @@
 <?PHP }else{?>
 
     <div class="container">
-        <form id="formLogin" method="post" action="login.php">
+        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login">
     	   <div class="feedback" id="geral">                
             <h1>Entre utilizando sua conta</h1>
             <?php 
@@ -65,10 +65,10 @@
                     <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
                 <br>
                     <input type="hidden" value="true" name="submit">
-                    <a id="p1" href="registro.php">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
+                    <a id="p1" href="<?PHP echo $host; ?>/registro">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
                     <div>
                     <input type="submit" value="Entrar"><br>
-                    <a id="p1" href="login.php?esqueceu-sua-senha=true">Esqueceu sua senha ?</a>
+                    <a id="p1" href="<?PHP echo $host; ?>/login/esqueci-minha-senha">Esqueceu sua senha ?</a>
                     </div>                            
                 </div>
             </form>

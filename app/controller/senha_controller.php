@@ -3,12 +3,12 @@
 	$success = false;
 	$input = true;
 
-	if(empty($_GET['token']))
+	if($part_url[2]!='token' || $part_url[3] == 'not')
 	{
-		header('location:index.php');		
+		header('Location:'.$host.'/home');
 	}
 
-	$token = $_GET['token'];
+	$token = $part_url[3];
 
 	##verificando token
 	if(substr($token, 0, 1) != 'S')

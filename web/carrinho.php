@@ -5,11 +5,11 @@
 <script type="text/javascript">
   function Nova()
 {
-location.href="compra.php"
+location.href="<?PHP echo $host; ?>/compra"
 }
   function Nova1()
 {
-location.href="cardapio.php"
+location.href="<?PHP echo $host; ?>/categoria"
 }
 </script>
 	<table>
@@ -96,7 +96,7 @@ location.href="cardapio.php"
 
 		<tr>
 			<th>
-				<input type="submit" href="#" value="Limpar carrinho" align="left" id="button1"></input>
+				<input type="submit" href="#" value="Limpar carrinho.php" align="left" id="button1"></input>
 			</th>
 			<th>
 				<input type="submit" onclick="Nova()" value="Continuar compra" id="button2" ></input>

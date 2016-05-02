@@ -17,8 +17,8 @@
 				$mensagem = $email['message'];
 			}
 			else
-			{								
-				$link = 'http://localhost/templatesiteclientesabore/trocar_senha.php?token='.$email['dados']['Usuario']['token_senha'];
+			{						
+				$link = $host.'/esqueci-minha-senha/token/'.$email['dados']['Usuario']['token_senha'];
 				$subject = "Message from ".$email['dados']['Usuario']['nome']; 
 				$message = '<html><head><title>'.$subject.'</title></head><body><table><tr><td>Email para troca de senha:  </td><td> '.$email['dados']['Usuario']['email'].'</td></tr>
 				<tr><td>Clique Aqui para trocar : </td><td> '.$link.'</td></tr><tr><td>Obs: </td><td>Se você não solicitou a troca de senha, pode somente ignorar esse email</td>
@@ -57,16 +57,19 @@
 		{
 			$_SESSION['Usuario'] = $login['dados']['Usuario'];	
 			$_SESSION['Usuario']['logado']	= true;
-			header('Location:cardapio.php');	
+			header('Location:'.$host.'/home');
 		}
 
 		
 	}
 
-	if(!empty($_GET['sair']))
+	
+	if($part_url[2] == 'sair')
 	{
 		unset($_SESSION['Usuario']);
-		header('Location:login.php');
+		header('Location:'.$host.'/login');
 	}
+		
+	
 
 ?>

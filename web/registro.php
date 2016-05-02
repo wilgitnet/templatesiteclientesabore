@@ -1,11 +1,11 @@
 
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/registro_controller.php');?>
-<script src="http://localhost/templatesiteclientesabore/js/registro.js"></script>
+<script src="<?PHP echo $host; ?>/js/registro.js"></script>
 
 <body>
 <div class="container">
-    <form id="formularioRegistro" method="post" action="registro.php">
+    <form id="formularioRegistro" method="post" action="<?PHP echo $host; ?>/registro">
 	<div class="feedback" id="geral">
         <?php 
             if($insertError)
@@ -25,7 +25,7 @@
         ?>
                     
                 <h1>Realize seu cadastro</h1><br>
-         <a id="p1" href="login.php" >Já tem sua conta ? Clique para logar</a>
+         <a id="p1" href="<?PHP echo $host; ?>/login" >Já tem sua conta ? Clique para logar</a>
    <br> <div>
             	<input type="text" value="<?PHP if(!empty($_POST['documento']))echo $_POST['documento']; ?>" placeholder="CPF ou CNPJ (Somente Numeros)" id="documento" name="documento" maxlength="14" />
             <br><br>

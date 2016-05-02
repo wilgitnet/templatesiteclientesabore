@@ -7,13 +7,13 @@
         $("#usuario").focus();
     });
 </script>
-<script src="http://localhost/templatesiteclientesabore/js/login.js"></script>
+<script src="<?PHP echo $host; ?>/js/login.js"></script>
 
-<?PHP if(!empty($_GET['esqueceu-sua-senha'])) {?>
+<?PHP if($part_url[2] == 'esqueci-minha-senha') {?>
 
 <div class="feed">
 	<div class="feedback">
-        <form id="formLogin" action="login.php?esqueceu-sua-senha=true" method="post">
+        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login/esqueci-minha-senha">
             <h1>Email para troca de senha</h1>
             <?php 
             if($error)
@@ -50,7 +50,7 @@
 
 <div class="feed">
     <div class="feedback">
-        <form id="formLogin" method="post" action="login.php">
+        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login">
             <h1>Entre utilizando sua conta</h1>
             <?php 
                 if($error)
@@ -68,10 +68,10 @@
                 <input type="password" class="" value="" placeholder="Senha" name="senha" id="senha" />
                 <input type="hidden" value="true" name="submit">
             <br>
-                <a id="p1" href="registro.php">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
+                <a id="p1" href="<?PHP echo $host; ?>/registro">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
                
                 <input type="submit" value="Entrar">
-                <div><a id="p1" href="login.php?esqueceu-sua-senha=true">Esqueceu sua senha ?<a></div><br>                
+                <a id="p1" href="<?PHP echo $host; ?>/login/esqueci-minha-senha">Esqueceu sua senha ?</a>
                         
             </div>                                         
 

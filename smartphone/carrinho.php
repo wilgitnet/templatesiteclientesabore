@@ -2,18 +2,18 @@
 <script>
   function Nova()
 {
-location.href="compra.php"
+location.href="<?PHP echo $host; ?>/compra"
 }
   function Nova1()
 {
-location.href="cardapio.php"
+location.href="<?PHP echo $host; ?>/categoria"
 }
 </script>
 <div class="feedback2">
 
       <div class="container" align="center">
         <h3 class="responsive" >Confira  os  itens  de  sua  compra</h3>
-        <input type="submit" href="index.php" value="Continuar comprando" onclick="Nova1()"></input>
+        <input type="submit" href="<?PHP echo $host; ?>/home" value="Continuar comprando" onclick="Nova1()"></input>
       </div>
   <br>
 
@@ -63,7 +63,7 @@ location.href="cardapio.php"
 </div>
     <div class="container" align="center">
       <button id="button2" value="Limpar" class="btn btn-responsive" onclick="Nova()">Continuar compra</button>
-      <button id="button1" value="Limpar" class="btn btn-responsive">Limpar carrinho</button>
+      <button id="button1" value="Limpar" class="btn btn-responsive">Limpar carrinho.php</button>
       
     </div>
     <br>

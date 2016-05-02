@@ -45,8 +45,21 @@ if(!empty($_POST['submit']))
 		$insertError = true;
 	}
 	else
-	{
-		echo "realizar login aqui";exit;
+	{		
+		//enviando requisicao para api	
+		$login = GoCURL(array('usuario'=>$_POST['usuario'], 'senha'=>md5($_POST['senha'])), 'usuario/login');
+
+		if(!$login['success'])
+		{
+			$mensagem = 'Ocorreu um erro no seu cadastro. Tente novamente';
+			$error = true;
+		}	
+		else
+		{
+			$_SESSION['Usuario'] = $login['dados']['Usuario'];	
+			$_SESSION['Usuario']['logado']	= true;
+			header('Location:'.$host.'/categoria');
+		}
 	}
 }
 

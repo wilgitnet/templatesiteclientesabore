@@ -1,14 +1,8 @@
 
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/cardapio_controller.php'); ?>
-
 <script src="<?PHP echo $host; ?>/js/modal_produto.js"></script>
-<script type="text/javascript">
-	function hrefH5(placeholder)
-	{
-		location.href="<?PHP echo $host; ?>/categoria/"+placeholder;
-	}	
-</script>	
+	
 	<div class="grids">
 		<ul>
 			<h4><?PHP echo $categoria; ?></h4>		

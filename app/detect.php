@@ -241,7 +241,8 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
         $_SESSION['funcionamento']      = explode('---', $dadosDominio['dados']['Cliente']['funcionamento']);        
         $_SESSION['quem_somos']         = $dadosDominio['dados']['Cliente']['quem_somos'];        
         $_SESSION['placeholder']        = $dadosDominio['dados']['Cliente']['placeholder'];        
-
+        $_SESSION['menu']               = $dadosDominio['dados']['CategoriaArray'];
+        
         if(!empty($dadosDominio['dados']['Cliente']['menu_principal']))
         {
             $_SESSION['menu_principal'] = $dadosDominio['dados']['Cliente']['menu_principal'];        
@@ -273,6 +274,6 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
     }
 }
 //testar funcionalidades em outras plataformas
-//$browser_t = 'mobile';
+//$browser_t = 'smartphone';
 
 	?>

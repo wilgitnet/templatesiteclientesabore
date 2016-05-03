@@ -35,6 +35,7 @@
 				</div>
 			</li>
 		</ul>
+		
 	</div>
 </div>	
 	<div class="grids">

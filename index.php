@@ -43,9 +43,13 @@ elseif ($page_name=='categoria') {
 	$banner = false;
 	include $browser_t.'/cardapio.php';
 	}	
-elseif ($page_name=='acompanhamento') {
+elseif ($page_name=='historico') {
 	$banner = false;
 	include $browser_t.'/acompanhamento.php';
+	}	
+elseif ($page_name=='acompanhamento') {
+	$banner = false;
+	include $browser_t.'/acompanhamentopedido.php';
 	}	
 elseif ($page_name=='carrinho') {
 	$banner = false;

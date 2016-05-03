@@ -56,11 +56,7 @@
 			<li>
 				<h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
 				<div id="cardapio-expand" style="display: none">
-				<?PHP foreach ($produtos['dados']['CategoriaArray'] as $categoriaArray) { ?>	
-					<h5 onclick="hrefH5('<?PHP echo $categoriaArray['Categorias']['placeholder']; ?>')">
-						<?PHP echo $categoriaArray['Categorias']['nome']; ?>
-					</h5><hr>						
-				<?PHP } ?>
+				<?PHP require_once('cardapioarq.php') ?>
 				</div>		
 				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">

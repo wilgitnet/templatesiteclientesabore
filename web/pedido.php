@@ -11,7 +11,7 @@
 <?php }else{ ?>
 
 	<h3>Pedidos</h3>
-	<h4>Seu carrinho.php esta vazio :(</h4>					
+	<h4>Seu carrinho esta vazio</h4>					
 	<p>Total  <span>R$0:00</span></p>					
 	<h6><a href="<?PHP echo $host; ?>/categoria">Realizar Pedido</a></h6>							
 

@@ -3,11 +3,11 @@
 <div class="feed2">
 <div class="feedback2">
 <script type="text/javascript">
-function Nova()
+function continuar()
 {
 location.href="<?PHP echo $host; ?>/compra"
 }
-  function Nova1()
+  function returncardapio()
 {
 location.href="<?PHP echo $host; ?>/categoria"
 }
@@ -18,7 +18,7 @@ location.href="<?PHP echo $host; ?>/categoria"
 				<h1>Confira os itens de sua compra</h1>
 			</th>
 			<th>
-				<input type="submit" onclick="Nova1()" value="Continuar comprando"></input>
+				<input type="submit" onclick="returncardapio()" value="Continuar comprando"></input>
 			</th>
 		</tr>
 	</table>
@@ -123,7 +123,7 @@ location.href="<?PHP echo $host; ?>/categoria"
 				<input type="submit" href="#" value="Limpar carrinho" align="left" id="button1"></input>
 			</th>
 			<th>
-				<input type="submit" onclick="Nova()" value="Continuar compra" id="button2" ></input>
+				<input type="submit" onclick="continuar()" value="Continuar compra" id="button2" ></input>
 			</th>
 		</tr>
 

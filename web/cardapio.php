@@ -37,10 +37,9 @@
 		<div class="order">
 			<ul>			
 				<li>					
-					<h3>Cardápio</h3>
-					<?PHP foreach ($produtos['dados']['CategoriaArray'] as $categoriaArray) { ?>			
-						<h5 onclick="hrefH5('<?PHP echo $categoriaArray['Categorias']['placeholder']; ?>')"><?PHP echo $categoriaArray['Categorias']['nome']; ?></h5><hr>						
-					<?PHP } ?>																				
+				<?PHP 
+					 require_once('cardapioarq.php');
+					?>															
 				</li>
 			</ul>
 		</div>

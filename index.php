@@ -43,10 +43,15 @@ elseif ($page_name=='categoria') {
 	$banner = false;
 	include $browser_t.'/cardapio.php';
 	}	
+elseif ($page_name=='acompanhamento') {
+	$banner = false;
+	include $browser_t.'/acompanhamento.php';
+	}	
 elseif ($page_name=='carrinho') {
 	$banner = false;
 	include $browser_t.'/carrinho.php';
 	}
+
 elseif ($page_name=='trocar-senha') {
 	$banner = false;
 	include $browser_t.'/senha.php';

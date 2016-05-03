@@ -63,15 +63,29 @@
 
 	<div class="boxes">
 		<div class="order">
-		<ul>
-			<li>	
+			<ul>			
+				<li>					
 				<?PHP 
-					require_once('pedido.php');
-				?>
-			</li>
-		</ul>
+					 require_once('cardapioarq.php');
+					?>															
+				</li>
+			</ul>
 		</div>
 		<div class="clear"> </div>
+		<div class="order">
+			<ul>
+				<li>
+					<li>
+					<?PHP 
+					 require_once('pedido.php');
+					?>
+				</li>															
+				</li>	
+			</ul>
+		</div>
+
+
+
 		<ul>
 			<li>
 			<h3>Horario de funcionamento</h3>
@@ -89,17 +103,11 @@
 				}
 			?>
 		</li>
-		<li>
-			<h3>Novidades e promoção</h3>
-			<p>As melhores pizzas da região para todos os cidadão de santa isabel</p>
-			<button>Confira já</button>
-			<h3>Quem somos</h3>
-			<p><?PHP echo substr($_SESSION['quem_somos'], 0, 74); ?></p>
-			<button>Leia mais</button>
-		</li>
 		<div class="clear"> </div>
 		</ul>
 	</div>
+
+
 	<div class="clear"> </div>
     </div>
 </div>

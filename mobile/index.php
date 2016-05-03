@@ -1,41 +1,29 @@
 
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/index_controller.php'); ?>
-<script type="text/javascript">
-	
-				pedido_situacao = 'close';
-		$(document).ready( function() {
-
-			$("#pedido").click(function() {
-				if(pedido_situacao == 'close')
-				{
-					$("#pedido-expand").show();	
-					pedido_situacao = 'open';
-				}
-				else
-				{
-					$("#pedido-expand").hide();	
-					pedido_situacao = 'close';	
-				}
-				
-			});
-		});
-</script>
+<script src="<?PHP echo $host; ?>/js/mobilesmart.js"></script>
 
 
 <div class="boxes-cardapio">
 	<div class="order">	
 		<ul>
 			<li>
+				<h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
+				<div id="cardapio-expand" style="display: none">
+				<?PHP require_once('cardapioarq.php') ?>
+				</div>		
 				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
-					<?PHP 
-						require_once('pedido.php');
-					?>
+					<?PHP require_once('pedido.php') ?>
 				</div>
 			</li>
 		</ul>
 		
+
+
+
+
+
 	</div>
 </div>	
 	<div class="grids">

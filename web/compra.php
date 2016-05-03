@@ -12,7 +12,7 @@
 		<h3> Complete para continuar a compra </h3>
 		<br>
 
-		<!--
+		
 			<input type="text" value="<?PHP if(!empty($_POST['nome']))echo $_POST['nome']; ?>" placeholder="Nome" name="nome" id="nome" maxlength="50" />
 
 			<input type="text" value="<?PHP if(!empty($_POST['sobrenome']))echo $_POST['sobrenome']; ?>" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />
@@ -24,7 +24,7 @@
 			<input type="password" value="" placeholder="Senha para acompanhamento" name="senha" id="senha" maxlength="20" />
 		
 			<input type="password" id="senha" value="" name="senha1" placeholder="Repita sua senha" maxlength="20" />
-		-->
+		
 			<input type="text" placeholder="CEP" name="cep" id="cep" maxlength="9" />                
 
             <select name="estado" id="estado">

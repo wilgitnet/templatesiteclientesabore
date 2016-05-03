@@ -55,4 +55,8 @@ $(document).ready( function() {
         $("#ctdebito_expand").show(); 
         $("#dinheiro_expand").hide(); 
       });
+      
+
+
+      
     }); 

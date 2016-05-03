@@ -1,51 +1,7 @@
 
 	<?php require_once('header.php'); ?>
 	<?php require_once('app/controller/cardapio_controller.php'); ?>
-
-	<script>
-		function hrefH5(placeholder)
-		{
-			location.href="<?PHP echo $host; ?>/categoria/"+placeholder;
-		}	
-	
-		cardapio_situacao = 'close';
-		$(document).ready( function() {
-
-			$("#cardapio").click(function() {
-				if(cardapio_situacao == 'close')
-				{
-					$("#cardapio-expand").show();	
-					cardapio_situacao = 'open';
-				}
-				else
-				{
-					$("#cardapio-expand").hide();	
-					cardapio_situacao = 'close';	
-				}
-				
-			});
-		});
-
-				pedido_situacao = 'close';
-		$(document).ready( function() {
-
-			$("#pedido").click(function() {
-				if(pedido_situacao == 'close')
-				{
-					$("#pedido-expand").show();	
-					pedido_situacao = 'open';
-				}
-				else
-				{
-					$("#pedido-expand").hide();	
-					pedido_situacao = 'close';	
-				}
-				
-			});
-		});
-	</script>
-
-
+	<script src="<?PHP echo $host; ?>/js/mobilesmart.js"></script>
 
 
 

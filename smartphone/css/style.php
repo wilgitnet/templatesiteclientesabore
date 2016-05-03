@@ -156,9 +156,9 @@ body{
 }
 .main-body{
 	background: #fff;
-	padding-left: 16px;
+	padding-left: 5px;
     padding-top: 16px;
-    padding-right: 16px;
+    padding-right: 5px;
     padding-bottom: 16px;
 }
 .content{

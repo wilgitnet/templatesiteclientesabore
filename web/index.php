@@ -12,12 +12,17 @@
 			<li>
 				<h3><?PHP echo $pizza['Produto']['nome']; ?></h3>
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
-				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
-				<button>R$ <?PHP echo $pizza['Produto']['valor']; ?></button>
-				<a href="carrinho.php"> Comprar </a>
+				<p><?PHP  echo substr($pizza['Produto']['descricao'], 0, 67);?></p>
+				<?PHP 
+					// GAMBIARRA MONSTRA PARA BOTAO COMPRAR FICAR ALINHADO PQ NINGUEM MANJA DE FRONT NESSA PORRA DE EMPRESA
+					if(strlen($pizza['Produto']['descricao']) <= 35){echo "<br>";}  
+				?>
+				<button>
+						R$ <?PHP echo $pizza['Produto']['valor']; ?>
+				</button>				
+				<a href="#">Comprar</a>
 			</li>
-		<?PHP } ?>		
-		<a href="#">Ver todas</a>
+		<?PHP } ?>				
 		<div class="clear"> </div>
 		
 		<h4>Sugestões para você</h4>
@@ -28,12 +33,17 @@
 			<li>
 				<h3><?PHP echo $pizza['Produto']['nome']; ?></h3>
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
-				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
-				<button>R$ <?PHP echo $pizza['Produto']['valor']; ?></button>
-				<a href="carrinho.php"> Comprar </a>
+				<p><?PHP echo $pizza['Produto']['descricao'];?></p>
+				<?PHP 
+					// GAMBIARRA MONSTRA PARA BOTAO COMPRAR FICAR ALINHADO PQ NINGUEM MANJA DE FRONT NESSA PORRA DE EMPRESA
+					if(strlen($pizza['Produto']['descricao']) <= 36){echo "<br>";}  
+				?>
+				<button>					
+					R$ <?PHP echo $pizza['Produto']['valor']; ?>
+				</button>					
+				<a href="#">Comprar</a>
 			</li>
-		<?PHP } ?>
-		<a href="#">Ver todas</a>
+		<?PHP } ?>		
 		</ul>
 		<div class="clear"> </div>
 	</div>

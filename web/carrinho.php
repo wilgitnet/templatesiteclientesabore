@@ -3,7 +3,7 @@
 <div class="feed2">
 <div class="feedback2">
 <script type="text/javascript">
-  function Nova()
+function Nova()
 {
 location.href="<?PHP echo $host; ?>/compra"
 }

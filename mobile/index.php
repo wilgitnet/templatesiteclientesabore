@@ -49,10 +49,10 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
-				<a href="carrinho.php"> Comprar </a>
+				<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">Comprar</a>
 			</li>
 		<?PHP } ?>			
-		<a href="#">Ver todas</a>
+		
 		<div class="clear"> </div>
 		<br>
 		<h4>Sugestões para você</h4>
@@ -65,10 +65,10 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
-				<a href="carrinho.php"> Comprar </a>
+				<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">Comprar</a>
 			</li>
 		<?PHP } ?>	
-		<a href="#">Ver todas</a>
+		
 		</ul>
 		<div class="clear"> </div>
 		</div>

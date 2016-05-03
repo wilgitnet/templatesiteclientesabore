@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
 	
-				pedido_situacao = 'close';
+		pedido_situacao = 'close';
 		$(document).ready( function() {
 
 			$("#pedido").click(function() {
@@ -51,11 +51,10 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
-				<a href="carrinho.php"> Comprar </a>
+				<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">Comprar</a>
 			</li>
 		<?PHP } ?>
-		
-		<a href="cardapio.php">Ver todas</a>
+				
 		<div class="clear"> </div>
 		<br>
 		<h4>Sugestões para você</h4>
@@ -68,25 +67,15 @@
 				<img src="<?PHP echo $pizza['Produto']['img']; ?>">
 				<p><?PHP echo $pizza['Produto']['descricao']; ?></p>
 				<span>R$ <?PHP echo $pizza['Produto']['valor']; ?></span>
-				<a href="carrinho.php"> Comprar </a>
+				<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">Comprar</a>
 			</li>
 		<?PHP } ?>
-		<a href="cardapio.php">Ver todas</a>
+		
 		</ul>
 		<div class="clear"> </div>
 </div>
 	<div class="boxes">
-		<!--
-			<li>
-			<h3>Pedidos</h3>
-			<h4>Sem nenhum produto adicionado</h4>
-			<p>Descontos  <span>R$0:00</span></p>
-			<p>Total  <span>R$0:00</span></p>
-			<h5>Tarifa de entrega incluída</h5>
-			<h6><a href="#">Pedidos</a></h6>
-			<h6><a href="#">Comprar</a></h6>
-		-->
-			
+		
 	<div class="clear"> </div>
 		<ul>
 			<li>

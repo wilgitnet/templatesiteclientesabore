@@ -1,6 +1,12 @@
 
 	<?php require_once('header.php'); ?>
+	<?php require_once('app/controller/cardapio_controller.php'); ?>
 <script>
+
+		function hrefH5(placeholder)
+		{
+			location.href="<?PHP echo $host; ?>/categoria/"+placeholder;
+		}	
 		cardapio_situacao = 'close';
 		$(document).ready( function() {
 
@@ -43,24 +49,19 @@
 <div class="boxes-cardapio">
 	<div class="order">	
 		<ul>
+		
 			<li>
-				
 				<h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
 				<div id="cardapio-expand" style="display: none">
-					<br><h5>Bebidas</h5><hr>
-					<h5>Bebidas</h5><hr>
-					<h5>Bebidas</h5><hr>									
-					<h5>Vinhos</h5><hr>
-					<h5>Pizzas Doces</h5><hr>
-					<h5>Pizzas Salgadas</h5><hr>
-					<h5>Sobremesas</h5><hr>
-					<h5>Sobremesas</h5><br>
+				<?PHP foreach ($produtos['dados']['CategoriaArray'] as $categoriaArray) { ?>	
+					<h5 onclick="hrefH5('<?PHP echo $categoriaArray['Categorias']['placeholder']; ?>')">
+						<?PHP echo $categoriaArray['Categorias']['nome']; ?>
+					</h5><hr>						
+				<?PHP } ?>
 				</div>		
 				<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
 				<div id="pedido-expand" style="display: none">
-					<?PHP 
-						require_once('pedido.php');
-					?>	
+					<?PHP require_once('pedido.php') ?>
 				</div>
 			</li>
 		</ul>
@@ -79,73 +80,20 @@
 				<h6><a href="#">Comprar</a></h6>
 			-->
 
-	<div class="grids">
-		<ul>
-			<h4>Pizzas</h4>
+<div class="grids">
+	<ul>
+		<h4><?PHP echo $categoria; ?></h4>
+		<?PHP foreach ($produtos['dados']['ProdutoArray'] as $key => $produto) { ?>	
 		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-1.png" width=280px> 
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-		
-		<div class="clear"> </div>
-		<br>
-
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-1.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-				<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-				<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-				<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-				<li>
-			<h3>Frango com catupiry</h3>
-			<img src="smartphone/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<span>R$30.00</span>
-			<a href="#">Comprar</a>
-		</li>
-		
-		</ul>
-		<div class="clear"> </div>
+			<h3><?PHP echo $produto['Produto']['nome']; ?></h3>
+			<img src="<?PHP echo $produto['Produto']['img']; ?>" width=280px> 
+			<p><?PHP echo $produto['Produto']['descricao']; ?></p>
+			<span>R$ <?PHP echo $produto['Produto']['valor']; ?></span>
+			<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $produto['Produto']['id']; ?>">Comprar</a>
+		</li>			
+		<?PHP } ?>
+	</ul>		
 </div>
-
+<div class="clear"> </div>
 
 <?php require_once('footer.php'); ?>

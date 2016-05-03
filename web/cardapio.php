@@ -1,117 +1,62 @@
 
 <?php require_once('header.php'); ?>
+<?php require_once('app/controller/cardapio_controller.php'); ?>
 
-	
+<script src="<?PHP echo $host; ?>/js/modal_produto.js"></script>
+<script type="text/javascript">
+	function hrefH5(placeholder)
+	{
+		location.href="<?PHP echo $host; ?>/categoria/"+placeholder;
+	}	
+</script>	
 	<div class="grids">
 		<ul>
-			<h4>Pizzas</h4>
-		<li>
-			<h3>Calabresa</h3>
-			<img src="web/images/thumb-1.png">
-			<p>Calabresa, molho, tomate, queijo</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Frango com catupiry</h3>
-			<img src="web/images/thumb-2.png">
-			<p>Frango, molho, catupiry, queijo</p>
-			<button>R$30.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Escarola</h3>
-			<img src="web/images/thumb-1.png">
-			<p>Escarola molho, queijo, pizzas</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-
-		</li>
-		<div class="clear"> </div>
-		
-
-
-		<li>
-			<h3>Calabresa</h3>
-			<img src="web/images/thumb-2.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Calabresa </h3>
-			<img src="web/images/thumb-1.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li class="last">
-			<h3>Frango com catupiry</h3>
-			<img src="web/images/thumb-2.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>	
-		</ul>
-		<div class="clear"> </div>
-
-
-
-		<li>
-			<h3>Calabresa</h3>
-			<img src="web/images/thumb-2.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li>
-			<h3>Calabresa</h3>
-			<img src="web/images/thumb-1.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>
-		<li class="last">
-			<h3>Calabresa</h3>
-			<img src="web/images/thumb-2.png">
-			<p>Descrição da pizza - Ingredientes</p>
-			<button>R$40.00</button>
-			<a href="#">Comprar</a>
-		</li>	
-		</ul>
-		<div class="clear"> </div>
+			<h4><?PHP echo $categoria; ?></h4>		
+			<?PHP foreach ($produtos['dados']['ProdutoArray'] as $key => $produto) { ?>			
+			<li>
+				<h3><?PHP echo $produto['Produto']['nome']; ?></h3>
+				<img src="<?PHP echo $produto['Produto']['img']; ?>">				
+				<p id="modal" id_produto="#<?PHP echo $produto['Produto']['id']; ?>" class="modal">
+					<?PHP 
+						echo substr($produto['Produto']['descricao'], 0, 30);
+					?>
+				</p>								
+				<div class="window" id="<?PHP echo $produto['Produto']['id']; ?>">
+				    <a href="#" class="fechar">X Fechar</a>
+				    <h4>Descrição</h4>
+				    <p><?PHP echo $produto['Produto']['descricao']; ?></p>				    
+				</div>
+				<div id="mascara"></div>
+				<button>R$ <?PHP echo $produto['Produto']['valor']; ?></button>
+				<a href="<?PHP echo $host; ?>/carrinho/<?PHP echo $produto['Produto']['id']; ?>">Comprar</a>
+			</li>
+		<?PHP } ?>		
 
 	</div>
 	<div class="boxes">
 		<div class="order">
 			<ul>			
-				<li>
+				<li>					
 					<h3>Cardápio</h3>
-					<h5>Bebidas</h5><hr>
-					<h5>Bebidas</h5><hr>
-					<h5>Bebidas</h5><hr>									
-					<h5>Vinhos</h5><hr>
-					<h5>Pizzas Doces</h5><hr>
-					<h5>Pizzas Salgadas</h5><hr>
-					<h5>Sobremesas</h5><hr>
-					<h5>Sobremesas</h5><hr>
-
+					<?PHP foreach ($produtos['dados']['CategoriaArray'] as $categoriaArray) { ?>			
+						<h5 onclick="hrefH5('<?PHP echo $categoriaArray['Categorias']['placeholder']; ?>')"><?PHP echo $categoriaArray['Categorias']['nome']; ?></h5><hr>						
+					<?PHP } ?>																				
 				</li>
 			</ul>
 		</div>
+		<div class="clear"> </div>
 		<div class="order">
 			<ul>
 				<li>
 					<li>
 					<?PHP 
-					require_once('pedido.php');
+					 require_once('pedido.php');
 					?>
 				</li>															
 				</li>	
 			</ul>
 		</div>
-	</div>
-	
+	</div>	
 	<div class="clear"> </div>
    
 </div>

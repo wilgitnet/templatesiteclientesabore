@@ -230,6 +230,32 @@ body{
 .grids li.last{
     margin-right: 0;
 }
+
+
+.window{
+    display:none;
+    width:200px;
+    height:200px;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+
 .grids h3{
     color: <?php echo $ColorBack; ?>;
     padding: 10px 0 10px 0;
@@ -240,6 +266,11 @@ body{
 }
 .h3St
 {
+    color: <?php echo $ColorBack; ?>;
+}
+
+.grids p:hover{
+    cursor: pointer;
     color: <?php echo $ColorBack; ?>;
 }
 .grids p{

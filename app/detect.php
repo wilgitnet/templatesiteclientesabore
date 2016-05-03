@@ -223,10 +223,9 @@ if(empty($_SESSION['id_cliente']))
 
 ##busca informacoes quando troca o dominio ou quando esta na pagina index.php
 if($buscarDominio || ($page_name == '' || $page_name == 'home'))
-{
+{    
     ##realizar busca por dados de cliente aqui
-    $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');            
-
+    $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');                
     if($dadosDominio['success'] && !empty($dadosDominio['dados']['Cliente']['id']))
     {        
         $_SESSION['nome_fantasia']      = $dadosDominio['dados']['Cliente']['nome_fantasia'];
@@ -240,7 +239,8 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
         $_SESSION['menu_principal']     = false;
         $_SESSION['style']              = $dadosDominio['dados']['Cliente']['cor'];
         $_SESSION['funcionamento']      = explode('---', $dadosDominio['dados']['Cliente']['funcionamento']);        
-        $_SESSION['quem_somos']         = $dadosDominio['dados']['Cliente']['quem_somos'];
+        $_SESSION['quem_somos']         = $dadosDominio['dados']['Cliente']['quem_somos'];        
+        $_SESSION['placeholder']        = $dadosDominio['dados']['Cliente']['placeholder'];        
 
         if(!empty($dadosDominio['dados']['Cliente']['menu_principal']))
         {
@@ -272,9 +272,7 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
             
     }
 }
-
-
 //testar funcionalidades em outras plataformas
-//$browser_t = 'mobile';
+//$browser_t = 'smartphone';
 
 	?>

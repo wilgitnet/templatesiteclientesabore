@@ -52,12 +52,13 @@
         <ul>
             <li class="active"><a href="<?PHP echo $host; ?>/home">Home</a></li>
             <li><a href="<?PHP echo $host; ?>/carrinho">Pedidos</a></li>
-            <?php 
-                if($_SESSION['menu_principal'])
-                {
-                    echo "<li><a href=\"categoria\">{$_SESSION['menu_principal']}</a></li>";
-                }
-            ?>  
+             <?php if($_SESSION['menu_principal']) {?>                
+                <li>
+                    <a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder'] ?>">
+                        <?PHP echo $_SESSION['menu_principal']; ?>
+                    </a>
+                </li>                
+            <?PHP } ?> 
             <li><a href="<?PHP echo $host; ?>/contato">contato</a></li>
             <div class="clear"> </div>
         </ul>

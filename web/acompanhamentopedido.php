@@ -5,7 +5,7 @@
 <script type="text/javascript">
   function returnhistorico()
 {
-location.href="<?PHP echo $host; ?>/acompanhamento"
+location.href="<?PHP echo $host; ?>/historico"
 }
 </script>
 	<table>
@@ -15,6 +15,9 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
 			</th>
 			<th>
 				<input type="submit" onclick="returnhistorico()" value="Retornar a historico"></input>
+			</th>
+			<th>
+			<button id="buttoncam"><img src="web/images/webcam.png" width="50" height="35" id="cam" >Acompanhe Online</button>
 			</th>
 		</tr>
 	</table>
@@ -29,7 +32,6 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
     <th><h3>Item</h3></th>
     <th><h3>Preço</h3></th>
     <th> <h3> Método de pagamento </h3></th>
-    <th ><h3>Acompanhe da pizzaria</h3></th>
 
 
   </tr>
@@ -48,7 +50,6 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
     <td > Mussarela </td>
     <td>R$100</td>
     <td> Dinheiro </td> 
-    <td><a href="#"><img src="web/images/cam-icon.png" style=" height: 50px; width: 50px;"></a></td>
   </tr>
 
 
@@ -65,7 +66,6 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
     <td > Mussarela </td>
     <td>R$100</td>
     <td> Dinheiro </td> 
-    <td><a href="#"><img src="web/images/cam-icon.png" style=" height: 50px; width: 50px;"></a></td>
   </tr>
 
 
@@ -82,7 +82,6 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
     <td > Mussarela </td>
     <td>R$100</td>
     <td> Dinheiro </td> 
-    <td><a href="#"><img src="web/images/cam-icon.png" style=" height: 50px; width: 50px;"></a></td>
   </tr>
 
   
@@ -99,7 +98,6 @@ location.href="<?PHP echo $host; ?>/acompanhamento"
     <td > Mussarela </td>
     <td>R$100</td>
     <td> Dinheiro </td> 
-    <td><a href="#"><img src="web/images/cam-icon.png" style=" height: 50px; width: 50px;"></a></td>
   </tr>
 
 

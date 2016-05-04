@@ -11,6 +11,8 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="container" align="center">
         <h3 class="responsive" >Detalhes do pedido 666</h3>
         <input type="submit" href="<?PHP echo $host; ?>/home" value="RETORNAR A HISTORICO" onclick="historico()"></input>
+         <button id="buttoncam"><img src="smartphone/images/webcam.png" width="50" height="35" id="cam" >Acompanhe Online</button>
+
       </div>
   <br>
 
@@ -22,7 +24,7 @@ location.href="<?PHP echo $host; ?>/historico"
         <th class="t-small"><h3>Tipo</h3></th>
         <th class="t-medium"><h3>Item</h3></th>
         <th><h3>Preço</h3></th>
-        <th class="t-medium"><h3>pg.to</h3></th>
+        <th class="t-medium"><h3>pgmto</h3></th>
       </tr>
 
 
@@ -34,7 +36,7 @@ location.href="<?PHP echo $host; ?>/historico"
         <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br><a href="#">Acompanhar ao vivo</a> </td>    
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
       <td>Dinheiro</td>
       </tr>
@@ -48,7 +50,7 @@ location.href="<?PHP echo $host; ?>/historico"
         <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br><a href="#">Acompanhar ao vivo</a> </td>    
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
       <td>Dinheiro</td>
       </tr>
@@ -62,7 +64,7 @@ location.href="<?PHP echo $host; ?>/historico"
         <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br><a href="#">Acompanhar ao vivo</a> </td>    
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
       <td>Dinheiro</td>
       </tr>
@@ -75,7 +77,7 @@ location.href="<?PHP echo $host; ?>/historico"
         <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br><a href="#">Acompanhar ao vivo</a> </td>    
+      <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
       <td>Dinheiro</td>
       </tr>

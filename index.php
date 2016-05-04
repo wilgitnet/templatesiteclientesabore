@@ -47,6 +47,10 @@ elseif ($page_name=='historico') {
 	$banner = false;
 	include $browser_t.'/acompanhamento.php';
 	}	
+elseif ($page_name=='meus-dados') {
+	$banner = false;
+	include $browser_t.'/meusdados.php';
+	}	
 elseif ($page_name=='acompanhamento') {
 	$banner = false;
 	include $browser_t.'/acompanhamentopedido.php';

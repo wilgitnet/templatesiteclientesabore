@@ -207,6 +207,13 @@ body{
     float: left;
     width: 705px;
 }
+.grids1{
+    margin:15px 0;
+    border-top:1px solid #eee; 
+    padding-top: 15px;
+    float: center;
+    width: 100%;
+}
 .grids li img{
     padding: 5px;
     box-shadow: 0px 0px 5px #CDCDCD;
@@ -691,6 +698,20 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
+#complementdados{
+    width:100px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
 #number{
     width:80px;
     padding:8px;
@@ -826,6 +847,7 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+
 #cam{
     padding: 0px;
     box-shadow: 0px 0px 0px #CDCDCD;
@@ -838,6 +860,21 @@ body{
     background:#27ae60;
      margin-left: 170px;
     border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #buttonmeusdados{
+    width:250px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    margin-left: 15px;
     font-size:16px;
     color:#fff;
     cursor:pointer;

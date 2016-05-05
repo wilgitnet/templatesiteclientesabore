@@ -68,8 +68,6 @@
             <input type="text" value="<?PHP if(!empty($_POST['numero']))echo $_POST['numero']; ?>" placeholder="Número" name="numero" id="number" maxlength="10" />
 
             <input type="text" value="<?PHP if(!empty($_POST['complemento']))echo $_POST['complemento']; ?>" placeholder="Complemento" name="complemento" id="complement" maxlength="150" /><br>
-			
-           
 		</div>
 	</form>	 
 	<button type="submit" id="button3" value="Prosseguir para pagamento" />Continuar compra</button>	

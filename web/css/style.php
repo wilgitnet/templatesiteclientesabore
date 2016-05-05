@@ -571,6 +571,13 @@ body{
     margin:0 0 0 30px;
     float:left;
 }
+.sla{
+    font-size:16px;
+    padding-bottom:10px;
+    color:#464646;
+    margin:0 0 0 30px;
+    float:left;
+}
 .feedback table{
     border-collapse: collapse;
     width: 100%;
@@ -817,6 +824,35 @@ body{
     -webkit-border-radius:.3em;
        -moz-border-radius:.3em;
             border-radius:.3em;
+}
+    #tudo {
+     width: 100%;
+     height: 700px;
+}
+    #tudo1 {
+    position:relative;
+    width: 40%;
+    height: 200px;
+    left: 70px;
+    float: left;
+}
+    #tudo2 {
+    position: relative;
+    width: 40%;
+    left: 70px;
+    height: 200px;
+    float: left;
+    top: 16px;
+}
+    #tudo3 {
+    position: relative;
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-top: 182px;
+    left: 98px;
+    top: 0px;
+    margin-bottom: 0px;
 }
     #button2{
     width:200px;

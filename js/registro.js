@@ -100,6 +100,9 @@ $(document).ready( function() {
         bairro:{
           required: true, minlength : 2
         },
+        sexo:{
+          required: true
+        },
         cidade:{
           required: true, minlength: 2
         },
@@ -137,6 +140,9 @@ $(document).ready( function() {
         email:{
           required: "Digite o seu Email",
           email:"Digite um email Válido"
+        },
+                sexo:{
+          required: "Escolha seu sexo"
         },
         endereco:{
           required: "Digite o seu Endereço",

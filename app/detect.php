@@ -271,7 +271,15 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
             $_SESSION['smart_banner1']    = $dadosDominio['dados']['Cliente']['smart_banner1'];                       
         }
             
-    }
+    }   
+}
+
+if(!empty($_SESSION['pedido']))
+{
+	if(count($_SESSION['pedido']['item']) == 0)
+	{		
+		unset($_SESSION['pedido']);
+	}
 }
 //testar funcionalidades em outras plataformas
 //$browser_t = 'smartphone';

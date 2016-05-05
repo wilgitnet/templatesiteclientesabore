@@ -60,6 +60,10 @@ elseif ($page_name=='trocar-senha') {
 	$banner = false;
 	include $browser_t.'/senha.php';
 	}
+elseif ($page_name=='carrinho-ajax') {
+	$banner = false;
+	include $browser_t.'/carrinho_ajax.php';
+	}
 else
 	{
 		include $browser_t.'/404.php';

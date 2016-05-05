@@ -37,10 +37,5 @@
 			<div class="clear">
 			</div>
 		</div>
-<script>
-	
-			$('#slider').coinslider();
-		</script>
-
 </body>
 </html>

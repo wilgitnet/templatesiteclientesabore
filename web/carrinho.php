@@ -1,136 +1,56 @@
 <?php require_once('header.php'); ?>
+<?PHP require_once('app/controller/carrinho_controller.php'); ?>
+<script src="<?PHP echo $host; ?>/js/carrinho.js"></script>
+
+<script type="text/javascript">
+    function continuar()
+    {
+      location.href="<?PHP echo $host; ?>/carrinho/validar-pedido"
+    }
+      function returncardapio()
+    {
+      location.href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>"
+    }
+    function limparCarrinho()
+    {
+      location.href="<?PHP echo $host; ?>/carrinho/limpar"
+    }
+</script>
 
 <div class="feed2">
-<div class="feedback2">
-<script type="text/javascript">
-function continuar()
-{
-location.href="<?PHP echo $host; ?>/compra"
-}
-  function returncardapio()
-{
-location.href="<?PHP echo $host; ?>/categoria"
-}
-</script>
-	<table>
-		<tr>
-			<th>
-				<h1>Confira os itens de sua compra</h1>
-			</th>
-			<th>
-				<input type="submit" onclick="returncardapio()" value="Continuar comprando"></input>
-			</th>
-		</tr>
-	</table>
-<br>
+  <div class="feedback2"> 
+    <?php            
+                
+        if(!empty($_SESSION['mensagem_erro']))
+        {                        
+            $mensagem = $_SESSION['mensagem_erro'];
+            echo "<div class='alert'>
+                {$mensagem}.
+              </div>
+              ";           
+
+            unset($_SESSION['mensagem_erro']);
+        }
+    ?>
+    <div id="refresh" style="display:none">
+      <table>
+          <tr>
+            <th>
+              <h4>Aguarde, estamos realizando sua solicitação</h4>              
+              <img src="<?PHP echo $host; ?>/images/loading.gif" width="100" height="100">            
+            </th>                          
+          </tr>
+        </table>                     
+        <br>        
+    </div>
 
 
-<table>
-  <tr>
-    <th><h3>tipo</h3></th>
-    <th></th>
-    <th><h3>Item</h3></th>
-    <th ><h3>QTD</h3></th>
-    <th><h3>Preço</h3></th>
-    <th ><h3>Remover</h3></th>
-
-  </tr>
-
-
-  <tr>
-  	<td>
-      <div class="checkbox">
-        <label><input type="checkbox" value="">Meia</label>
-        <label><input type="checkbox" value="">Broto</label> 
-        <label><input type="checkbox" value="">Borda</label> Recheada?
-      </div>
-     </td>
-    <td><img src="web/images/thumb-2.png"></td>
-    <td > Mussarela </td>
-    <td>1</td>
-    <td>R$100</td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
-  </tr>
-
-
-  <tr>
-    <td>
-      <div class="checkbox">
-        <label><input type="checkbox" value="">Meia</label>
-        <label><input type="checkbox" value="">Broto</label> 
-        <label><input type="checkbox" value="">Borda</label> Recheada?
-      </div>
-     </td>
-    <td><img src="web/images/thumb-2.png"></td>
-    <td > Mussarela </td>
-    <td>1</td>
-    <td>R$150</td>
-    <td><a href="#"><img src="web/images/x.png" style="height: 10px; width: 10px;"></a></td>
-  </tr>
-
-
-  <tr>
-    <td>
-      <div class="checkbox">
-        <label><input type="checkbox" value="">Meia</label>
-        <label><input type="checkbox" value="">Broto</label> 
-        <label><input type="checkbox" value="">Borda</label> Recheada?
-      </div>
-     </td>
-    <td><img src="web/images/thumb-2.png"></td>
-    <td > Mussarela </td>
-    <td>1</td>
-    <td>R$300</td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
-  </tr>
-
-
-  
-  <tr>
-    <td>
-      <div class="checkbox">
-        <label><input type="checkbox" value="">Meia</label>
-        <label><input type="checkbox" value="">Broto</label> 
-        <label><input type="checkbox" value="">Borda</label> Recheada?
-      </div>
-     </td>
-    <td><img src="web/images/thumb-2.png"></td>
-    <td > Mussarela </td>
-    <td>1</td>
-    <td>R$250</td>
-    <td><a href="#"><img src="web/images/x.png" style=" height: 10px; width: 10px;"></a></td>
-  </tr>
-
-
-
-</table>
-	<br>
-	<table>
-
-
-		<tr>
-			<th>
-				<h1 align="left">Total : R$500,00 </h1><br>
-			</th>
-			<th>
-				<h1 align="left"></h1><br>
-			</th>
-		</tr>
-
-
-		<tr>
-			<th>
-				<input type="submit" href="#" value="Limpar carrinho" align="left" id="button1"></input>
-			</th>
-			<th>
-				<input type="submit" onclick="continuar()" value="Continuar compra" id="button2" ></input>
-			</th>
-		</tr>
-
-	</table>
-	<br>
-</div>
+    <div id="pedido_ajax" class="pedido_ajax_class">
+      <?PHP require_once('carrinho_ajax.php'); ?>
+    </div>    
+  </div>
 </div>
 
 <div class="clear"> </div>
 <?php require_once('footer.php'); ?>
+

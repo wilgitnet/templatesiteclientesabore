@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+
 /*
  * A Design by W3layouts
 Author: W3layouts

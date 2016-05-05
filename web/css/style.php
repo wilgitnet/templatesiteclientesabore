@@ -585,9 +585,12 @@ body{
     color:#464646;
     margin:0 0 0 30px;
 }
-.feedback2 table img{
+.pedido table img{
     padding: 2px;
     box-shadow: 0px 0px 2px #CDCDCD;
+}
+.feedback2 table img{
+    padding: 2px; 
 }
 
 .feedback2 h4{

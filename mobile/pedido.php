@@ -3,10 +3,21 @@
 	{
 	
 ?>
-	<h5>1-Pizza Calabresa<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela<br> 1-Pizza Mussarela</h4>
-	<p>Descontos  <span>R$0.00</span></p>
-	<p>Total  <span>R$40.00</span></p>
-	<h5>Tarifa de entrega incluída</h5>
+	<h5>
+		<?PHP 
+			if(!empty($_SESSION['pedido']['item'][0])) 				
+				echo $_SESSION['pedido']['item'][0]['Produto']['nome']."<BR>"; 
+		?>		
+		<?PHP 
+			if(!empty($_SESSION['pedido']['item'][1])) 				
+				echo $_SESSION['pedido']['item'][1]['Produto']['nome']."<BR>"; 
+		?>		
+		<?PHP 
+			if(!empty($_SESSION['pedido']['item'][2])) 				
+				echo $_SESSION['pedido']['item'][2]['Produto']['nome']."<BR>"; 
+		?>
+	</h5>		
+	<h5>Total:  <span>R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></span> </h5>
 	<h6><a href="<?PHP echo $host; ?>/carrinho">Ver Pedido</a></h6>
 	<h6><a href="pagamento.php">Finalizar</a></h6>					
 	<br><br> 	

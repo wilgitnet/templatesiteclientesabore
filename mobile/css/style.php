@@ -214,6 +214,26 @@ body{
 {
     color: <?php echo $ColorBack; ?>;
 }
+    #buttoncam{
+    width:197px;
+    padding:8px 4px;
+    font-size:16px;
+    align:middle;
+    background-color:<?php echo $ColorBack; ?>;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+#cam{
+    padding: 0px;
+    box-shadow: 0px 0px 0px #CDCDCD;
+    vertical-align:middle
+}
     #button2{
     padding:10px 8px;
     font-size:14px;

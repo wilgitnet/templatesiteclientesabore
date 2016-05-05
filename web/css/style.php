@@ -207,6 +207,13 @@ body{
     float: left;
     width: 705px;
 }
+.grids1{
+    margin:15px 0;
+    border-top:1px solid #eee; 
+    padding-top: 15px;
+    float: center;
+    width: 100%;
+}
 .grids li img{
     padding: 5px;
     box-shadow: 0px 0px 5px #CDCDCD;
@@ -564,6 +571,13 @@ body{
     margin:0 0 0 30px;
     float:left;
 }
+.sla{
+    font-size:16px;
+    padding-bottom:10px;
+    color:#464646;
+    margin:0 0 0 30px;
+    float:left;
+}
 .feedback table{
     border-collapse: collapse;
     width: 100%;
@@ -694,6 +708,20 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
+#complementdados{
+    width:100px;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-size:14px;
+    color:#333;
+    background:#eee;
+    box-shadow: 0 0 6px #aaa;
+    border:none;
+    outline: none;
+    font-family: 'Istok Web', sans-serif;
+}
 #number{
     width:80px;
     padding:8px;
@@ -800,6 +828,35 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+    #tudo {
+     width: 100%;
+     height: 700px;
+}
+    #tudo1 {
+    position:relative;
+    width: 40%;
+    height: 200px;
+    left: 70px;
+    float: left;
+}
+    #tudo2 {
+    position: relative;
+    width: 40%;
+    left: 70px;
+    height: 200px;
+    float: left;
+    top: 16px;
+}
+    #tudo3 {
+    position: relative;
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-top: 182px;
+    left: 98px;
+    top: 0px;
+    margin-bottom: 0px;
+}
     #button2{
     width:200px;
     padding:15px 8px;
@@ -814,6 +871,27 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+    #buttoncam{
+    width:100%;
+    padding:8px 4px;
+    font-size:16px;
+    align:middle;
+    background-color:<?php echo $ColorBack; ?>;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+
+#cam{
+    padding: 0px;
+    box-shadow: 0px 0px 0px #CDCDCD;
+    vertical-align:middle
+}
     #button3{
     width:250px;
     padding:15px 8px;
@@ -821,6 +899,21 @@ body{
     background:#27ae60;
      margin-left: 170px;
     border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #buttonmeusdados{
+    width:250px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    margin-left: 15px;
     font-size:16px;
     color:#fff;
     cursor:pointer;

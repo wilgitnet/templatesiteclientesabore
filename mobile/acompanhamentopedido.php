@@ -11,6 +11,7 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="container" align="center">
         <h3 class="responsive" >Detalhes do pedido 666</h3>
         <input type="submit" href="<?PHP echo $host; ?>/home" value="RETORNAR A HISTORICO" onclick="historico()"></input>
+      <button id="buttoncam"><img src="mobile/images/webcam.png" width="50" height="35" id="cam" >Acompanhe Online</button>
       </div>
   <br>
 

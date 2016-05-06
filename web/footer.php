@@ -7,7 +7,7 @@
                         <li><a href="">Fale conosco</a></li>
                         <li><a href="">Acompanhe seu pedido</a></li>
                         <li><a href="">Delivery</a></li>
-                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre nós</a></li>
                     </ul>
                 </div>
 

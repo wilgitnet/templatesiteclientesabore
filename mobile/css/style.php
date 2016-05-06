@@ -229,6 +229,10 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+#linhatotal{
+    background-color:<?php echo $ColorBack; ?>;
+    color: #fff;
+}
 #cam{
     padding: 0px;
     box-shadow: 0px 0px 0px #CDCDCD;

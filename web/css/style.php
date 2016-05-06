@@ -606,7 +606,10 @@ body{
 .feedback2 table img{
     padding: 2px; 
 }
-
+#linhatotal{
+    background-color:<?php echo $ColorBack; ?>;
+    color: #fff;
+}
 .feedback2 h4{
     color: #fff;
     padding: 10px 0 10px 10px;
@@ -614,7 +617,7 @@ body{
     font-size: 13px;
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
-    background-color:<?php echo $ColorBack; ?>
+    background-color:<?php echo $ColorBack; ?>;
 }
 .feedback3 h4{
     color: #fff;
@@ -830,7 +833,7 @@ body{
 }
     #tudo {
      width: 100%;
-     height: 700px;
+     height: 750px;
 }
     #tudo1 {
     position:relative;
@@ -856,6 +859,17 @@ body{
     left: 98px;
     top: 0px;
     margin-bottom: 0px;
+}
+    #errormsg{
+        margin-left: 100px;
+        width: 70%;
+        height: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #linhatotal{
+    background-color:<?php echo $ColorBack; ?>;
+    color: #fff;
 }
     #button2{
     width:200px;
@@ -985,8 +999,40 @@ body{
     border-bottom:1px solid #867070;
 }
 /*----about----*/
+
+.gridsabout h4{
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    background: white;
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    background-color:<?php echo $ColorBack; ?>
+}
+.gridsabout{
+    margin:15px 0;
+    border-top:1px solid #eee; 
+    padding-top: 15px;
+    float: left;
+    width: 100%;
+}
+.gridsabout p:hover{
+    cursor: pointer;
+    color: <?php echo $ColorBack; ?>;
+}
+.gridsabout p{
+    color: #888;
+    font-size: 16px;
+    padding:8px 0;
+    background: #fff;
+    line-height: 1.8em;
+}
 .about-grid1 p{
-    width: 492px;
+    text-align:justify;
+}
+.about-grid2 p{
+
+    width: 100%;
     float: left;
     text-align:justify;
 }

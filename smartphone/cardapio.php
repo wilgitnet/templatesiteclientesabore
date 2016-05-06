@@ -1,4 +1,3 @@
-
 	<?php require_once('header.php'); ?>
 	<?php require_once('app/controller/cardapio_controller.php'); ?>
 	<script src="<?PHP echo $host; ?>/js/mobilesmart.js"></script>
@@ -24,16 +23,7 @@
 </div>	
 
 
-			<!--
-				<li>
-				<h3>Pedidos</h3>
-				<h4>Sem nenhum produto adicionado</h4>
-				<p>Descontos  <span>R$0:00</span></p>
-				<p>Total  <span>R$0:00</span></p>
-				<h5>Tarifa de entrega incluída</h5>
-				<h6><a href="#">Pedidos</a></h6>
-				<h6><a href="#">Comprar</a></h6>
-			-->
+
 
 <div class="grids">
 	<ul>

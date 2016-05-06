@@ -2,7 +2,7 @@
 <?php require_once('header.php'); ?>
 
 	
-<div class="gridsabout">
+<div class="feedback2">
 	<ul>
 	<h4>Quem somos</h4>
 	<br>

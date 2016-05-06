@@ -11,6 +11,10 @@
     {
       location.href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>"
     }
+    function gohistorico()
+    {
+      location.href="<?PHP echo $host; ?>/historico"
+    }
     function limparCarrinho()
     {
       location.href="<?PHP echo $host; ?>/carrinho/limpar"

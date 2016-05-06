@@ -6,7 +6,11 @@
           <h1>Confira os itens de sua compra</h1>
         </th>
         <th>
-          <input type="submit" onclick="returncardapio()" value="Continuar comprando"></input>
+          <select class="selectpicker" style="width: 130px;">
+            <option>Menu rápido</option>
+            <option>Pizzas</option>
+            <option>Bebidas</option>
+          </select>
         </th>
       </tr>
     </table>
@@ -94,7 +98,7 @@
           <input type="submit" href="javascript:void(0);" onclick="limparCarrinho()" value="Limpar carrinho" align="left" id="button1">
         </th>
         <th>
-          <input type="submit" onclick="continuar()" value="Finalizar compra" id="button2" >
+          <input type="submit" onclick="continuar()" value="Dados de entrega" id="button2" >
         </th>
       </tr>
 
@@ -112,6 +116,7 @@
             </th>
             <th>
               <input type="submit" onclick="returncardapio()" value="Realizar um Pedido Agora"></input>
+              <input type="submit" onclick="gohistorico()" value="Historico de compras"></input>
             </th>
           </tr>
         </table>        

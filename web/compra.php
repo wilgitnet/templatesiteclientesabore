@@ -2,7 +2,8 @@
 <?php require_once('header.php'); ?>
 <?PHP require_once('app/controller/compra_controller.php'); ?>
 
- <script src="<?PHP echo $host; ?>/js/compra.js"></script>
+<script src="<?PHP echo $host; ?>/js/compra.js"></script>
+
 
 <div class="grids" id="compra_expand">
 

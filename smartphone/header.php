@@ -59,6 +59,7 @@
                     </a>
                 </li>                
             <?PHP } ?> 
+            <li><a href="<?PHP echo $host; ?>/quem-somos">Quem somos</a></li> 
             <li><a href="<?PHP echo $host; ?>/contato">contato</a></li>
             <div class="clear"> </div>
         </ul>

@@ -11,6 +11,10 @@
     {
       location.href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>"
     }
+    function gohistorico()
+    {
+      location.href="<?PHP echo $host; ?>/historico"
+    }
     function limparCarrinho()
     {
       location.href="<?PHP echo $host; ?>/carrinho/limpar"
@@ -19,12 +23,13 @@
 
 <div class="feed2">
   <div class="feedback2"> 
+
     <?php            
                 
         if(!empty($_SESSION['mensagem_erro']))
         {                        
             $mensagem = $_SESSION['mensagem_erro'];
-            echo "<div class='alert'>
+            echo "<div class='alert' id='errormsg'>
                 {$mensagem}.
               </div>
               ";           

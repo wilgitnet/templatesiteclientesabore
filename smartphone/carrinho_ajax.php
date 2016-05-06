@@ -1,4 +1,20 @@
 <?PHP if(!empty($_SESSION['pedido'])){ ?>  
+<script src="<?PHP echo $host; ?>/js/mobilesmart.js"></script>
+
+<div class="boxes-cardapio">
+  <div class="order"> 
+    <ul>
+      <li>
+        <h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
+        <div id="cardapio-expand" style="display: none">
+        <?PHP require_once('cardapioarq.php') ?>
+        </div>    
+      </li>
+    </ul>
+  </div>
+</div>  
+
+
       <div class="container" align="center">
         <h3 class="responsive" >Confira  os  itens  de  sua  compra</h3>
         <input type="submit" href="javascript:void(0);" value="Continuar comprando" onclick="returncardapio()"></input>
@@ -83,7 +99,9 @@
    <?PHP }else{ ?>
    <div class="container" align="center">
 	        <h3 class="responsive" ><h2>SEU CARRINHO ESTA VAZIO :(</h3>
-	        <input type="submit" href="<?PHP echo $host; ?>/home" value="Realizar um Pedido Agora" onclick="returncardapio()"></input>
+          <br>
+	        <input type="submit" href="<?PHP echo $host; ?>/home" value="Realizar um Pedido Agora" onclick="returncardapio()"></input><br>
+          <input type="submit" href="<?PHP echo $host; ?>/historico"  value="Historico de compras" onclick="gohistorico()"></input>
 	      </div>
 		<br>	
 	<?PHP } ?>

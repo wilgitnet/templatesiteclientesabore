@@ -22,10 +22,9 @@ location.href="<?PHP echo $host; ?>/historico"
     
       <tr>  
         <th class="t-small"><h3>Tipo</h3></th>
+        <th class="t-medium" style="width: 250px;"></th>
         <th class="t-medium"><h3>Item</h3></th>
         <th><h3>Preço</h3></th>
-        <th class="t-medium"><h3>Método Pagamento</h3></th>
-        <th><h3> Acompanhe<br> da pizzaria</h3> </th>
       </tr>
 
       <tr>
@@ -33,13 +32,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="mobile/images/thumb-1.png" class="img-responsive" >1 Mussarela</td>    
+      <td><img src="mobile/images/thumb-1.png" class="img-responsive" ></td>
+      <td> Mussarela </td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
-      <td><img src="mobile/images/cam-icon.png" width="60" height="60"></td>
       </tr>
 
 
@@ -48,13 +45,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="mobile/images/thumb-1.png" class="img-responsive" >1 Mussarela</td>    
+      <td><img src="mobile/images/thumb-1.png" class="img-responsive" ></td>
+      <td> Mussarela </td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
-      <td><img src="mobile/images/cam-icon.png" width="60" height="60"></td>
       </tr>
 
 
@@ -63,13 +58,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="mobile/images/thumb-1.png" class="img-responsive" >1 Mussarela</td>    
+      <td><img src="mobile/images/thumb-1.png" class="img-responsive" ></td>
+      <td> Mussarela </td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
-      <td><img src="mobile/images/cam-icon.png" width="60" height="60"></td>
       </tr>
       
 
@@ -78,16 +71,26 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-      <td><img src="mobile/images/thumb-1.png" class="img-responsive" >1 Mussarela</td>    
+      <td><img src="mobile/images/thumb-1.png" class="img-responsive" ></td>
+      <td> Mussarela </td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
-      <td><img src="mobile/images/cam-icon.png" width="60" height="60"></td>
       </tr>
+
+      <tr id="linhatotal">
+    <td>
+      <div class="checkbox disabled">
+        <label><input type="checkbox" value="" disabled checked>Borda</label> Recheada
+      </div>
+     </td>
+      <td>Total de itens : 10</td>
+      <td>Pagamento : Dinheiro</td>    
+      <td>Total : R$500.00</td>
+      </tr>
+
   </table>
-  <p align="center"> Total : R$500.00 </p>
+
 </div>
 
 

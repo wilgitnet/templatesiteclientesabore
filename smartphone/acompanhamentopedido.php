@@ -24,7 +24,6 @@ location.href="<?PHP echo $host; ?>/historico"
         <th class="t-small"><h3>Tipo</h3></th>
         <th class="t-medium"><h3>Item</h3></th>
         <th><h3>Preço</h3></th>
-        <th class="t-medium"><h3>pgmto</h3></th>
       </tr>
 
 
@@ -33,12 +32,10 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
       <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
       </tr>
 
 
@@ -47,12 +44,10 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
       <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
       </tr>
 
 
@@ -61,12 +56,10 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
       <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
       </tr>
 
       <tr>
@@ -74,16 +67,26 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
       <td><img src="smartphone/images/thumb-1.png" class="img-responsive" >1 Mussarela<br></td>    
       <td>R$50.00</td>
-      <td>Dinheiro</td>
       </tr>
+
+
+      <tr id="linhatotal">
+    <td>
+      <div class="checkbox disabled">
+        <label><input type="checkbox" value="" disabled checked>Borda recheada</label>
+      </div>
+     </td>
+      <td>Total Itens: 10<br>Pagamento : Dinheiro</td>    
+      <td>R$50.00</td>
+      </tr>
+
+
   </table> 
 
-  <p align="center">Total : R$500,00</p> 
 
 </div>
     <br>

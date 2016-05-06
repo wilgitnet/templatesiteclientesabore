@@ -1,4 +1,22 @@
 <?PHP if(!empty($_SESSION['pedido'])){ ?>     
+	<script src="<?PHP echo $host; ?>/js/mobilesmart.js"></script>
+
+
+
+<div class="boxes-cardapio">
+	<div class="order">	
+		<ul>
+			<li>
+				<h3 id="cardapio"><i class="glyphicon glyphicon-menu-down"></i>  Cardapio</h3>
+				<div id="cardapio-expand" style="display: none">
+				<?PHP require_once('cardapioarq.php') ?>
+				</div>		
+			</li>
+		</ul>
+	</div>
+</div>	
+
+
 	   <div class="container" align="center">
 	        <h3 class="responsive" >Confira  os  itens  de  sua  compra</h3>
 	        <input type="submit" href="javascript:void(0);" value="Continuar comprando" onclick="returncardapio()"></input>
@@ -80,13 +98,14 @@
 
 	    <div class="container" align="center">
 	      <button id="button1" value="Limpar" class="btn btn-responsive" onclick="limparCarrinho()">Limpar carrinho</button>
-	      <button id="button2" value="Limpar" class="btn btn-responsive" onclick="continuar()">Finalizar Compras</button>
+	      <button id="button2" value="Limpar" class="btn btn-responsive" onclick="continuar()">Dados de entrega</button>
 	    </div>
 	    <br>
 	  <?PHP }else{ ?>
 	  	<div class="container" align="center">
 	        <h3 class="responsive" ><h2>SEU CARRINHO ESTA VAZIO :(</h3>
 	        <input type="submit" href="<?PHP echo $host; ?>/home" value="Realizar um Pedido Agora" onclick="returncardapio()"></input>
+	        <input type="submit" href="<?PHP echo $host; ?>/historico" value="Historico de pedidos" onclick="gohistorico()"></input>
 	      </div>
 		<br>	
 

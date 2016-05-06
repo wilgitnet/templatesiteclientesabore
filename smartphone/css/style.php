@@ -418,6 +418,10 @@ body{
     outline: none;
     font-family: 'Istok Web', sans-serif;
 }
+#linhatotal{
+    background-color:<?php echo $ColorBack; ?>;
+    color: #fff;
+}
     #buttoncam{
     width:197px;
     padding:8px 4px;

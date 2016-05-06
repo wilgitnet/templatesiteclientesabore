@@ -3,7 +3,6 @@
  <script src="<?PHP echo $host; ?>/js/compra.js"></script>
 
 
-
 <div class="grids" id="compra_expand">
 	<h4>Endereço</h4>
 	<form id="endereco" method="GET">

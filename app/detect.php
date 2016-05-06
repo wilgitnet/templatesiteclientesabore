@@ -242,6 +242,7 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
         $_SESSION['quem_somos']         = $dadosDominio['dados']['Cliente']['quem_somos'];        
         $_SESSION['placeholder']        = $dadosDominio['dados']['Cliente']['placeholder'];        
         $_SESSION['menu']               = $dadosDominio['dados']['CategoriaArray'];
+        $_SESSION['img_quem_somos']               = $dadosDominio['dados']['Cliente']['img_quem_somos'];
         
         if(!empty($dadosDominio['dados']['Cliente']['menu_principal']))
         {
@@ -282,6 +283,5 @@ if(!empty($_SESSION['pedido']))
 	}
 }
 //testar funcionalidades em outras plataformas
-//$browser_t = 'smartphone';
-
+$browser_t = 'smartphone';
 	?>

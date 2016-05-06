@@ -27,11 +27,9 @@ location.href="<?PHP echo $host; ?>/historico"
 <table>
   <tr>
     <th><h3>tipo</h3></th>
-    <th ><h3>QTD</h3></th>
     <th></th>
     <th><h3>Item</h3></th>
     <th><h3>Preço</h3></th>
-    <th> <h3> Método de pagamento </h3></th>
 
 
   </tr>
@@ -42,14 +40,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-    <td>1</td>
     <td><img src="web/images/thumb-2.png"></td>
     <td > Mussarela </td>
     <td>R$100</td>
-    <td> Dinheiro </td> 
   </tr>
 
 
@@ -58,14 +53,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-    <td>1</td>
     <td><img src="web/images/thumb-2.png"></td>
     <td > Mussarela </td>
     <td>R$100</td>
-    <td> Dinheiro </td> 
   </tr>
 
 
@@ -74,14 +66,11 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-    <td>1</td>
     <td><img src="web/images/thumb-2.png"></td>
     <td > Mussarela </td>
     <td>R$100</td>
-    <td> Dinheiro </td> 
   </tr>
 
   
@@ -90,34 +79,25 @@ location.href="<?PHP echo $host; ?>/historico"
       <div class="checkbox disabled">
         <label><input type="checkbox" value="" disabled>Meia</label>
         <label><input type="checkbox" value="" disabled checked>Broto</label> 
-        <label><input type="checkbox" value="" disabled>Borda</label> Recheada?
       </div>
      </td>
-    <td>1</td>
     <td><img src="web/images/thumb-2.png"></td>
     <td > Mussarela </td>
     <td>R$100</td>
-    <td> Dinheiro </td> 
   </tr>
 
-
+  <tr id="linhatotal">
+     <td>
+        <input type="checkbox" value="" disabled checked> Borda recheada
+     </td>
+    <td>Quantidade de itens : 10</td>
+    <td >Pagamento : Dinheiro </td>
+    <td><h2>Total : R$500.00</h2></td>
+  </tr>
 
 </table>
 	<br>
-	<table>
 
-
-		<tr>
-			<th>
-				<h1 align="left">Total : R$500,00 </h1><br>
-			</th>
-			<th>
-				<h1 align="left"></h1><br>
-			</th>
-		</tr>
-
-	</table>
-	<br>
 </div>
 </div>
 

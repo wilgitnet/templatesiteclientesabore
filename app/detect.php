@@ -283,5 +283,5 @@ if(!empty($_SESSION['pedido']))
 	}
 }
 //testar funcionalidades em outras plataformas
-$browser_t = 'smartphone';
+//$browser_t = 'smartphone';
 	?>

@@ -34,7 +34,7 @@
             <input type="password" value="" placeholder="Repita sua senha" name="senha1" id="senha1" maxlength="20" />      
             <input type="text" value="<?PHP if(!empty($_POST['nome']))echo $_POST['nome']; ?>" placeholder="Nome" name="nome" id="nome" maxlength="50" />
             <input type="text" value="<?PHP if(!empty($_POST['sobrenome']))echo $_POST['sobrenome']; ?>" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />
-            <input type="text" value="<?PHP if(!empty($_POST['email']))echo $_POST['email']; ?>" placeholder="Endereço de email" name="email" id="email" maxlength="30" />
+            <input type="text" value="<?PHP if(!empty($_POST['email']))echo $_POST['email']; ?>" placeholder="Endereço de email" name="email" id="email" maxlength="100" />
                 <br>Sexo:
                 <input type="radio" name="sexo" value="M">Masculino
                 <input type="radio" name="sexo" value="F">Feminino

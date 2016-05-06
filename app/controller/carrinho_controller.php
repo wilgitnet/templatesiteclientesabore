@@ -109,7 +109,8 @@
 			}		
 			else
 			{
-				echo "faz o redirect para dados de endereco aqui";exit;
+				header('LOCATION:'.$host.'/compra');
+				exit;
 			}
 
 		}

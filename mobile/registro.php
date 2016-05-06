@@ -50,7 +50,7 @@ font-size: 11px;
             <br><br>
                 <input type="text" value="<?PHP if(!empty($_POST['sobrenome']))echo $_POST['sobrenome']; ?>" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />
             <br><br>
-                <input type="text" value="<?PHP if(!empty($_POST['email']))echo $_POST['email']; ?>" placeholder="Endereço de email" name="email" id="email" maxlength="30" />
+                <input type="text" value="<?PHP if(!empty($_POST['email']))echo $_POST['email']; ?>" placeholder="Endereço de email" name="email" id="email" maxlength="100" />
             <br><br>
                 <input type="text" value="<?PHP if(!empty($_POST['cep']))echo $_POST['cep']; ?>" placeholder="CEP" name="cep" id="cep" maxlength="9" />                
                 <div id="loading" style="display:none">

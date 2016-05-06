@@ -26,7 +26,7 @@ if(!empty($_POST['submit']))
 		$receberPromocao = 'S';
 	
 	$arrayDados = array('documento'=>$_POST['documento'], 'celular'=>$_POST['celular'],
-						'usuario'=>$_POST['usuario'], 'senha'=>$_POST['senha'],
+						'senha'=>$_POST['senha'],
 						'nome'=>$_POST['nome'], 'sobrenome'=>$_POST['sobrenome'],
 						'email'=>$_POST['email'], 'estado'=>$_POST['estado'],
 						'cep'=>$_POST['cep'], 'cidade'=>$_POST['cidade'],

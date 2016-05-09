@@ -9,7 +9,7 @@
 		<ul>
 			<li>
 				<li>
-					<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i>  Pedidos</h3>
+					<h3 id="pedido"><i class="glyphicon glyphicon-menu-down"></i> Pedidos</h3>
 					<div id="pedido-expand" style="display: none">
 					<?PHP require_once('pedido.php') ?>
 					</div>
@@ -35,6 +35,7 @@
 	</div>
 <div id="endereco_completo">
 	<h4>Endereço</h4>
+	<div class='alert' id="cep-alert" style="display:none"></div>  
 	<form id="endereco_compra">
 		<div class="feedback2" align="center">
 			<h3> Complete para finalizar a compra </h3>
@@ -101,6 +102,7 @@
 				<h3>Sera necessário Troco ? Digite a baixo o valor </h3>
 				<input type="text" placeholder="EXEMPLO:R$18,70"></input>
 				<button type="submit" id="button4"/>Finalizar pedido</button> 
+
 			</div>
 		</div>
 
@@ -122,7 +124,22 @@
 			<button type="submit" id="button4"/>Finalizar pedido</button> 
 		</div>
 	</form>	
-	
+					<div class="container" align="center">
+				<br><table width="30%" style="border: 1px white ; font-family: helvetica; margin-left: 35px;">
+					<tr>
+					<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+					</tr>
+				</table>
+			</div>
 </div>
 
 	

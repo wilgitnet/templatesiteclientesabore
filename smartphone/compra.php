@@ -58,7 +58,7 @@
 <div id="endereco_completo">
 	<h4>Endereço de Entrega</h4>
 	<form id="endereco_compra">
-	
+		<div class='alert' id="cep-alert" style="display:none"></div>  
 		<div class="feedback2" align="center">
 		<h3> Complete para continuar a compra </h3><br>
 				<div id="loading" style="display:none">
@@ -112,6 +112,23 @@
 				<input type="text" placeholder="EXEMPLO:R$18,70" align="center" id="troco"></input>
 				<button type="submit" id="button4"/>Finalizar pedido</button> 
 			</div>
+			
+			<div class="container" align="center">
+				<br><table width="100%" style="border: 1px white ;">
+					<tr>
+					<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 
 
@@ -119,6 +136,22 @@
 		<div class="feedback3" style="display: none" id="ctcredito_expand" align="center"><br>
 			<h3> Cartão de crédito ? Clique para finalizar e Finalizarmos seu pedido</h3><br>
 			<button type="submit" id="button5"/>Finalizar pedido</button> 
+			<div class="container" align="center">
+				<br><table width="100%" style="border: 1px white ;">
+					<tr>
+					<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 
 
@@ -128,6 +161,22 @@
 
 			<h3>Cartão de Débito ? Clique para finalizar e Finalizarmos seu pedido</h3><br>
 			<button type="submit" id="button6"/>Finalizar pedido</button> 
+			<div class="container" align="center">
+				<br><table width="100%" style="border: 1px white ;">
+					<tr>
+					<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+					</tr>
+					<tr>
+					<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</form>	
 </div>

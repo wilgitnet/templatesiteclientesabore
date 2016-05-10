@@ -154,6 +154,7 @@ $(document).ready( function() {
         $("#ctcredito_expand").hide();          
         $("#ctdebito_expand").hide(); 
         $("#dinheiro_expand").show(); 
+        $("#tipo_pagamento").val(3);        
       });
 
       $("#cartaocredito").click(function() 
@@ -161,15 +162,48 @@ $(document).ready( function() {
         $("#ctcredito_expand").show();          
         $("#ctdebito_expand").hide(); 
         $("#dinheiro_expand").hide(); 
+        $("#tipo_pagamento").val(1);        
       });
 
       $("#cartaodebito").click(function() {
         $("#ctcredito_expand").hide();          
         $("#ctdebito_expand").show(); 
         $("#dinheiro_expand").hide(); 
+        $("#tipo_pagamento").val(2);        
       });
       
 
+      //finalizando pedido
+      $(".finalizar-pedido").click(function() 
+      {       
+        
+        $("#cep-alert").hide();  
+        $("#refresh").show();
+        $("#pagamento_expand").hide();         
+        
+        //finalizando pedido                      
+        $.ajax({            
+            type: "POST",
+            url: 'app/controller/compra_controller.php',
+            data: '&ajax=true&finalizar=true&tipo_pagamento='+ $("#tipo_pagamento").val() +'&troco='+$("#troco").val(),
+            dataType: 'json', 
+            success: function(data)
+            {                              
+                if(data.success == 1)
+                {                                      
+                    location.href=$("#host").val() + "/acompanhamento"
+                }
+                else
+                {                    
+                    $("#cep-alert").show();
+                    $("#cep-alert").html(data.mensagem);   
+                    $("#refresh").hide();
+                    $("#pagamento_expand").show(); 
+                }
+            }
+        });              
+        return false;                 
 
-      
+      });
+    
     }); 

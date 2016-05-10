@@ -22,9 +22,9 @@
 	    </div>
 	</div>
 	
+	<div class='alert' id="cep-alert" style="display:none"></div>    
 	<div id="endereco_completo">
-		<h4>Endereço de Entrega</h4>		
-		<div class='alert' id="cep-alert" style="display:none"></div>    
+		<h4>Endereço de Entrega</h4>				
 		<form id="endereco_compra">
 			<div class="feedback2">				
 				<br>				
@@ -80,7 +80,7 @@
 
 <div class="grids" id="pagamento_expand" style="display: none">
 	<h4>Escolha seu método de pagamento</h4>
-	<form id="pagamento" method="GET">
+	
 		<div class="feedback2">
 			<table width="100%">
 				<tr>
@@ -97,8 +97,8 @@
 			<div class="feedback2" align="center">
 			<br>
 				<h3>Sera necessário Troco ? Digite a baixo o valor </h3>
-				<input type="text" placeholder="EXEMPLO:R$18,70"></input>
-				<button type="submit" id="button4"/>Finalizar pedido</button> 
+				<input type="text" name="troco" id="troco" placeholder="EXEMPLO:R$18,70"></input>
+				<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
 			</div>
 		</div>
 
@@ -106,17 +106,17 @@
 		<div class="feedback3" style="display: none" id="ctcredito_expand" align="center">
 		<br>
 			<h3> Cartão de crédito ? Clique para finalizar e Finalizarmos seu pedido</h3>
-			<button type="submit" id="button4"/>Finalizar pedido</button> 
+			<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
 		</div>
 
 
 		<div class="feedback3" style="display: none" id="ctdebito_expand" align="center">
 		<br>
 			<h3>Cartão de Débito ? Clique para finalizar e Finalizarmos seu pedido</h3>
-			<button type="submit" id="button4"/>Finalizar pedido</button> 
+			<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
 		</div>
-
-	</form>		
+		<input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
+		<input type="hidden" name="host" id="host" value="<?PHP echo $host; ?>">	
 </div>
 
 <div class="boxes">

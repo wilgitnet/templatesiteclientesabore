@@ -126,6 +126,28 @@
 			echo json_encode(array('success'=>true));
 			exit;
 		}	
+
+		##finalizando compra
+		if(!empty($_POST['finalizar']))
+		{
+			if(empty($_POST['tipo_pagamento']))
+			{				
+				echo json_encode(array('success'=>false, 'mensagem'=>'Informar o tipo de pagamento'));
+				exit;				
+			}
+			
+			$pedido = GoCURL(array('tipo_pagamento'=>$_POST['tipo_pagamento'], 'cliente_id'=>$_SESSION['id_cliente'], 'carrinho'=>$c, 'troco'=>$_POST['troco']), 'pedidos/finalizar');
+
+			if(!$pedido['success'])
+			{
+				echo json_encode(array('success'=>false, 'mensagem'=>$pedido['message']));
+				exit;				
+			}
+			
+			echo json_encode(array('success'=>true));
+			exit;				
+		}
 	}
+	
 	
 ?>

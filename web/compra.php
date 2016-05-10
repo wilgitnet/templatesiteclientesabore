@@ -5,11 +5,11 @@
 <script src="<?PHP echo $host; ?>/js/compra.js"></script>
 
 
-<div class="grids" id="compra_expand">
+
+	<div class="grids" id="compra_expand">
 
 	<div class="feedback2" id="refresh" style="display:none">
 		<br>
-		<div>
 	      <table>
 	          <tr>
 	            <th>
@@ -19,7 +19,6 @@
 	          </tr>
 	        </table>                     
 	        <br>        
-	    </div>
 	</div>
 	
 	<div class='alert' id="cep-alert" style="display:none"></div>    
@@ -115,8 +114,32 @@
 			<h3>Cartão de Débito ? Clique para finalizar e Finalizarmos seu pedido</h3>
 			<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
 		</div>
+
 		<input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
 		<input type="hidden" name="host" id="host" value="<?PHP echo $host; ?>">	
+
+
+
+		<div class="container" align="center">
+			<table width="50%" style="margin-left: 58px;border: 1px white;width: 249px; ">
+				<tr>
+				<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+				</tr>
+				<tr>
+				<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+				</tr>
+				<tr>
+				<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+				</tr>
+				<tr>
+				<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+				</tr>
+			</table>
+		</div>
+
+
+	</form>		
+
 </div>
 
 <div class="boxes">

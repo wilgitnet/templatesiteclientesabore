@@ -285,6 +285,6 @@ if(!empty($_SESSION['pedido']))
 	}
 }
 //testar funcionalidades em outras plataformas
-$browser_t = 'mobile';
+//$browser_t = 'mobile';
 
 	?>

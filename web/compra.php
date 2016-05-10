@@ -118,21 +118,34 @@
 		<input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
 		<input type="hidden" name="host" id="host" value="<?PHP echo $host; ?>">	
 
+		<?PHP 
 
+			$valor_borda = 0;
+			if(!empty($_SESSION['pedido']['valor_borda']))
+				$valor_borda = $_SESSION['pedido']['valor_borda'];
 
+			 ##calculando taxa e valores totais do pedido
+			 $percentual = 3 / 100.0; 		 
+			 $valor_total = $_SESSION['pedido']['total'] + $_SESSION['pedido']['valor_cep'];		 		 
+			 $valor_total_antigo = $valor_total;
+			 $valor_total = $valor_total + ($percentual * $valor_total);
+			 $valor_percentual = $valor_total - $valor_total_antigo;
+			 $valor_total_taxas = $valor_percentual + $_SESSION['pedido']['valor_cep'] + $valor_borda;
+			
+		 ?>
 		<div class="container" align="center">
 			<table width="50%" style="margin-left: 58px;border: 1px white;width: 249px; ">
 				<tr>
-				<td><h3>Pedido</h3></td> <td><h3>R$15.00</h3></td>
+				<td><h3>Pedido</h3></td> <td><h3>R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Frete</h3></td><td><h3>R$2.00</h3></td>
+				<td><h3>Frete</h3></td><td><h3>R$ <?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Taxa do site</h3></td><td><h3> R$1.50</h3></td>
+				<td><h3>Taxa do site</h3></td><td><h3> R$ <?PHP echo number_format($valor_percentual, 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Valor total</h3></td><td><h3>R$18.50</h3></td>
+				<td><h3>Valor total</h3></td><td><h3>R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></h3></td>
 				</tr>
 			</table>
 		</div>

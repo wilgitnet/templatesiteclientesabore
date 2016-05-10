@@ -27,7 +27,7 @@
 			$endereco['dados']['KM'] = 1;
 		}
 		
-		$_SESSION['pedido']['valor_cep'] = $_SESSION['valor_km_entrega'] * $endereco['dados']['KM'];		
+		$_SESSION['pedido']['valor_cep'] = $_SESSION['valor_km_entrega'] * $endereco['dados']['KM'];				
 	}
 
 	##requisicao ajax
@@ -144,6 +144,7 @@
 				exit;				
 			}
 			
+			unset($_SESSION['pedido']);
 			echo json_encode(array('success'=>true));
 			exit;				
 		}

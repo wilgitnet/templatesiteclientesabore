@@ -1,5 +1,6 @@
 
 <?php require_once('header.php'); ?>
+<?PHP require_once('app/controller/registro_controller.php'); ?>
 
 <script type="text/javascript">
   function returnhistorico()

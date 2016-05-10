@@ -1,4 +1,4 @@
-<?PHP if(!empty($_SESSION['pedido'])){ ?>    
+<?PHP if(!empty($_SESSION['pedido'])){ ?>      
 
       <table>
       <tr>
@@ -6,10 +6,13 @@
           <h1>Confira os itens de sua compra</h1>
         </th>
         <th>
-          <select class="selectpicker" style="width: 130px;">
+          <select class="selectpicker" id="menu-rapido" style="width: 130px;">          
             <option>Menu rápido</option>
-            <option>Pizzas</option>
-            <option>Bebidas</option>
+            <?PHP foreach($_SESSION['menu'] as $menu){ ?>
+              <option value="<?PHP echo $host."/categoria/".$menu['Categorias']['placeholder']; ?>">
+                <?PHP echo $menu['Categorias']['nome']; ?>
+              </option>            
+            <?PHP } ?>
           </select>
         </th>
       </tr>

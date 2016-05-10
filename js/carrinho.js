@@ -100,6 +100,11 @@ $(document).ready( function() {
 
 	});	         	
 
+	//menu rapido
+    $('#pedido_ajax').on('change', '.selectpicker', function(){
+		location.href=$(this).val();
+    });	         	
+
 	//meia ou pizza inteira evento 
     $('#pedido_ajax').on('click', '.meia', function(){
 

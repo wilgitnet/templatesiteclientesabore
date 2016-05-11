@@ -63,4 +63,32 @@ if(!empty($_POST['submit']))
 	}
 }
 
+if(!empty($_POST['submit_editar']))
+{
+	$arrayDados = array('celular'=>$_POST['celular'],						
+						'nome'=>$_POST['nome'], 'sobrenome'=>$_POST['sobrenome'],
+						'email'=>$_POST['email'], 'estado'=>$_POST['estado'],
+						'cep'=>$_POST['cep'], 'cidade'=>$_POST['cidade'],
+						'bairro'=>$_POST['bairro'], 'endereco'=>$_POST['endereco'],
+						'numero'=>$_POST['numero'], 'complemento'=>$_POST['complemento'], 'id'=>$_SESSION['Usuario']['id']);
+		
+	//enviando requisicao para api	
+	$update = GoCURL($arrayDados, 'usuario/editar'); 
+
+	if(!$update['success'])
+	{
+		$mensagem = $update['message'];
+		$mensagemArray = $update['message_array'];
+		$insertError = true;
+	}
+	else
+	{				
+		unset($_POST['submit_editar']);
+		unset($_POST['cliente_id']);
+		$id = $_SESSION['Usuario']['id'];
+		$_SESSION['Usuario'] = $_POST;
+		$_SESSION['Usuario']['id'] = $id;
+	}
+}
+
 ?>

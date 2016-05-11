@@ -3,18 +3,27 @@
 <?PHP require_once('app/controller/compra_controller.php'); ?>
 
 <script src="<?PHP echo $host; ?>/js/compra.js"></script>
+<script type="text/javascript">
+    function returncarrinho()
+    {
+      location.href="<?PHP echo $host; ?>/carrinho"
+    }	
+    function returnendereco()
+    {
+      location.href="<?PHP echo $host; ?>/compra"
+    }	
 
+</script>
 
 
 	<div class="grids" id="compra_expand">
-
 	<div class="feedback2" id="refresh" style="display:none">
 		<br>
 	      <table>
 	          <tr>
 	            <th>
 	              <h4>Aguarde, realizando sua solicitação</h4>              
-	              <img src="<?PHP echo $host; ?>/images/loading.gif" width="100" height="100">            
+	              <img src="<?PHP echo $host; ?>/images/loading.gif" width="100" height="100">           
 	            </th>                          
 	          </tr>
 	        </table>                     
@@ -36,10 +45,20 @@
 			            </th>                          
 			          </tr>
 			        </table>                     
-			        <br>        
+			                
 			    </div>
 			    		   
-				<h3>Complete para finalizar a compra </h3>
+					<table>
+		          <tr>
+		            <th>
+		              <h3 align="left">Aguarde, realizando sua solicitação</h3>                    
+		            </th>                          
+		            <th>
+		             <input type="button" id="buttonreturn1" value="Retornar ao carrinho" onclick="returncarrinho()"></input>
+		            </th>
+		          </tr>
+		        </table>
+
 				<br>										
 					<div id="loading" style="display:none">
 		                <img src="images/loading.gif" width="25" height="25" align="right">
@@ -66,7 +85,7 @@
 				        <input type="text" value="" placeholder="Endereço de email" name="email" id="email" maxlength="100" />
 						<input type="text" value="" placeholder="Telefone celular" name="celular" id="celular" maxlength="30" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
 				        <input type="password" value="" placeholder="Senha para acompanhamento" name="senha" id="senha" maxlength="20" />		
-						<input type="password" id="senha" value="" name="senha1" placeholder="Repita sua senha" maxlength="20" />            
+						<input type="password" id="senha1" value="" name="senha1" placeholder="Repita sua senha" maxlength="20" />            
 					<?PHP } ?>
 		           <br>			
 				<input type="hidden" name="cliente_id" id="cliente_id" value="<?PHP echo $_SESSION['id_cliente']; ?>">			
@@ -78,9 +97,21 @@
 </div>
 
 <div class="grids" id="pagamento_expand" style="display: none">
-	<h4>Escolha seu método de pagamento</h4>
 	
+	<h4>Escolha seu método de pagamento</h4>
+				
+
 		<div class="feedback2">
+		<table>
+		          <tr>
+		            <th>
+		              <h3 align="left">Opa, quase acabando!!</h3>                    
+		            </th>                          
+		            <th>
+		             <input type="button" id="buttonreturn2" value="Retornar ao endereco" class="returnendereco" onclick="returnendereco()"></input>
+		            </th>
+		          </tr>
+		        </table>
 			<table width="100%">
 				<tr>
 					<th id="dinheiro"><img src="web/images/icondinheiro.png" height="100" width="140"><h3>Dinheiro</h3></th>
@@ -134,18 +165,18 @@
 			
 		 ?>
 		<div class="container" align="center">
-			<table width="50%" style="margin-left: 58px;border: 1px white;width: 249px; ">
+			<table style="margin-left: 58px;border: 1px white;width: 200px; ">
 				<tr>
-				<td><h3>Pedido</h3></td> <td><h3>R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></h3></td>
+				<td><h3>Pedido : R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Frete</h3></td><td><h3>R$ <?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?></h3></td>
+				<td><h3>Frete : $ <?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Taxa do site</h3></td><td><h3> R$ <?PHP echo number_format($valor_percentual, 2, ',', '.'); ?></h3></td>
+				<td><h3>Taxa do site : R$ <?PHP echo number_format($valor_percentual, 2, ',', '.'); ?></h3></td>
 				</tr>
 				<tr>
-				<td><h3>Valor total</h3></td><td><h3>R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></h3></td>
+				<td><h3>Valor total: R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></h3></td>
 				</tr>
 			</table>
 		</div>
@@ -159,11 +190,11 @@
 		<div class="order">
 			<ul>
 				<li>
-					<li>
+					
 					<?PHP 
 					require_once('pedido.php');
 					?>
-				</li>															
+																			
 				</li>	
 			</ul>
 		</div>

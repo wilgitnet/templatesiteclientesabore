@@ -2,6 +2,18 @@
 <?php require_once('header.php'); ?>
 
  <script src="<?PHP echo $host; ?>/js/compra.js"></script>
+<script type="text/javascript">
+    function returncarrinho()
+    {
+      location.href="<?PHP echo $host; ?>/carrinho"
+    }	
+    function returnendereco()
+    {
+      location.href="<?PHP echo $host; ?>/compra"
+    }	
+
+
+</script>
 
 
 	<br>
@@ -39,7 +51,19 @@
 	<div class='alert' id="cep-alert" style="display:none"></div>  
 	<form id="endereco_compra">
 		<div class="feedback2" align="center">
-			<h3> Complete para finalizar a compra </h3>
+
+
+
+			<table>
+		          <tr>
+		            <th>
+		              <h3 align="left">Aguarde, realizando sua solicitação</h3>                    
+		            </th>                          
+		            <th>
+		             <input type="button" id="buttonreturn2" value="Retornar ao carrinho" onclick="returncarrinho()"></input>
+		            </th>
+		          </tr>
+		        </table>
 			<br>										
 					<div id="loading" style="display:none">
 		                <img src="images/loading.gif" width="25" height="25" align="right">
@@ -84,6 +108,16 @@
 	<h4>Escolha seu método de pagamento</h4>
 	<form id="pagamento" method="GET">
 		<div class="feedback2">
+				<table>
+		          <tr>
+		            <th>
+		              <h3 align="left">Opa, quase acabando!!</h3>                    
+		            </th>                          
+		            <th align="right">
+		             <input type="button" id="buttonreturn2" value="Retornar ao endereco" class="returnendereco" onclick="returnendereco()"></input>
+		            </th>
+		          </tr>
+		        </table>
 			<table width="100%">
 				<tr>
 					<th id="dinheiro"><img src="mobile/images/icondinheiro.png" height="100" width="140"><h3>Dinheiro</h3></th>

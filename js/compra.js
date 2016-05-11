@@ -1,7 +1,20 @@
 $(document).ready( function() {
 
     $("#cep").mask("99999-999");
+    $("#celular").mask("(99) 99999-9999");
 
+  $('#senha1').blur(function()
+  {
+    if($('#senha1').val() != $('#senha').val())
+    {
+      alert('Confirmação de senha incorreta');
+      $("#senha1").val('');
+      $("#senha").val('');
+      $("#senha").focus();
+    }
+  });
+
+    
     //busca por cep ajax
     $('#cep').blur(function()
     {    
@@ -86,7 +99,6 @@ $(document).ready( function() {
         }
     });  
 
-
       pedido_situacao = 'close'
       compra_situacao = 'open';
       pagamento_situacao = 'close';
@@ -98,6 +110,8 @@ $(document).ready( function() {
         $("#refresh").show();
         $("#endereco_completo").hide(); 
         $("#cep-alert").hide();  
+
+      
 
         var dados = $("#endereco_compra").serialize();        
         
@@ -145,8 +159,12 @@ $(document).ready( function() {
           $("#pagamento_expand").show();  
           pagamento_situacao = 'open';
         }
-        
       });
+
+
+
+
+
         
 
       $("#dinheiro").click(function() 
@@ -205,5 +223,6 @@ $(document).ready( function() {
         return false;                 
 
       });
-    
+
+
     }); 

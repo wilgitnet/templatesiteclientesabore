@@ -885,6 +885,20 @@ body{
        -moz-border-radius:.3em;
             border-radius:.3em;
 }
+    .button50{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
     #buttoncam{
     width:100%;
     padding:8px 4px;
@@ -908,6 +922,21 @@ body{
 }
     #button3{
     width:250px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#27ae60;
+     margin-left: 170px;
+    border:none;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+    #buttonhistorico{
+    width:200px;
     padding:15px 8px;
     font-size:16px;
     background:#27ae60;
@@ -971,6 +1000,42 @@ body{
 }
 
 .feedback input[type="submit"]:hover{
+    background:#2E1A19;
+    color: #fff;
+}
+#buttonreturn1{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#95a5a6;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+#buttonreturn1:hover{
+    background:#2E1A19;
+    color: #fff;
+}
+#buttonreturn2{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#95a5a6;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
+#buttonreturn2:hover{
     background:#2E1A19;
     color: #fff;
 }

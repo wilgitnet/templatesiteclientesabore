@@ -3,7 +3,7 @@
 
  <script src="<?PHP echo $host; ?>/js/compra.js"></script>
 
- <script>
+ <script type="text/javascript">
  	$(document).ready( function() {
  		
  		$("#dinheiro").click(function() 
@@ -20,8 +20,19 @@
 	      {       
 	        $("#button6").focus();
 	      });
+	});
+    function returncarrinho()
+    {
+      location.href="<?PHP echo $host; ?>/carrinho"
+    }
+    function returnendereco()
+    {
+      location.href="<?PHP echo $host; ?>/compra"
+    }
 
- 	});
+
+ 	
+
  </script>
 
 
@@ -57,7 +68,8 @@
 </div>
 <div class='alert' id="cep-alert" style="display:none"></div>    
 <div id="endereco_completo">
-	<h4>Endereço de Entrega</h4>
+	<h4>Endereço de Entrega</h4><br>
+	<input type="button" id="buttonreturn2" value="Retornar ao carrinho" onclick="returncarrinho()"></input>
 	<form id="endereco_compra">
 		<div class='alert' id="cep-alert" style="display:none"></div>  
 		<div class="feedback2" align="center">
@@ -101,6 +113,8 @@
 
 <div class="grids" id="pagamento_expand" style="display: none">
 	<h4>Escolha seu método de pagamento</h4><br>
+		<input type="button" id="buttonreturn2" class="returnendereco" value="Retornar ao carrinho" onclick="returnendereco()"></input>
+
 	<form id="pagamento" method="GET">
 				<div id="dinheiro" align="center"><img src="smartphone/images/icondinheiro.png"  width="130" height="90"><h3>Dinheiro</h3><br></div>
 				<div id="cartaocredito" align="center"><img src="smartphone/images/credito.png"  width="130" height="90"><h3>Cartão de crédito</h3><br></div>

@@ -214,6 +214,24 @@ body{
 {
     color: <?php echo $ColorBack; ?>;
 }
+#buttonreturn1:hover{
+    background:#2E1A19;
+    color: #fff;
+}
+#buttonreturn2{
+    width:200px;
+    padding:15px 8px;
+    font-size:16px;
+    background:#95a5a6;
+    border:none;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'Istok Web', sans-serif;
+    -webkit-border-radius:.3em;
+       -moz-border-radius:.3em;
+            border-radius:.3em;
+}
     #buttoncam{
     width:197px;
     padding:8px 4px;

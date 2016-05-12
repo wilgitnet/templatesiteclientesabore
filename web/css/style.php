@@ -271,6 +271,14 @@ body{
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
 }
+#h3loucura{
+    color: <?php echo $ColorBack; ?>;
+    padding: 10px 0 10px 0;
+    background: #fff;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+}
 .h3St
 {
     color: <?php echo $ColorBack; ?>;

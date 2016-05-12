@@ -16,7 +16,7 @@
 </script>
 
 
-	<div class="grids" id="compra_expand">
+<div class="grids" id="compra_expand">
 	<div class="feedback2" id="refresh" style="display:none">
 		<br>
 	      <table>
@@ -29,6 +29,7 @@
 	        </table>                     
 	        <br>        
 	</div>
+
 	
 	<div class='alert' id="cep-alert" style="display:none"></div>    
 	<div id="endereco_completo">
@@ -51,7 +52,7 @@
 					<table>
 		          <tr>
 		            <th>
-		              <h3 align="left">Aguarde, realizando sua solicitação</h3>                    
+		              <h3 align="left">Digite as informações para entrega</h3>                    
 		            </th>                          
 		            <th>
 		             <input type="button" id="buttonreturn1" value="Retornar ao carrinho" onclick="returncarrinho()"></input>
@@ -94,9 +95,9 @@
 		</form>	 
 		<button type="submit" id="button3" class="finalizar-endereco" value="Prosseguir para pagamento" />Prosseguir para Pagamento</button>	
 	</div>	
-</div>
 
-<div class="grids" id="pagamento_expand" style="display: none">
+
+<div id="pagamento_expand" style="display: none">
 	
 	<h4>Escolha seu método de pagamento</h4>
 				
@@ -130,6 +131,7 @@
 				<input type="text" name="troco" id="troco" placeholder="EXEMPLO:R$18,70"></input>
 				<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
 			</div>
+			<br><br>
 		</div>
 
 
@@ -137,6 +139,7 @@
 		<br>
 			<h3> Cartão de crédito ? Clique para finalizar e Finalizarmos seu pedido</h3>
 			<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
+			<br><br>
 		</div>
 
 
@@ -144,6 +147,7 @@
 		<br>
 			<h3>Cartão de Débito ? Clique para finalizar e Finalizarmos seu pedido</h3>
 			<button type="submit" id="button4" class="finalizar-pedido"/>Finalizar pedido</button> 
+			<br><br>
 		</div>
 
 		<input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
@@ -164,27 +168,29 @@
 			 $valor_total_taxas = $valor_percentual + $_SESSION['pedido']['valor_cep'] + $valor_borda;
 			
 		 ?>
+	<div class="feedback3">
 		<div class="container" align="center">
-			<table style="margin-left: 58px;border: 1px white;width: 200px; ">
+			<table style="border: 1px white;width: 100%; ">
 				<tr>
-				<td><h3>Pedido : R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></h3></td>
+				<td align="center"><h3>Pedido : R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></h3></td>
+				<td align="center"><h3>Frete : $ <?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?></h3></td>
+				<td align="center"><h3>Taxa do site : R$ <?PHP echo number_format($valor_percentual, 2, ',', '.'); ?></h3></td>
 				</tr>
-				<tr>
-				<td><h3>Frete : $ <?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?></h3></td>
+
+				<tr id="linhatotal">
+				<td></td>
+				<td align="center" >Valor total: R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></td>
+				<td></td>
 				</tr>
-				<tr>
-				<td><h3>Taxa do site : R$ <?PHP echo number_format($valor_percentual, 2, ',', '.'); ?></h3></td>
-				</tr>
-				<tr>
-				<td><h3>Valor total: R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></h3></td>
-				</tr>
+
 			</table>
 		</div>
-
-
+	</div>
 	</form>		
-
 </div>
+<!-- Div id = Pagamento_expand fechando aqui-->
+</div>
+<!-- GRID FECHANDO AQUI -->
 
 <div class="boxes">
 		<div class="order">

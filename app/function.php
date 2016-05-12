@@ -30,7 +30,7 @@ function GoCURL($campos, $url)
     //echo '<Pre>';print_r($resultado);
     curl_close($ch);
     $json = json_decode($resultado,1);
-
+    
     if(!$json['request'])
     {          
         echo '<Pre>';print_r($resultado);

@@ -208,8 +208,8 @@ $(document).ready( function() {
             success: function(data)
             {                              
                 if(data.success == 1)
-                {                                      
-                    location.href=$("#host").val() + "/acompanhamento"
+                {                                 
+                    location.href=$("#host").val() + "/acompanhamento/"+data.pedido_id;
                 }
                 else
                 {                    

@@ -144,8 +144,8 @@
 				exit;				
 			}
 			
-			unset($_SESSION['pedido']);
-			echo json_encode(array('success'=>true));
+			unset($_SESSION['pedido']);			
+			echo json_encode(array('success'=>true, 'pedido_id'=>$pedido['dados']['pedido_id']));
 			exit;				
 		}
 	}

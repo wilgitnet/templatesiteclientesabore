@@ -113,7 +113,9 @@
 
 <div class="grids" id="pagamento_expand" style="display: none">
 	<h4>Escolha seu método de pagamento</h4><br>
+	<div align="center">
 		<input type="button" id="buttonreturn2" class="returnendereco" value="Retornar ao carrinho" onclick="returnendereco()"></input>
+	</div><br>
 
 	<form id="pagamento" method="GET">
 				<div id="dinheiro" align="center"><img src="smartphone/images/icondinheiro.png"  width="130" height="90"><h3>Dinheiro</h3><br></div>

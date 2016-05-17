@@ -33,7 +33,7 @@
             ?>
                 <br>
                 <div>
-                    <input type="text" value=""  placeholder="Usuário ou Email" name="email_troca" id="email_troca" />
+                    <input type="text" value=""  placeholder="Lucas" name="email_troca" id="email_troca" />
                     <input type="hidden" name="submit_email" value="true">
                 <br><br>                                        
                     <div>

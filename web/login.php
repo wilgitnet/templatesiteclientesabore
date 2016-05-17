@@ -60,7 +60,7 @@
             ?>
                 <br>
             	<div>
-                    <input type="text" value=""  placeholder="Email" name="usuario" id="usuario" />
+                    <input type="text" value=""  placeholder="Email somente" name="usuario" id="usuario" />
                 <br><br>
                     <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
                 <br>

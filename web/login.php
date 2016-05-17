@@ -34,6 +34,7 @@
                 <br>
                 <div>
                     <input type="text" value=""  placeholder="Lucas" name="email_troca" id="email_troca" />
+
                     <input type="hidden" name="submit_email" value="true">
                 <br><br>                                        
                     <div>
@@ -60,7 +61,7 @@
             ?>
                 <br>
             	<div>
-                    <input type="text" value=""  placeholder="Email" name="usuario" id="usuario" />
+                    <input type="text" value=""  placeholder="Email somente" name="usuario" id="usuario" />
                 <br><br>
                     <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
                 <br>

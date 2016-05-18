@@ -11,8 +11,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- CSS  -->
-   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
-   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+   <link rel="stylesheet" type="text/css" href="web/stylesheets/bootstrap.css" >
+   <link rel="stylesheet" type="text/css" href="web/stylesheets/style.css">
 
    <!-- Google Fonts -->
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
@@ -31,7 +31,7 @@
                         <div class="span2">
                             <div id="logo" class="logo">
                                 <a href="index.html" rel="home">
-                                    <img src="images/logo.png" alt="Pizzaria" />
+                                    <img src="web/images/logo.png" alt="Pizzaria" />
                                 </a>
                             </div>
                         </div>
@@ -97,14 +97,14 @@
 
    
     <!-- Javascript -->
-    <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/parallax.js"></script>
-    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
-    <script type="text/javascript" src="javascript/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="web/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="web/javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="web/javascript/parallax.js"></script>
+    <script type="text/javascript" src="web/javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="web/javascript/jquery.sticky.js"></script>
+    <script type="text/javascript" src="web/javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="web/javascript/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="web/javascript/main.js"></script>
 </body>
 </html>
 

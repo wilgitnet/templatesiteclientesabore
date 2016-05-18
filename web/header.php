@@ -1,108 +1,112 @@
 
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-<title>La Favoritta</title>
+   <meta charset="utf-8">
+   <title>SaboreWeb</title>
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="Allan Santos">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="<?PHP echo $host; ?>/web/css/style.php" type="text/css" media="all" />
-<link rel="stylesheet" href="<?PHP echo $host; ?>/web/css/slider-styles.css" type="text/css" media="all" /> 
-<link rel="stylesheet" href="<?PHP echo $host; ?>/css/style.css" type="text/css" media="all" />
-<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link href="signin.css" rel="stylesheet">
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="<?PHP echo $host; ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?PHP echo $host; ?>/web/js/slider.js"></script>
-<script src="<?PHP echo $host; ?>/js/validate.js"></script>
-<script src="<?PHP echo $host; ?>/js/mask.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <!-- CSS  -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
-    
+   <!-- Google Fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+
 </head>
-<body>
-<div class="wrap">
-	<div class="top-head">
-		<div class="welcome"><img src="<?PHP echo $host; ?>/web/images/pequena.png"  alt="Pequena"/>Bem vindo a <span>Pizzaria Favoritta</span></div>
-		<div class="top-nav">
 
-        
-	        <ul>
-            <?PHP if(!empty($_SESSION['Usuario'])){ ?>                
-                <li class="active"><a href="<?PHP echo $host; ?>/home">Bem Vindo <?PHP echo $_SESSION['Usuario']['nome']; ?>,</a></li>
-                <li><a href="<?PHP echo $host; ?>/carrinho">Pedidos</a></li>
-                <li><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li> 
-            <?PHP }else{ ?>
-	            <li><a href="<?PHP echo $host; ?>/login">Login </a></li>
-                <li><a href="<?PHP echo $host; ?>/registro">Registro </a></li>
-                <li><a href="<?PHP echo $host; ?>/contato">Contato </a></li>                            
-              <?PHP } ?>
-	        </ul>
-	    </div>
+<body> 
+    <div id="top-slider" class="parallax-bg1 parallax">
+        <div class="overlay"></div>
 
-	    <div class="clear"> </div>
-    </div>
-	<div class="header">
-	<div class="logo"><a href="<?PHP echo $host; ?>/home"><img src="<?php echo $_SESSION['logo']; ?>"  alt="Favorita"/></a></div>
-    <div class="search">
-    	<form>
-    		<input type="text" value="" placeholder="Pesquise aqui" />
-    		<input type="submit" value="" />
-    	</form>
-    </div>
-    <div class="clear"> </div>
-	</div>
-	<div class="nav">
-        <ul>
-            <li class="active"><a href="<?PHP echo $host; ?>/home">Home</a></li>
-            <li><a href="<?PHP echo $host; ?>/carrinho">Pedidos</a></li>            
-            <?php if($_SESSION['menu_principal']) {?>                
-                <li>
-                    <a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder'] ?>">
-                        <?PHP echo $_SESSION['menu_principal']; ?>
-                    </a>
-                </li>                
-            <?PHP } ?> 
-            <li><a href="<?PHP echo $host; ?>/quem-somos">Quem somos</a></li>           
-            <div class="clear"> </div>
-        </ul>
-    </div>
+        <header id="header" class="header header-sticky">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="span2">
+                            <div id="logo" class="logo">
+                                <a href="index.html" rel="home">
+                                    <img src="images/logo.png" alt="Pizzaria" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="span10">
+                            <div class="btn-menu"></div><!-- Mobile menu button -->
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li><a class="active" href="#top">Início</a></li>
+                                    <li><a href="#">Pedidos</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Sobre</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Cadastro</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    
+                                 </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div class="main-body">
-    <?php if($banner){ ?>
-        <div id="slider">
-                <?php 
-                    if(!empty($_SESSION['banner1']))
-                    {                    
-                 ?>
-                    <a href="<?PHP echo $_SESSION['link1']; ?>" target="_blank">
-                        <img src="<?PHP echo $_SESSION['banner1']; ?>" alt="Pizza 1" />
-                    </a>
-                <?php } ?>
-                <?php 
-                    if(!empty($_SESSION['banner2']))
-                    {                    
-                 ?>
-                    <a href="<?PHP echo $_SESSION['link2']; ?>" target="_blank">
-                        <img src="<?PHP echo $_SESSION['banner2']; ?>" alt="Pizza 1" />
-                    </a>
-                <?php } ?>
-                <?php 
-                    if(!empty($_SESSION['banner3']))
-                    {                    
-                 ?>
-                    <a href="<?PHP echo $_SESSION['link3']; ?>" target="_blank">
-                        <img src="<?PHP echo $_SESSION['banner3']; ?>" alt="Pizza 1" />
-                    </a>
-                <?php } ?>
+        <div class="control-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="content-slider">
+                            <h2 class="FromLeft captionDelay2">Bem vindo a <b>Pizzaria<span class="color"> Hut</span></b></h2>
+                            <div class="divider FromLeft captionDelay5"></div>
+                            <p class="FromLeft captionDelay8">Qualidade e tradição em cada ingrediente</p>
+                            <a href="#" class="read-more FromLeft captionDelay11">CARDÁPIO</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-slider">
+                            <h2 class="FromTop captionDelay2">Realize seu <b>pedido<span class="color"> Online.</span></b></h2>
+                            <div class="divider FromTop captionDelay5"></div>
+                            <p class="FromTop captionDelay8">Mais prático e seguro</p>
+                            <a href="#" class="read-more FromTop captionDelay11">FAZER PEDIDO</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    <?php } ?>
+
+        <div class="contact-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="contact-slider-inner">
+                            <span class="phone">Pedidos online: Disponível </span>
+                            <span class="serve">Tempo limite de entrega: 50 minutos</span>
+                            <span class="address">Retirada: Rua Beijamim Paulo, 500 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 2000px; widht: 100%;">
+
+   
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="javascript/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+</html>
 
 
-
-
-
-
+   

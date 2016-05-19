@@ -51,7 +51,54 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row mgT50">
+					<div class="col-md-12">
+						<h2 class="sub-title-home">SUGESTÕES PARA VOCÊ</h2>
+						<div class="nz-separator"></div>
+						<div class="row">
 
+							<div class="col-md-4">
+								<div class="more-buy">
+									<img class="img-pizza" src="web/images/pizza2.jpg"/>
+									<div class="description">
+										<p class="name-product">Marguerita</p>
+										<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+										<a class="buy" href="">COMPRAR</a>	
+										<span class="preco">R$ 39,00</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="more-buy">
+									<img class="img-pizza" src="web/images/pizza6.jpg"/>
+									<div class="description">
+										<p class="name-product">Calabresa com queijo</p>
+										<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+										<a class="buy" href="">COMPRAR</a>	
+										<span class="preco">R$ 39,00</span>								
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="more-buy">
+									<img class="img-pizza" src="web/images/pizza7.jpg"/>
+									<div class="description">
+										<p class="name-product">Baiana</p>
+										<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+										<a class="buy" href="">COMPRAR</a>	
+										<span class="preco">R$ 39,00</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-3">
+						
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -86,59 +133,13 @@
 							<td><p class="sub-titulo-carrinho">TOTAL: </p><span class="carrinho-valor">R$ 0,00</span></td>
 						</tr>
 					</tbody>
-				</table>	
+				</table>
+				<a class="finalizar-pedido" href="">REALIZAR PEDIDO</a>	
 
 			</div>
 		</div>
 
-		<div class="row mgT50">
-			<div class="col-md-9">
-				<h2 class="sub-title-home">SUGESTÕES PARA VOCÊ</h2>
-				<div class="nz-separator"></div>
-				<div class="row">
-
-					<div class="col-md-4">
-						<div class="more-buy">
-							<img class="img-pizza" src="web/images/pizza2.jpg"/>
-							<div class="description">
-								<p class="name-product">Marguerita</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
-								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="more-buy">
-							<img class="img-pizza" src="web/images/pizza6.jpg"/>
-							<div class="description">
-								<p class="name-product">Calabresa com queijo</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
-								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="more-buy">
-							<img class="img-pizza" src="web/images/pizza7.jpg"/>
-							<div class="description">
-								<p class="name-product">Baiana</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
-								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="col-md-3">
-				
-			</div>
-		</div>
+		
 
 		
 

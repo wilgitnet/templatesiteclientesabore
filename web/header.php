@@ -14,9 +14,11 @@
    <link rel="stylesheet" type="text/css" href="web/stylesheets/bootstrap.css" >
    <link rel="stylesheet" type="text/css" href="web/stylesheets/style.css">
 
-   <!-- Google Fonts -->
+   <!-- Fonts -->
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="web/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
 
 </head>
 
@@ -30,8 +32,8 @@
                     <div class="row">
                         <div class="span2">
                             <div id="logo" class="logo">
-                                <a href="index.html" rel="home">
-                                    <img src="web/images/logo.png" alt="Pizzaria" />
+                                <a href="index.php">
+                                    <img class="logo-img" src="web/images/logoteste1.png" alt="Pizzaria" />
                                 </a>
                             </div>
                         </div>
@@ -46,7 +48,8 @@
                                     <li><a href="#">Contato</a></li>
                                     <li><a href="#">Cadastro</a></li>
                                     <li><a href="#">Login</a></li>
-                                    
+                                    <!-- <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
+                                    <li class="img-name-logado"><a href="#">Allan Santos</a></li> -->
                                  </ul>
                             </nav>
                         </div>
@@ -60,7 +63,7 @@
                 <ul class="slides">
                     <li>
                         <div class="content-slider">
-                            <h2 class="FromLeft captionDelay2">Bem vindo a <b>Pizzaria<span class="color"> Hut</span></b></h2>
+                            <h2 class="FromLeft captionDelay2">Bem vindo a <b>Pizzaria<span class="color"> Big Boca</span></b></h2>
                             <div class="divider FromLeft captionDelay5"></div>
                             <p class="FromLeft captionDelay8">Qualidade e tradição em cada ingrediente</p>
                             <a href="#" class="read-more FromLeft captionDelay11">CARDÁPIO</a>
@@ -81,11 +84,17 @@
         <div class="contact-slider">
             <div class="container">
                 <div class="row">
-                    <div class="span12">
+                    <div class="col-md-12">
                         <div class="contact-slider-inner">
-                            <span class="phone">Pedidos online: Disponível </span>
-                            <span class="serve">Tempo limite de entrega: 50 minutos</span>
-                            <span class="address">Retirada: Rua Beijamim Paulo, 500 </span>
+                            <div class="col-md-4 border-right-color">
+                            <span> <i class="fa fa-paper-plane icon-banner-color"> </i> Pedidos online: Disponível</span>
+                            </div>
+                            <div class="col-md-4 border-right-color">
+                            <span><i class="fa fa-clock-o icon-banner-color"></i></i>Tempo previsto de entrega: 30 minutos</span>
+                            </div>
+                            <div class="col-md-4">
+                            <span><i class="fa fa-map-marker icon-banner-color"></i></i>Retirada: Rua Beijamim Paulo, 500</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,20 +102,6 @@
         </div>
     </div>
 
-    <div style="height: 2000px; widht: 100%;">
-
-   
-    <!-- Javascript -->
-    <script type="text/javascript" src="web/javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="web/javascript/bootstrap.min.js"></script>
-    <script type="text/javascript" src="web/javascript/parallax.js"></script>
-    <script type="text/javascript" src="web/javascript/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="web/javascript/jquery.sticky.js"></script>
-    <script type="text/javascript" src="web/javascript/jquery-waypoints.js"></script>
-    <script type="text/javascript" src="web/javascript/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="web/javascript/main.js"></script>
-</body>
-</html>
 
 
    

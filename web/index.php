@@ -21,9 +21,9 @@
 							<img class="img-pizza" src="web/images/pizza4.jpg"/>
 							<div class="description">
 								<p class="name-product">Frango Catupiry</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
-								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
+								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+								<a class="buy" href="">COMPRAR</a>	
+								<span class="preco">R$ 39,00</span>								
 							</div>
 						</div>
 					</div>
@@ -33,9 +33,9 @@
 							<img class="img-pizza" src="web/images/pizza5.jpg"/>
 							<div class="description">
 								<p class="name-product">Calabresa</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
-								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
+								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+								<a class="buy" href="">COMPRAR</a>	
+								<span class="preco">R$ 39,00</span>								
 							</div>
 						</div>
 					</div>
@@ -45,9 +45,9 @@
 							<img class="img-pizza" src="web/images/pizza3.jpg"/>
 							<div class="description">
 								<p class="name-product">Mexicana</p>
-								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>	
+								<p class="ingredientes-produto">Mussarela, tomate seco, azeitonas e folhas de majerição.</p>
+								<a class="buy" href="">COMPRAR</a>	
 								<span class="preco">R$ 39,00</span>
-								<div class="preco-line"></div>
 							</div>
 						</div>
 					</div>

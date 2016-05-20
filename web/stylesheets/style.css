@@ -2338,11 +2338,163 @@ a:hover{
 
 .footer{
 	width: 100%;
-	height: 300px;
+	min-height: 380px;
 	background: #d91d1d;
 	color: #FFF;
+	padding-top: 60px;
 }
 
 .content{
 	padding-bottom: 120px;
+}
+
+/*Sign */
+
+.sign {
+  float:left;
+  width: 100%;
+  border: 5px solid #fff;
+  padding: 0.15em 1em .65em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.sign p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0,0,0,1);
+  margin: 0 auto;
+  line-height: normal;
+}
+
+.sign:before {
+  position: absolute;
+  content: "";
+  border: 2px dotted #444;
+  border-bottom: none;
+  border-left: none;
+  width: 100px;
+  height: 100px;
+  top: -55px;
+  left: 50%;
+  margin-left: -50px;
+  transform: rotate(-45deg);
+  border-radius: 0 5px 0 0;
+}
+
+.sign:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -75px;
+  left: 50%;
+  margin-left: -4px;
+  background: #4c4c4c;
+}
+
+
+
+.list-footer{
+	list-style: none;
+	padding: 0px !important;
+}
+
+
+
+.footer-widget-area a:not(.button):not(.ui-slider-handle),
+.sidebar a:not(.button):not(.ui-slider-handle) {
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.widget {
+	padding-bottom: 50px;
+}
+
+.widget_title {
+	margin-bottom: 25px;
+	padding-bottom: 5px;
+	font-weight:400;
+	font-size: 20px;
+	line-height: 30px;
+	position:relative;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+
+	color: #FFF;
+}
+
+.footer .widget_title {
+	color: #fff;
+	font-size: 14px;
+}
+
+.widget_title:after,
+.widget_title:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	width: 70px;
+	background-color: #FFF;
+	height: 1px;
+}
+
+.widget_title:before {
+	bottom: -4px;
+	left: 10px;
+	background-color: #FFF;
+}
+
+.border-footer {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.footer > .container{
+	padding-bottom: 55px;
+}
+
+.copyrights {
+	text-align: center;
+	font-size: 14px;
+	line-height: 60px;
+}
+
+.list-footer li {
+	    font-family: 'Montserrat';
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+}
+
+.social-links{
+	margin-top: 15px;
+}
+
+.social-links a {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	text-align: center;
+	color: #999 !important;
+	border:1px solid #e0e0e0;
+	margin: 0 4px 3px 0;
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.social-links a {
+	color: #ffffff !important;
+	border:1px solid #ffffff;
 }

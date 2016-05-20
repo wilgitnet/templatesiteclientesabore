@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/index_controller.php'); ?>
 
-<div class="content" style="min-height: 1800px;">
+<div class="content">
 
 	<div class="container">
 		<div class="row">
@@ -97,7 +97,7 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						
+
 					</div>
 				</div>
 			</div>

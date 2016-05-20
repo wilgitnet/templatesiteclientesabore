@@ -1,3 +1,8 @@
+<div class="footer">
+
+</div>
+
+
     <!-- Javascript -->
     <script type="text/javascript" src="web/javascript/jquery.min.js"></script>
     <script type="text/javascript" src="web/javascript/bootstrap.min.js"></script>

@@ -228,6 +228,7 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
     $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');                
     if($dadosDominio['success'] && !empty($dadosDominio['dados']['Cliente']['id']))
     {        
+        
         $_SESSION['nome_fantasia']      = $dadosDominio['dados']['Cliente']['nome_fantasia'];
         $_SESSION['id_cliente']         = $dadosDominio['dados']['Cliente']['id'];
         $_SESSION['logo']               = $dadosDominio['dados']['Cliente']['logo'];                
@@ -244,8 +245,11 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
         $_SESSION['menu']               = $dadosDominio['dados']['CategoriaArray'];
         $_SESSION['valor_km_entrega']   = $dadosDominio['dados']['Cliente']['valor_km_entrega'];
         $_SESSION['img_quem_somos']     = $dadosDominio['dados']['Cliente']['img_quem_somos'];
+        $_SESSION['banner_info']        = $dadosDominio['dados']['banner_info'];
+        $_SESSION['footer']             = $dadosDominio['dados']['Cliente']['footer'];
+        $_SESSION['endereco']           = $dadosDominio['dados']['Cliente']['endereco'].', '.$dadosDominio['dados']['Cliente']['numero'].' - '.$dadosDominio['dados']['Cliente']['cidade'];
 
-        
+
         if(!empty($dadosDominio['dados']['Cliente']['menu_principal']))
         {
             $_SESSION['menu_principal'] = $dadosDominio['dados']['Cliente']['menu_principal'];        
@@ -277,14 +281,26 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
     }   
 }
 
+
+##sempre buscar se pizzaria esta aberta
+$StatusSite = GoCURL(array('id_cliente'=>$_SESSION['id_cliente']), 'cliente/open-close');                
+
 if(!empty($_SESSION['pedido']))
 {
 	if(count($_SESSION['pedido']['item']) == 0)
 	{		
 		unset($_SESSION['pedido']);
 	}
+
+    if($StatusSite['dados']['Cliente']['open'] == 'N')
+    {
+        unset($_SESSION['pedido']);
+        header('LOCATION:'.$host);   
+    }
 }
 //testar funcionalidades em outras plataformas
-//$browser_t = 'smartphone';
+$browser_t = 'web';
 
-	?>
+//echo '<PRe>';print_r($_SESSION);exit;
+
+?>

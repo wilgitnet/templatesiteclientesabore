@@ -1,38 +1,44 @@
 <?php if(!empty($_SESSION['pedido'])){ ?>					
+<table class="meus-pedidos mgT50">
+	<thead>
+		<tr>
+			<th>MEUS PEDIDOS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?PHP foreach($_SESSION['pedido']['item'] as $item){ ?>
+			<tr>
+				<td><?PHP echo $item['Produto']['nome']; ?></td>
+			</tr>
+		<?PHP } ?>
+		<tr>
+			<td><p class="sub-titulo-carrinho">TOTAL: </p>
+				<span class="carrinho-valor">
+					R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?>
+				</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<a class="finalizar-pedido" href="<?PHP echo $host; ?>/carrinho">Ver Pedido Completo</a>	
+<?PHP }else{ ?>
 
-	<h3>Pedidos</h3>
-	<h4>
-		<?PHP 
-			if(!empty($_SESSION['pedido']['item'][0])) 				
-				echo $_SESSION['pedido']['item'][0]['Produto']['nome']."<BR>"; 
-		?>		
-		<?PHP 
-			if(!empty($_SESSION['pedido']['item'][1])) 				
-				echo $_SESSION['pedido']['item'][1]['Produto']['nome']."<BR>"; 
-		?>		
-		<?PHP 
-			if(!empty($_SESSION['pedido']['item'][2])) 				
-				echo $_SESSION['pedido']['item'][2]['Produto']['nome']."<BR>"; 
-		?>
-	</h4>	
-	<p>Entrega:  
-		<span id="valor_cep">
-			R$ 		
-			<?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?>
-		</span>
-		<span id="loading_cep_valor" style="display: none">
-			Calculando<img src="images/loading.gif" width="25" height="25" align="right">
-		</span>
-	</p>
-	<h5>Pedido:  <span>R$ <?PHP echo number_format($_SESSION['pedido']['total'], 2, ',', '.'); ?></span> </h5>
-	<h6><a href="<?PHP echo $host; ?>/carrinho">Ver Completo</a></h6>
-	<h6><a href="pagamento.php">Finalizar</a></h6>
+<table class="meus-pedidos mgT50">
+	<thead>
+		<tr>
+			<th>MEUS PEDIDOS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Seu carrinho está vazio</td>
+		</tr>
+		<tr>
+			<td><p class="sub-titulo-carrinho">TOTAL: </p><span class="carrinho-valor">R$ 0,00</span></td>
+		</tr>
+	</tbody>
+</table>
+<a class="finalizar-pedido" href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">REALIZAR PEDIDO</a>	
 
-<?php }else{ ?>
+<?PHP } ?>
 
-	<h3>Pedidos</h3>
-	<h4>Seu carrinho esta vazio</h4>					
-	<p>Total  <span>R$0:00</span></p>					
-	<h6><a href="<?PHP echo $host; ?>/categoria">Realizar Pedido</a></h6>							
-
-<?php } ?>

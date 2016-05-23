@@ -2610,3 +2610,104 @@ a:hover{
 .pdB60 {
 	padding-bottom: 60px !important;
 }
+	.nz-breadcrumbs {
+		padding: 7px 0;
+		position: relative;
+		background-color: #fff;
+		text-align: right;
+		z-index: 79;
+	}
+
+	.nz-breadcrumbs {
+		background-color: #f0eee9;
+	}
+
+	.header-img + .nz-breadcrumbs:after {
+	    background: url(../images/zigzag_top_grey.png) repeat-x left bottom;
+	}
+
+	.nz-breadcrumbs > .container > a {
+		color: #999;
+		text-transform: uppercase;
+		font-size: 12px;
+		padding-right: 20px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		position: relative;
+		font-family: Montserrat;
+	}
+
+		.nz-breadcrumbs > .container > span {
+		color: #999;
+		text-transform: uppercase;
+		font-size: 12px;
+		padding-right: 20px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		position: relative;
+		font-family: Montserrat;
+	}
+
+		.nz-breadcrumbs > .container > i {
+		padding-right: 20px;
+		color: #d91d1d;
+	}
+
+	.nz-breadcrumbs a {
+		color: #999 !important;
+	} 
+
+	.nz-breadcrumbs > .container > *:after {
+		left: 8px;
+	}
+
+	.nz-breadcrumbs > .container > :first-child:before,
+	.nz-breadcrumbs > .container > :first-child:after {
+		display: none;
+	}
+
+	.nz-breadcrumbs:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 8px;
+		position: absolute;
+		left: 0;
+		bottom: -8px;
+		background: url(../images/zigzag_top.png) repeat-x left bottom;
+	}
+
+.content-checkout {
+	background: #FFF !important;
+}
+
+.table-cart {
+	width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.table-cart tr {	
+    border: 1px solid #e1e1e1;
+}
+
+.table-cart thead {
+	line-height: 50px;
+}
+
+.product-type ul{
+	list-style: none;
+    width: 150px;
+    margin: 0px !important;
+    padding: 0px 0px 0px 50px !important;
+}
+
+.product-type {
+	width: 150px;
+}
+
+.product-type-th {
+	padding-left: 50px;
+}

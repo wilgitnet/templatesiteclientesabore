@@ -13,8 +13,6 @@ $banner2 = $_SESSION['banner2'];
 */
 
 
-@import url("flexslider.css");
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 *,
 *:before,
@@ -2686,6 +2684,7 @@ a:hover{
 
 .content-checkout {
     background: #FFF !important;
+    padding-bottom: 100px;
 }
 
 .table-cart {
@@ -2693,7 +2692,7 @@ a:hover{
     max-width: 100%;
     border-collapse: collapse;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .table-cart tr {    
@@ -2702,6 +2701,8 @@ a:hover{
 
 .table-cart thead {
     line-height: 50px;
+    font-family: 'Montserrat';
+    font-size: 13px;
 }
 
 .product-type ul{
@@ -2717,4 +2718,99 @@ a:hover{
 
 .product-type-th {
     padding-left: 50px;
+}
+
+
+.product-remove-th {
+    width: 130px;
+    text-align: center;
+}
+
+.product-remove {
+    text-align: center;
+}
+
+.product-thumbnail a img {
+    padding: 5px;
+}
+
+.options-cart {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    margin-top: -1px;
+    padding-left: 50px;
+}
+
+.options-cart h6 {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    margin-right: 50px;
+    font-weight: bold;
+    color: #777;
+}
+
+.options-cart p {
+    display: inline-block;
+}
+
+.cart-next {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    margin-top: -1px;
+    padding-left: 50px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.cart-next h5 {
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+}
+
+.cart-next span{
+    color: #d91d1d;
+    margin-left: 20px;
+}
+
+.list-footer li a  {
+    color: #FFF !important;
+}
+
+.limpar-carrinho {
+    float: left;
+}
+
+.dados-de-entrega {
+    float: right;
+    background: #6dab3c !important;
+    border: 1px solid #6dab3c !important;
+}
+
+.dados-de-entrega:hover {
+    color: #6dab3c !important;
+}
+
+.cart-header h4 {
+    font-size: 19px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.cart-header select{
+    float: right;
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    height: 45px;
 }

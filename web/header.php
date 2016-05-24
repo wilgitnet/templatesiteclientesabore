@@ -18,7 +18,7 @@
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="<?PHP echo $host; ?>/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="<?PHP echo $host; ?>/web/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
 
 </head>
 

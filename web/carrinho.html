@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8">
+   <title>SaboreWeb</title>
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="Allan Santos">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS  -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+   <!-- Fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body> 
+
+    <!-- HEADER SEM BANNER -->
+    <div id="top-slider" class="header-img parallax">
+        <div class="overlay others-pages"></div>
+        <header id="header" class="header header-sticky">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="span2">
+                            <div id="logo" class="logo">
+                                <a href="index.php">
+                                    <img class="logo-img" src="images/logoteste1.png" alt="Pizzaria" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="span10">
+                            <div class="btn-menu"></div><!-- Mobile menu button -->
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li><a class="active" href="#top">Início</a></li>
+                                    <li><a href="#">Pedidos</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Sobre</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Cadastro</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <!-- <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
+                                    <li class="img-name-logado"><a href="#">Allan Santos</a></li> -->
+                                 </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- HEADER SEM BANNER -->
+
+    <div class="nz-breadcrumbs">
+        <div class="container">
+            <a href="">Inicio</a>
+            <i class="fa fa-angle-double-right"></i>
+            <span>Carrinho</span>
+        </div>
+    </div>
+
+    
+    <div class="content content-checkout pdB60">
+        <div class="container" style="min-height: 900px;">
+
+
+            <table class="table-cart" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="product-type-th">Tipo</th>
+                        <th class="product-thumbnail-th"></th>
+                        <th class="product-name-th">Item</th>
+                        <th class="product-price-th">Preço</th>
+                        <th class="product-remove-th">Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="cart_item">
+
+                        <td class="product-type">
+                            <ul>
+                                <li><input type="checkbox"> Meia</li>
+                                <li><input type="checkbox"> Inteira</li>
+                            </ul>       
+                        </td>
+
+                        <td class="product-thumbnail">
+                            <a href="#"><img width="120" src="<?PHP echo $host; ?>images/pizza4.jpg"></a>                            
+                        </td>
+
+                        <td class="product-name">
+                            <a href="">Pizza Frango com catupiry</a>                    
+                        </td>
+
+                        <td class="product-price">
+                            <span class="amount">R$ 39,00</span>                   
+                        </td>
+
+                        <td class="product-remove">
+                            <a href="#">×</a>
+                        </td>
+                    </tr>
+
+                    <tr class="cart_item">
+
+                        <td class="product-type">
+                            <ul>
+                                <li><input type="checkbox"> Meia</li>
+                                <li><input type="checkbox"> Inteira</li>
+                            </ul>       
+                        </td>
+
+                        <td class="product-thumbnail">
+                            <a href="#"><img width="120" src="images/pizza4.jpg"></a>                            
+                        </td>
+
+                        <td class="product-name">
+                            <a href="">Pizza Frango com catupiry</a>                    
+                        </td>
+
+                        <td class="product-price">
+                            <span class="amount">R$ 39,00</span>                   
+                        </td>
+
+                        <td class="product-remove">
+                            <a href="#">×</a>
+                        </td>
+                    </tr>
+                    <tr class="cart_item">
+
+                        <td class="product-type">
+                            <ul>
+                                <li><input type="checkbox"> Meia</li>
+                                <li><input type="checkbox"> Inteira</li>
+                            </ul>       
+                        </td>
+
+                        <td class="product-thumbnail">
+                            <a href="#"><img width="120" src="images/pizza4.jpg"></a>                            
+                        </td>
+
+                        <td class="product-name">
+                            <a href="">Pizza Frango com catupiry</a>                    
+                        </td>
+
+                        <td class="product-price">
+                            <span class="amount">R$ 39,00</span>                   
+                        </td>
+
+                        <td class="product-remove">
+                            <a href="#">×</a>
+                        </td>
+                    </tr>                    
+
+                </tbody>
+            </table>
+            <div class="options-cart">
+                <h6>Opções:</h6><p><input type="checkbox"> Borda recheada</p>
+                 
+            </div>    
+
+           <!--  <input type="submit" class="button" name="update_cart" value="Update Cart">  -->
+
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container border-footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="widget_title">SOBRE</h6>
+                    <ul class="list-footer">
+                        <li>A pizzaria tem mais de 21 anos de tradição..</li>
+                        <li><div class="social-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>                         
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="widget_title">CÁRDAPIO</h6>
+                    <ul class="list-footer">
+                        <li>PIZZAS</li>
+                        <li>SOBREMESSAS</li>
+                        <li>BEBIDAS</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="widget_title">LINKS</h6>
+                    <ul class="list-footer">
+                        <li>MEUS PEDIDOS</li>
+                        <li>MINHA CONTA</li>
+                        <li>FALE CONOSCO</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="widget_title">INFORMAÇÕES</h6>
+                    <ul class="list-footer">
+                        <li>Horário de atendimento:<br/>TER A DOM - 18H A 01H</li>
+                        <li>Endereço:<br/>
+                        Rua da Sofrência, 11</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyrights">© 2016 Pizzaria Big Boca — All rights reserved. Developed by Saboreweb</p>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="javascript/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+</html>

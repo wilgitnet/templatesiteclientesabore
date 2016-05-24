@@ -7,7 +7,7 @@
     {
       location.href="<?PHP echo $host; ?>/carrinho/validar-pedido"
     }
-      function returncardapio()
+    function returncardapio()
     {
       location.href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>"
     }

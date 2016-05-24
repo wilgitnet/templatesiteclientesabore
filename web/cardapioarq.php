@@ -1,10 +1,16 @@
-<script type="text/javascript">
-	function hrefH5(placeholder)
-	{
-		location.href="<?PHP echo $host; ?>/categoria/"+placeholder;
-	}	
+<script>
+	function GoMenu(categoria)
+    {    	
+      location.href="<?PHP echo $host; ?>/categoria/"+categoria;
+    }
 </script>
-<h3>Cardápio</h3>
-<?PHP foreach ($_SESSION['menu'] as $categoriaArray) { ?>
-	<h5 onclick="hrefH5('<?PHP echo $categoriaArray['Categorias']['placeholder']; ?>')"><?PHP echo $categoriaArray['Categorias']['nome']; ?></h5><hr>
-<?PHP } ?>	
+<h2 class="sub-title-home">CÁRDAPIO</h2>
+<div class="nz-separator"></div>
+<?PHP foreach($_SESSION['menu'] as $menu){ ?>
+	<div class="acordion">
+		<span class="opcoes-cardapio" onclick="GoMenu('<?PHP echo $menu['Categorias']['placeholder'] ?>');">
+			<?PHP echo $menu['Categorias']['nome']; ?>
+		</span>
+		<span class="arrow-acordion"></span>
+	</div>
+<?PHP } ?>				

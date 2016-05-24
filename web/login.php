@@ -1,87 +1,39 @@
-
-<?php require_once('header.php'); ?>
-<?php require_once('app/controller/login_controller.php'); ?>
-<script src="<?PHP echo $host; ?>/js/login.js"></script>
-<script type="text/javascript">
-    $( document ).ready(function() {
-        $("#usuario").focus();
-    });
-</script>
-
-
-<?PHP if($part_url[2] == 'esqueci-minha-senha') {?>
-    <div class="container">
-        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login/esqueci-minha-senha">
-           <div class="feedback" id="geral">                
-            <h1>Digite seu email para realizar troca de senha</h1>
-            <?php 
-                if($error)
-                {
-                    echo "<div class='alert'>
-                          <strong>Ops! </strong>{$mensagem}.
-                        </div>
-                        ";            
-                }
-
-                if($success)
-                {
-                    echo "<div class='success'>
-                          {$mensagem}.
-                        </div>
-                        ";            
-                }
-            ?>
-                <br>
-                <div>
-                    <input type="text" value=""  placeholder="Email" name="email_troca" id="email_troca" />
-
-                    <input type="hidden" name="submit_email" value="true">
-                <br><br>                                        
-                    <div>
-                    <input type="submit" value="Entrar"><br>                  
-                    </div>                            
-                </div>
-            </form>
+ <?php require_once('header.php'); ?> 
+    <div class="nz-breadcrumbs">
+        <div class="container">
+            <a href="">Inicio</a>
+            <i class="fa fa-angle-double-right"></i>
+            <span>Login</span>
         </div>
     </div>
-<?PHP }else{?>
 
-    <div class="container">
-        <form id="formLogin" method="post" action="<?PHP echo $host; ?>/login">
-    	   <div class="feedback" id="geral">                
-            <h1>Entre utilizando sua conta</h1>
-            <?php 
-                if($error)
-                {
-                    echo "<div class='alert'>
-                          <strong>Ops! </strong>{$mensagem}.
-                        </div>
-                        ";            
-                }
-            ?>
-                <br>
-            	<div>
-                    <input type="text" value=""  placeholder="Email somente" name="usuario" id="usuario" />
-                <br><br>
-                    <input type="password"  value="" placeholder="Senha" name="senha" id="senha" />
-                <br>
-                    <input type="hidden" value="true" name="submit">
-                    <a id="p1" href="<?PHP echo $host; ?>/registro">Ainda não tem sua conta ? Clique para registrar-se</a><br><br>
-                    <div>
-                    <input type="submit" value="Entrar"><br>
-                    <a id="p1" href="<?PHP echo $host; ?>/login/esqueci-minha-senha">Esqueceu sua senha ?</a>
-                    </div>                            
-                </div>
-            </form>
+    
+    <div class="content content-checkout">
+        <div class="container">
+
+            <div class="login">
+                <h4>SIGN IN</h4>
+                <form>
+                    <label>Usuário ou e-mail*</label>
+                    <input type="text" />
+                    <label>Senha*</label>
+                    <input type="password" />
+                    <input type="checkbox" class="remember" checked="checked" /><span class="text-remember">Lembrar-me</span>
+                    <a href="#" class="request-password">Esqueceu sua senha?</a> 
+                    <input type="button" class="button" value="Entrar" />
+                </form>
+
+                <!-- MENSAGEM DE ERRO COMENTADO AQUI EM BAIXO -->
+
+                <!-- <div class="alert error">
+                    <div class="alert-message">Senha incorreta, tente novamente.
+                </div><span class="close-alert">X</span></div> -->
+                
+                <h5>Ainda não tem conta? <a href="#">Registre-se.</a></h5>
+
+                
+            </div>
+             
         </div>
     </div>
-<?PHP } ?>
-
-    <div class="clear"></div>
-</div>
-</div>
-	<div class="clear"> </div>
-    </div>
-
 <?php require_once('footer.php'); ?>
-

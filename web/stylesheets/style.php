@@ -12,7 +12,7 @@ $banner2 = $_SESSION['banner2'];
   * Author URI: http://www.allandss.com.br
 */
 
-
+@import url("flexslider.css");
 
 *,
 *:before,
@@ -2813,4 +2813,105 @@ a:hover{
     width: 200px;
     text-align: center;
     height: 45px;
+}
+
+.product-thumbnail-th {
+    width: 150px;
+}
+
+.login {
+    max-width: 400px;
+    margin: 120px auto;
+}
+
+.login input {
+    width: 100%;
+}
+
+
+.login label {
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+.login .button {
+    margin-top: 15px;
+}
+
+.login h4 {
+    color: #d91d1d;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login h5 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #767676;
+}
+
+.login h5 a{
+    color: #d91d1d !important;
+}
+
+.login h5 a:hover{
+    color: #d91d1d !important;
+}
+
+.remember{
+    width: 15px !important;
+    margin-top: 15px !important;
+    display: inline-block;
+    float: left;
+}
+
+.text-remember {
+    float: left;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.request-password {
+    float: right;
+    margin-top: 10px;
+}
+
+.request-password:hover {
+color: #d91d1d;
+}
+
+.alert {
+    padding:20px 70px 20px 20px;
+    position: relative;
+    border-width:1px;
+    border-style: solid;
+    margin-bottom: 25px;
+    border-radius: 0px !important;
+    margin-top: 15px;
+}
+
+.alert.error {
+    border-color:#e1a197;
+    background: #fcd4cb;
+    color: #8e4438;
+}
+
+.alert.error .close-alert {
+    color: #8e4438;
+}
+.alert .close-alert {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
 }

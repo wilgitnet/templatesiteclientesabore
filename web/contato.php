@@ -9,11 +9,7 @@
             if(!empty($mensagem) && !$error)
             {
                 echo "<h3 class='h3St'>{$mensagem}</h3>";
-            }
-            else
-            {
-                echo "<br>";
-            }
+            }           
 
             if($error)
             {
@@ -23,26 +19,54 @@
             }
 
         ?>
-        
-        <h1>Entre em contato</h1>        
-        <form id="formularioContato" method="post" action="<?PHP echo $host; ?>/contato">
-        	<div>
-            	<span><input type="text" id="nome" value="" name="nome" placeholder="Nome" /></span>
+        <div class="content pdB60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title-contact">ENTRE EM CONTATO</h2>
+                </div>
             </div>
-            <div>
-            	<span><input type="text" value="" name="email" placeholder="Email" /></span>
-            </div>                        
-        	<div>
-            	<span><textarea name="mensagem" placeholder="O que deseja nos falar?"></textarea></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-send-message">
+                        <h2>ENVIE UMA MENSAGEM</h2>
+                        <p>Fale conosco, teremos o prazer em atendê-lo(a).</p>
+                    </div>
+                </div>  
             </div>
-        	<div>
-            	<span><input type="submit" value="Enviar" /></span>
-            </div>
-            <input type="hidden" value="<?php echo $cliente['dados']['Cliente']['email']; ?>" name="email_to"  />
-        </form>
+            <div class="row">
+                <div class="col-md-6">                    
+                    <form id="formularioContato" class="contact-form" method="post" action="<?PHP echo $host; ?>/contato">
+
+                        <input type="text" placeholder="Nome" id="nome" value="" name="nome" title="* Por favor informe o seu nome.">
+
+                        <input type="text" placeholder="E-mail" name="email" title="* Por favor, informe um endereço de e-mail válido.">
+
+                        <input type="text" placeholder="Telefone" name="telefone">
+
+                        <textarea placeholder="Mensagem" name="mensagem" title="* Por favor, informe sua mensagem."></textarea>
+
+                        <input class="button-contact-form" type="submit" value="ENVIAR">
+
+                    </form>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="info-contact pdL70">
+                        <h2><?PHP echo $_SESSION['nome_fantasia']; ?></h2>
+                        <h4>ENDEREÇO:</h4>
+                        <p><?PHP echo $_SESSION['endereco']; ?></p>
+                        <h4>HORÁRIO DE ATENDIMENTO:</h4>
+                        <p><?PHP echo $_SESSION['funcionamento'][0]; ?></p>
+                        <p><?PHP echo $_SESSION['funcionamento'][1]; ?></p>
+                    </div>
+                </div>
+            </div>             
+        </div>
     </div>
-    <div class="map">
-        <iframe width="350" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.br/maps?q=<?PHP echo $endereco; ?>,%20Brasil&output=embed"></iframe>        
+       
+    <div class="maps">
+        <iframe width="1345" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.br/maps?q=<?PHP echo $endereco; ?>,%20Brasil&output=embed"></iframe>        
     </div>
     <div class="clear"></div>
 </div>

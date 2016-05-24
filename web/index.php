@@ -1,11 +1,6 @@
 <?php require_once('header.php'); ?>
 <?php require_once('app/controller/index_controller.php'); ?>
-<script>
-	function GoMenu(categoria)
-    {    	
-      location.href="<?PHP echo $host; ?>/categoria/"+categoria;
-    }
-</script>
+
 <div class="content">
 
 	<div class="container">
@@ -81,16 +76,10 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-				<h2 class="sub-title-home">CÁRDAPIO</h2>
-				<div class="nz-separator"></div>
-				<?PHP foreach($_SESSION['menu'] as $menu){ ?>
-					<div class="acordion">
-						<span class="opcoes-cardapio" onclick="GoMenu('<?PHP echo $menu['Categorias']['placeholder'] ?>');">
-							<?PHP echo $menu['Categorias']['nome']; ?>
-						</span>
-						<span class="arrow-acordion"></span>
-					</div>
-				<?PHP } ?>				
+				
+				<?PHP
+					 require_once('cardapioarq.php');
+				 ?>
 
 				<?PHP 
 					require_once('pedido.php');					

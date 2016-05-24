@@ -11,20 +11,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- CSS  -->
-   <link rel="stylesheet" type="text/css" href="web/stylesheets/bootstrap.css" >
-   <link rel="stylesheet" type="text/css" href="web/stylesheets/style.php">
+   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/bootstrap.css" >
+   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/style.php">
 
    <!-- Fonts -->
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="web/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="<?PHP echo $host; ?>/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
 
 </head>
 
 <body> 
+    <?PHP if($banner){ ?>
     <div id="top-slider" class="parallax-bg1 parallax">
-        <div class="overlay"></div>
+    <div class="overlay"></div>
 
         <header id="header" class="header header-sticky">
             <div class="header-wrap">
@@ -110,6 +111,45 @@
             </div>
         </div>
     </div>
+<?PHP }else{ ?>
+
+ <!-- HEADER SEM BANNER -->
+    <div id="top-slider" class="header-img parallax">
+        <div class="overlay others-pages"></div>
+        <header id="header" class="header header-sticky">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="span2">
+                            <div id="logo" class="logo">
+                                <a href="<?PHP echo $host; ?>">
+                                    <img class="logo-img" src="<?PHP echo $_SESSION['logo']; ?>" alt="Pizzaria" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="span10">
+                            <div class="btn-menu"></div><!-- Mobile menu button -->
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li><a href="<?PHP echo $host; ?>">Início</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/pedidos">Pedidos</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardapio</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/contato">Contato</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/login">Login</a></li>
+                                    <!-- <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
+                                    <li class="img-name-logado"><a href="#">Allan Santos</a></li> -->
+                                 </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- HEADER SEM BANNER -->
+<?PHP } ?>
 
 
 

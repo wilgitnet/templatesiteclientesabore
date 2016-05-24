@@ -2,6 +2,7 @@
 session_start();
 header("Content-type: text/css");
 $banner = $_SESSION['banner1'];
+$banner2 = $_SESSION['banner2'];
 ?>
 
 /**
@@ -580,27 +581,8 @@ input[type="color"],
 
 .parallax-bg1 { background-image: url(<?PHP echo $banner; ?>); height: 500px; }
 
-.parallax-bg2 { background-image: url(../images/parallax-bg2.jpg); }
+.header-img { background-image: url(<?PHP echo $banner2; ?>); height: 150px; }
 
-.parallax-bg3 { background-image: url(../images/parallax-bg3.jpg); }
-
-.parallax-bg4 { background-image: url(../images/parallax-bg4.jpg); }
-
-.parallax-bg5 { background-image: url(../images/parallax-bg5.jpg); }
-    
-.parallax-bg6 { background-image: url(../images/parallax-bg6.jpg); }
-
-.parallax-bg7 { background-image: url(../images/parallax-bg7.jpg); }
-
-.parallax-bg8 { background-image: url(../images/parallax-bg8.jpg); }
-
-.parallax-bg9 { background-image: url(../images/parallax-bg9.jpg); }
-
-.parallax-bg10 { background-image: url(../images/parallax-bg10.jpg); }
-
-.parallax-bg11 { background-image: url(../images/parallax-bg11.jpg); background-position: center; }
-
-.parallax-bg12 { background-image: url(../images/parallax-bg12.jpg); }
 
 /* Fullscreen
 -------------------------------------------------------------- */
@@ -625,6 +607,10 @@ input[type="color"],
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
     filter: alpha(opacity=75);
     opacity: 0.75;
+}
+
+.others-pages {
+    height: 150px !important;
 }
 
 #top-slider .content {
@@ -2503,4 +2489,232 @@ a:hover{
 .social-links a {
     color: #ffffff !important;
     border:1px solid #ffffff;
+}
+
+.more-buy-carpadio{
+    background: #FFF;
+    box-shadow: 0px 0px 1px 1px #ddd;
+    margin-bottom: 20px;
+}
+
+.pdL0{
+    padding-left: 0px !important;
+}
+
+.preco-two {
+    color: #dc3522;
+    font-family: 'Montserrat';
+    float: left;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.buy-two {
+    float: right;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #FFF;
+    background-color: #d91d1d;
+    padding: 7px 14px;
+}
+
+.comprar {
+    margin-top: 20px;
+}
+
+.img-product-cardapio{
+    height: 170px;
+}
+
+.contact-form input {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+}
+
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Raleway';
+}
+
+.button-contact-form{
+    width: 200px !important;
+}
+
+.title-send-message h2 {
+    font-size: 17px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+.title-send-message p {
+    font-family: 'Raleway';
+}
+
+.title-info-contact {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.info-contact h2 {
+    font-size: 17px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+}
+
+.info-contact h4 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.info-contact p {
+    font-family: 'Raleway';
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+
+.pdL70 {
+    padding-left: 70px;
+}
+
+.title-contact {
+    text-align: left;
+    color: #d91d1d;
+    font-weight: bold;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+
+
+.mgT0 {
+    margin-top: 0px !important;
+}
+
+.maps {
+    height: 250px;
+    width: 100%;
+    background: #FFF;
+}
+
+.pdB60 {
+    padding-bottom: 60px !important;
+}
+    .nz-breadcrumbs {
+        padding: 7px 0;
+        position: relative;
+        background-color: #fff;
+        text-align: right;
+        z-index: 79;
+    }
+
+    .nz-breadcrumbs {
+        background-color: #f0eee9;
+    }
+
+    .header-img + .nz-breadcrumbs:after {
+        background: url(../images/zigzag_top_grey.png) repeat-x left bottom;
+    }
+
+    .nz-breadcrumbs > .container > a {
+        color: #999;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-right: 20px;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        position: relative;
+        font-family: Montserrat;
+    }
+
+        .nz-breadcrumbs > .container > span {
+        color: #999;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-right: 20px;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        position: relative;
+        font-family: Montserrat;
+    }
+
+        .nz-breadcrumbs > .container > i {
+        padding-right: 20px;
+        color: #d91d1d;
+    }
+
+    .nz-breadcrumbs a {
+        color: #999 !important;
+    } 
+
+    .nz-breadcrumbs > .container > *:after {
+        left: 8px;
+    }
+
+    .nz-breadcrumbs > .container > :first-child:before,
+    .nz-breadcrumbs > .container > :first-child:after {
+        display: none;
+    }
+
+    .nz-breadcrumbs:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        background: url(../images/zigzag_top.png) repeat-x left bottom;
+    }
+
+.content-checkout {
+    background: #FFF !important;
+}
+
+.table-cart {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.table-cart tr {    
+    border: 1px solid #e1e1e1;
+}
+
+.table-cart thead {
+    line-height: 50px;
+}
+
+.product-type ul{
+    list-style: none;
+    width: 150px;
+    margin: 0px !important;
+    padding: 0px 0px 0px 50px !important;
+}
+
+.product-type {
+    width: 150px;
+}
+
+.product-type-th {
+    padding-left: 50px;
 }

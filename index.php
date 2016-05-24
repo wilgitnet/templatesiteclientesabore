@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  */
 include "app/config.php";
 include "app/detect.php";
-$banner = true;
+$banner = false;
 
 if ($page_name=='') {
 	$banner = true;
@@ -19,53 +19,41 @@ elseif ($page_name=='home') {
 	$banner = true;
 	include $browser_t.'/index.php';
 	}
-elseif ($page_name=='quem-somos') {
-	$banner = true;
+elseif ($page_name=='quem-somos') {	
 	include $browser_t.'/about.php';
 	}
-elseif ($page_name=='contato') {
-	$banner = true;
+elseif ($page_name=='contato') {	
 	include $browser_t.'/contato.php';
 	}
-elseif ($page_name=='login') {
-	$banner = false;	
+elseif ($page_name=='login') {	
 	include $browser_t.'/login.php';
 	}
-elseif ($page_name=='compra') {
-	$banner = false;
+elseif ($page_name=='compra') {	
 	include $browser_t.'/compra.php';
 	}
-elseif ($page_name=='registro') {
-	$banner = false;
+elseif ($page_name=='registro') {	
 	include $browser_t.'/registro.php';
 	}
-elseif ($page_name=='categoria') {
-	$banner = false;
+elseif ($page_name=='categoria') {	
 	include $browser_t.'/cardapio.php';
 	}	
-elseif ($page_name=='historico') {
-	$banner = false;
+elseif ($page_name=='historico') {	
 	include $browser_t.'/acompanhamento.php';
 	}	
-elseif ($page_name=='meus-dados') {
-	$banner = false;
+elseif ($page_name=='meus-dados') {	
 	include $browser_t.'/meusdados.php';
 	}	
-elseif ($page_name=='acompanhamento') {
-	$banner = false;
+elseif ($page_name=='acompanhamento') {	
 	include $browser_t.'/acompanhamentopedido.php';
 	}	
-elseif ($page_name=='carrinho') {
-	$banner = false;
+elseif ($page_name=='carrinho') {	
 	include $browser_t.'/carrinho.php';
 	}
 
-elseif ($page_name=='trocar-senha') {
-	$banner = false;
+elseif ($page_name=='trocar-senha') {	
 	include $browser_t.'/senha.php';
 	}
 elseif ($page_name=='carrinho-ajax') {
-	$banner = false;
 	include $browser_t.'/carrinho_ajax.php';
 	}
 else

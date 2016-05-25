@@ -2915,3 +2915,161 @@ color: #d91d1d;
     text-align: center;
     border-radius: 3px;
 }
+
+.register h4 {
+    font-size: 22px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.register p {
+    font-size: 15px;
+}
+
+.register p a{
+    color: #d91d1d;
+}
+
+.register label {
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+.register input {
+    width: 100%;
+    height: 40px;
+}
+
+.register select {
+    width: 100%;
+    height: 40px;
+}
+
+.required {
+    color: #d91d1d;
+}
+
+.register input[type="checkbox"] {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    float: left;
+    margin-left: 1px;
+}
+
+.register input[type="radio"] {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    float: left;
+    margin-left: 1px;
+}
+
+
+.options-checkbox {
+    float: left;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.options-radio {
+    float: left;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.newsletter-register {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.register input[type="button"] {
+    height: 50px;
+    width: 300px;
+}
+
+.mT30 {
+    margin-top: 30px !important;
+}
+
+.title-data-delivery {
+    font-size: 19px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.data-delivery label {
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+.data-delivery input[type="text"] {
+    width: 90%;
+}
+
+.label-number {
+    width: 34% !important;
+    display: inline-block !important;
+}
+
+.input-number {
+    width: 30% !important;
+}
+
+.label-complement {
+    width: 56% !important;
+    display: inline-block !important;
+    margin-left: 4%;
+}
+
+.input-complement {
+    width: 56% !important;
+    margin-left: 4%;
+}
+
+
+
+.btn-next {
+    float: right;
+    background: #6dab3c !important;
+    border: 1px solid #6dab3c !important;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.btn-next:hover {
+    color: #6dab3c !important;
+    background-color: #FFF !important;
+}
+
+.btn-red {
+    margin-top: 40px;
+}

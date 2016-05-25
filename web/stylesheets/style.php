@@ -3007,3 +3007,69 @@ color: #d91d1d;
 .mT30 {
     margin-top: 30px !important;
 }
+
+.title-data-delivery {
+    font-size: 19px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.data-delivery label {
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+.data-delivery input[type="text"] {
+    width: 90%;
+}
+
+.label-number {
+    width: 34% !important;
+    display: inline-block !important;
+}
+
+.input-number {
+    width: 30% !important;
+}
+
+.label-complement {
+    width: 56% !important;
+    display: inline-block !important;
+    margin-left: 4%;
+}
+
+.input-complement {
+    width: 56% !important;
+    margin-left: 4%;
+}
+
+
+
+.btn-next {
+    float: right;
+    background: #6dab3c !important;
+    border: 1px solid #6dab3c !important;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.btn-next:hover {
+    color: #6dab3c !important;
+    background-color: #FFF !important;
+}
+
+.btn-red {
+    margin-top: 40px;
+}

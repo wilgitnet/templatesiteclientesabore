@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="title-home ">O que você deseja?</h2>
+                    <h3 class="title-home ">O QUE VOCÊ DESEJA?</h2>
                 </div>
             </div>
             

@@ -54,7 +54,7 @@
 			$error = true;
 		}	
 		else
-		{
+		{			
 			$_SESSION['Usuario'] = $login['dados']['Usuario'];	
 			$_SESSION['Usuario']['logado']	= true;
 			header('Location:'.$host.'/home');

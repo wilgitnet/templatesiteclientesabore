@@ -1,5 +1,5 @@
 
-$(document).ready( function() {
+$(document).ready( function() {	
 
 	//excluindo pedido
 	$('#pedido_ajax').on('click', '.excluir', function(){
@@ -100,8 +100,9 @@ $(document).ready( function() {
 
 	});	         	
 
+
 	//menu rapido
-    $('#pedido_ajax').on('change', '.selectpicker', function(){
+    $('.cart-header').on('change', '.cardapio_rapido', function(){    	
 		location.href=$(this).val();
     });	         	
 

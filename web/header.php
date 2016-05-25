@@ -20,6 +20,15 @@
    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="<?PHP echo $host; ?>/web/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
 
+   <!-- Javascript -->
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/parallax.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/main.js"></script>
+
 </head>
 
 <body> 
@@ -42,17 +51,20 @@
                             <div class="btn-menu"></div><!-- Mobile menu button -->
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
-                                    <li><a class="active" href="#top">Início</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/pedidos">Pedidos</a></li>
+                                    <li><a class="active" href="<?PHP echo $host; ?>">Início</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/carrinho">Meu Pedido</a></li>
                                     <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardapio</a></li>
                                     <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre</a></li>
                                     <li><a href="<?PHP echo $host; ?>/contato">Contato</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/login">Login</a></li>
-
-                                    <!--- <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
-                                    <li class="img-name-logado"><a href="#">Allan Santos</a></li> ---->
-
+                                    <?PHP if(!empty($_SESSION['Usuario'])){ ?>
+                                        <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
+                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/meus-dados">
+                                            <?PHP echo $_SESSION['Usuario']['nome']; ?></a></li>
+                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
+                                    <?PHP } else { ?>
+                                        <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
+                                        <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
+                                    <?PHP } ?>                                    
                                  </ul>
                             </nav>
                         </div>
@@ -131,15 +143,20 @@
                             <div class="btn-menu"></div><!-- Mobile menu button -->
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
-                                    <li><a href="<?PHP echo $host; ?>">Início</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/pedidos">Pedidos</a></li>
+                                    <li><a class="active" href="<?PHP echo $host; ?>">Início</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/carrinho">Meu Pedido</a></li>
                                     <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardapio</a></li>
                                     <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre</a></li>
                                     <li><a href="<?PHP echo $host; ?>/contato">Contato</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/login">Login</a></li>
-                                    <!-- <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
-                                    <li class="img-name-logado"><a href="#">Allan Santos</a></li> -->
+                                    <?PHP if(!empty($_SESSION['Usuario'])){ ?>
+                                        <li class="img-user-logado"><a href="#"><img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user"></a></li>
+                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/meus-dados">
+                                            <?PHP echo $_SESSION['Usuario']['nome']; ?></a></li>
+                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
+                                    <?PHP } else { ?>
+                                        <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
+                                        <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
+                                    <?PHP } ?>                                    
                                  </ul>
                             </nav>
                         </div>

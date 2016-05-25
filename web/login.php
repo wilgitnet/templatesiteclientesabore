@@ -54,7 +54,7 @@
                 
                 
                 
-                <h5>Ainda não tem conta? <a href="#">Registre-se.</a></h5>
+                <h5>Ainda não tem conta? <a href="<?PHP echo $host; ?>/registro">Registre-se.</a></h5>
                 
             </div>            
         </div>
@@ -86,7 +86,7 @@
                     <input type="submit" class="button" name="submit" value="Entrar" />
                 </form>
                                     
-                <h5>Ainda não tem conta? <a href="#">Registre-se.</a></h5>                
+                <h5>Ainda não tem conta? <a href="<?PHP echo $host; ?>/registro">Registre-se.</a></h5>                
             </div>            
         </div>
     </div>

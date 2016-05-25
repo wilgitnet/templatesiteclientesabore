@@ -2,6 +2,12 @@
 
 
 $(document).ready( function() {
+
+  $('#submitButton').click(function(){
+     $("#formularioRegistro").submit();  
+  });
+  
+
   $("#documento").focus();
   
   $('#documento').bind('keydown',soNums); 

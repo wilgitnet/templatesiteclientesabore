@@ -1,6 +1,6 @@
 
-<?php require_once('header.php'); ?>
 <?php require_once('app/controller/cardapio_controller.php'); ?>
+<?php require_once('header.php'); ?>
 
 <div class="content">
         <div class="container">

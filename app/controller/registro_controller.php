@@ -14,18 +14,15 @@ if(!empty($_POST['search']))
 }
 
 ##realizando insert
-if(!empty($_POST['submit']))
-{	
+if(!empty($_POST['nome']))
+{		
 	$tipoPessoa = 'F';
 	$receberPromocao = 'N';
-
-	if(count($_POST['documento']) > 11)
-		$tipoPessoa = 'J';
 
 	if(!empty($_POST['receber_promocao']))
 		$receberPromocao = 'S';
 	
-	$arrayDados = array('documento'=>$_POST['documento'], 'celular'=>$_POST['celular'],
+	$arrayDados = array('celular'=>$_POST['celular'],
 						'senha'=>$_POST['senha'],
 						'nome'=>$_POST['nome'], 'sobrenome'=>$_POST['sobrenome'],
 						'email'=>$_POST['email'], 'estado'=>$_POST['estado'],
@@ -47,7 +44,7 @@ if(!empty($_POST['submit']))
 	else
 	{		
 		//enviando requisicao para api	
-		$login = GoCURL(array('usuario'=>$_POST['usuario'], 'senha'=>md5($_POST['senha'])), 'usuario/login');
+		$login = GoCURL(array('usuario'=>$_POST['email'], 'senha'=>md5($_POST['senha'])), 'usuario/login');
 
 		if(!$login['success'])
 		{

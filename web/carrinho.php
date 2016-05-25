@@ -51,10 +51,11 @@
                 if(!empty($_SESSION['mensagem_erro']))
                 {                        
                     $mensagem = $_SESSION['mensagem_erro'];
-                    echo "<div class='alert' id='errormsg'>
-                        {$mensagem}.
-                      </div>
-                      ";           
+                    echo '
+                                <div class="alert error">
+                                    <div class="alert-message">'.$mensagem.'.
+                                </div><span class="close-alert">X</span></div>
+                            ';         
 
                     unset($_SESSION['mensagem_erro']);
                 }

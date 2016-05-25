@@ -22,6 +22,8 @@
 
    <!-- Javascript -->
     <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery.min.js"></script>
+    <script src="<?PHP echo $host; ?>/js/validate.js"></script>
+    <script src="<?PHP echo $host; ?>/js/mask.js"></script>
     <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/parallax.js"></script>
     <script type="text/javascript" src="<?PHP echo $host; ?>/web/javascript/jquery.flexslider-min.js"></script>
@@ -62,7 +64,7 @@
                                             <?PHP echo $_SESSION['Usuario']['nome']; ?></a></li>
                                         <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
                                     <?PHP } else { ?>
-                                        <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
+                                        <li><a href="<?PHP echo $host; ?>/registro">Cadastro</a></li>
                                         <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
                                     <?PHP } ?>                                    
                                  </ul>
@@ -154,7 +156,7 @@
                                             <?PHP echo $_SESSION['Usuario']['nome']; ?></a></li>
                                         <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
                                     <?PHP } else { ?>
-                                        <li><a href="<?PHP echo $host; ?>/cadastro">Cadastro</a></li>
+                                        <li><a href="<?PHP echo $host; ?>/registro">Cadastro</a></li>
                                         <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
                                     <?PHP } ?>                                    
                                  </ul>

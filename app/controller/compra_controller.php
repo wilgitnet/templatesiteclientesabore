@@ -52,8 +52,7 @@
 
 		##finalizando endereco
 		if(!empty($_POST['finalizar_endereco']))
-		{
-
+		{			
 			##validacao de endereco enviado
 			if(empty($_POST['cep']) || empty($_POST['estado']) || empty($_POST['endereco']) || empty($_POST['cidade']) || empty($_POST['bairro']) || empty($_POST['numero']))
 			{

@@ -8,9 +8,24 @@
 	<tbody>
 		<?PHP foreach($_SESSION['pedido']['item'] as $item){ ?>
 			<tr>
-				<td><?PHP echo $item['Produto']['nome']; ?></td>
+				<td>
+					<?PHP echo $item['Produto']['nome']; ?> R$ :
+					<font color="red">
+						<?PHP echo number_format($item['Produto']['valor'], 2, ',', '.'); ?>
+					</font>
+				</td>
 			</tr>
 		<?PHP } ?>
+		<tr>
+			<td>
+				Frete: 
+				<font color="red">
+					<span id="valor_cep">					
+						<?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?>					
+					</span>
+				</font>
+			</td>
+		</tr>
 		<tr>
 			<td><p class="sub-titulo-carrinho">TOTAL: </p>
 				<span class="carrinho-valor">

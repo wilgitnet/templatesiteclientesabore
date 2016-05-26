@@ -1,75 +1,81 @@
-<?php require_once('header.php'); ?>
-<?PHP require_once('app/controller/acompanhamento_controller.php'); ?>
+ <?php require_once('header.php'); ?>  
 
-<div class="feed2">
-<div class="feedback2">
-<script type="text/javascript">
-  function returnhistorico()
-{
-location.href="<?PHP echo $host; ?>/historico"
-}
-</script>
-	<table>
-		<tr>
-			<th>
-				<h1>Detalhes do pedido <?PHP echo $pedido['dados']['Pedido']['id']; ?></h1>
-			</th>
-			<th>
-				<input type="submit" onclick="returnhistorico()" value="Retornar a historico"></input>
-			</th>
-			<th>
-			<button id="buttoncam"><img src="<?PHP echo $host;?>/web/images/webcam.png" width="50" height="35" id="cam" >Acompanhe Online</button>
-			</th>
-		</tr>
-	</table>
-<br>
-
-
-<table>
-  <tr>
-    <th><h3>tipo</h3></th>
-    <th></th>
-    <th><h3>Item</h3></th>
-    <th><h3>Preço</h3></th>
-
-  </tr>
-
-  <?PHP 
-  $i = 0;  
-  foreach($pedido['dados']['produtos'] as $produto){ ?>
-  <tr>
-  	<td>
-      <div class="checkbox disabled">
-        <label>
-            <input type="checkbox" value="" disabled <?PHP if($pedido['dados']['PedidoProduto'][$i]['metade'] == 'S') echo "checked" ?>>
-            Meia
-        </label> 
-        <label>
-            <input type="checkbox" value="" disabled <?PHP if($pedido['dados']['PedidoProduto'][$i]['mini'] == 'S') echo "checked" ?>>
-            Broto
-        </label> 
-      </div>
-     </td>
-    <td><img src="<?PHP echo $produto['Produto']['img']; ?>"></td>
-    <td > <?PHP echo $produto['Produto']['nome']; ?> </td>
-    <td>R$ <?PHP echo number_format($pedido['dados']['PedidoProduto'][$i]['valor'], 2, ',', '.'); ?></td>
-  </tr>
-<?PHP $i++; } ?>
-
-  <tr id="linhatotal">
-     <td>
-        <input type="checkbox" value="" disabled checked> Borda recheada
-     </td>
-    <td>Quantidade de itens : <?PHP echo $i; ?></td>
-    <td >Pagamento : <?PHP echo strtolower($pedido['dados']['FormaPagamento']['descricao']); ?> </td>
-    <td><h2>Total : R$ <?PHP echo number_format($pedido['dados']['Pedido']['valor_total'], 2, ',', '.'); ?></h2></td>
-  </tr>
-
-</table>
-	<br>
-
-</div>
+ <div class="nz-breadcrumbs">
+    <div class="container">
+        <a href="">Inicio</a>
+        <i class="fa fa-angle-double-right"></i>
+        <span>Histórico de pedidos</span>
+        <i class="fa fa-angle-double-right"></i>
+        <span>Detalhes do pedido</span>
+    </div>
 </div>
 
-<div class="clear"> </div>
+<div class="content content-checkout pdB150">
+    <div class="container">
+
+        <h4 class="title-info">DETALHES DO PEDIDO Nº 666</h4>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="info-cliente">
+                    <p><i class="fa fa-user" aria-hidden="true"></i>  Wilson Junior</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> wilson@seguidoresdofeliciano.com.br</p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Rua Pastor Marco Feliciano, 171 - Papuda, DF</p>
+                </div>
+            </div>
+        </div>
+        <table class="table-cart" cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="product-type-th">Tipo</th>
+                    <th class="product-thumbnail-th"></th>
+                    <th class="product-name-th">Item</th>
+                    <th class="product-price-th">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart_item">
+                    <td class="product-type">
+                        <ul>
+                            <li><input type="checkbox" disabled> Meia</li>
+                            <li><input type="checkbox" checked="checked" disabled> Inteira</li>
+                        </ul>       
+                    </td>
+                    <td class="product-thumbnail">
+                        <a href="#"><img width="120" src="<?PHP echo $host; ?>/web/images/pizza4.jpg"></a>                            
+                    </td>
+                    <td class="product-name">
+                        <a href="">Pizza Frango com catupiry</a>                    
+                    </td>
+                    <td class="product-price">
+                        <span class="amount">R$ 39,00</span>                   
+                    </td>
+                </tr>       
+            </tbody>
+        </table>
+        <div class="options-cart">
+            <h6>Opções:</h6><p><input type="checkbox" disabled> Borda recheada</p>                 
+        </div>
+        <div class="info-pedido">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>FORMA DE PAGAMENTO: DINHEIRO</h3>
+                </div>
+                <div class="col-md-6">
+                    <h4>VALOR TOTAL <span>R$ 39,00</span></h4>    
+                </div>
+            </div>
+
+           <!--  QUANDO ESCOLHER DINHEIRO -->
+
+           <!--  <div class="row">
+                <div class="col-md-12">
+                    <h5>TROCO <span>R$ 11,00</span></h5>  
+                </div>
+            </div> -->
+        </div>     
+    </div>
+</div>
+
+
 <?php require_once('footer.php'); ?>

@@ -96,7 +96,24 @@
 
 <?PHP }else{ ?>
     
-        <table>
+  <div class="row">
+    <div class="carrinho-vazio">
+      <div class="col-md-12">
+        <h3>SEU CARRINHO ESTA VAZIO :(</h3>
+      </div>
+      <div class="col-md-12">
+        <div class="buttons-cart">
+          <input type="submit" class="button limpar-carrinho" onclick="gohistorico()" value="Historico de compras"></input>
+          <input type="submit"  class="dados-de-entrega" onclick="returncardapio()" value="Realizar um Pedido Agora">         
+        </div>
+      </div>
+    </div>
+  </div>
+
+<?PHP } ?>
+
+
+<!--         <table>
           <tr>
             <th>
               <h1>SEU CARRINHO ESTA VAZIO :(</h1>
@@ -107,8 +124,4 @@
             </th>
           </tr>
         </table>        
-      <br>
-
-<?PHP } ?>
-
-
+      <br> -->

@@ -3073,3 +3073,97 @@ color: #d91d1d;
 .btn-red {
     margin-top: 40px;
 }
+
+.money {
+    background-color: #87b960;
+    width: 190px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.money span {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top: 15px;
+    border: 4px solid #fff;
+    float: left;
+    margin-left: 60px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.cart-deb {
+    height: 100px;
+}
+
+.cart-cred {
+    height: 100px;
+    
+}
+
+.money-option {
+    width: 190px;
+    margin: 0 auto;
+}
+
+.cred {
+    width: 190px;
+    margin: 0 auto;
+}
+
+.options-checkout {
+    background: #f2f2f2;
+    width: 100%;
+    float: left;
+    padding: 40px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.deb {
+    width: 190px;
+    margin: 0 auto;
+}
+
+
+.sub-title-money {
+    color: #87b960;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.sub-title-cred {
+    color: #e7a414;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    margin-top: 14px;
+    text-align: center;   
+}
+
+.sub-title-deb {
+    color: #009bdb;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    margin-top: 14px;
+    text-align: center;   
+}
+
+.troco p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.troco input {
+    width: 200px !important;
+    margin-bottom: 40px;
+    height: 45PX;
+}

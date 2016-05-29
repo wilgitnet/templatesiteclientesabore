@@ -4,7 +4,7 @@
 <div class="feed2">
 <div class="feedback2">
 <script type="text/javascript">
-  function returnhistorico()
+function returnhistorico()
 {
 location.href="<?PHP echo $host; ?>/historico"
 }

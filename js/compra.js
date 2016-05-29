@@ -1,5 +1,8 @@
 $(document).ready( function() {
 
+  $("#troco").maskMoney({symbol:'R$ ', 
+      showSymbol:true, thousands:'.', decimal:',', symbolStay: false});
+
   $('.pula').keypress(function(e){      
       /* 
        * verifica se o evento é Keycode (para IE e outros browsers)
@@ -193,31 +196,38 @@ $(document).ready( function() {
 
       $("#dinheiro").click(function() 
       {       
-        $("#ctcredito_expand").hide();          
-        $("#ctdebito_expand").hide(); 
-        $("#dinheiro_expand").show(); 
+        $("#cep-alert").hide();  
+        $("#escolha-usuario").html("Você selecionou dinheiro como forma de pagamento");
+        $("#escolha-usuario").show();
+        $("#realizar-checkout").show();
+        $("#dinheiro-troco").show();
+        $("#troco").focus();
         $("#tipo_pagamento").val(3);        
       });
 
       $("#cartaocredito").click(function() 
-      {       
-        $("#ctcredito_expand").show();          
-        $("#ctdebito_expand").hide(); 
-        $("#dinheiro_expand").hide(); 
+      {      
+        $("#cep-alert").hide();  
+        $("#escolha-usuario").html("Você selecionou cartão de crédito como forma de pagamento");
+        $("#escolha-usuario").show();
+        $("#realizar-checkout").show();
+        $("#dinheiro-troco").hide();        
         $("#tipo_pagamento").val(1);        
       });
 
       $("#cartaodebito").click(function() {
-        $("#ctcredito_expand").hide();          
-        $("#ctdebito_expand").show(); 
-        $("#dinheiro_expand").hide(); 
+        $("#cep-alert").hide();  
+        $("#escolha-usuario").html("Você selecionou cartão de débito como forma de pagamento");
+        $("#escolha-usuario").show();
+        $("#realizar-checkout").show();
+        $("#dinheiro-troco").hide();        
         $("#tipo_pagamento").val(2);        
       });
       
 
       //finalizando pedido
-      $(".finalizar-pedido").click(function() 
-      {       
+      $("#finalizar-pedido-compra").click(function() 
+      {               
         
         $("#cep-alert").hide();  
         $("#refresh").show();
@@ -227,7 +237,7 @@ $(document).ready( function() {
         $.ajax({            
             type: "POST",
             url: 'app/controller/compra_controller.php',
-            data: '&ajax=true&finalizar=true&tipo_pagamento='+ $("#tipo_pagamento").val() +'&troco='+$("#troco").val(),
+            data: 'ajax=true&finalizar=true&tipo_pagamento='+ $("#tipo_pagamento").val() +'&troco='+$("#troco").val(),
             dataType: 'json', 
             success: function(data)
             {                              
@@ -236,15 +246,16 @@ $(document).ready( function() {
                     location.href=$("#host").val() + "/acompanhamento/"+data.pedido_id;
                 }
                 else
-                {                    
+                {                                    
                     $("#cep-alert").show();
-                    $("#cep-alert").html(data.mensagem);   
+                    $("#cep-alert").html("<div class='alert error'><div class='alert-message'>"+data.mensagem+"</div><span class='close-alert'>X</span></div>")
+                    
                     $("#refresh").hide();
                     $("#pagamento_expand").show(); 
                 }
             }
         });              
-        return false;                 
+        return false;          
 
       });
 

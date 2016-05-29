@@ -1,5 +1,17 @@
 <?php	
 	
+	if(!empty($_POST['ajax']))
+	{
+		##para requisicoes ajax é necessário realizar inclue de funcao goCURL e session_start();		
+		if(!empty($_POST['acompanhamento']))
+		{
+			$status = GoCURL(array('pedido_id'=>$_POST['pedido_id']), 
+							'pedidos/acompanhamento');						
+			echo json_encode($status['dados']['status']);
+			exit;
+		}
+
+	}
 	
 	if($part_url[2] == 'not')
 	{

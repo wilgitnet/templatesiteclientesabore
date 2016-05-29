@@ -129,13 +129,20 @@
 		##finalizando compra
 		if(!empty($_POST['finalizar']))
 		{
+			$troco = 0;
 			if(empty($_POST['tipo_pagamento']))
 			{				
 				echo json_encode(array('success'=>false, 'mensagem'=>'Informar o tipo de pagamento'));
 				exit;				
-			}
+			}			
 			
-			$pedido = GoCURL(array('tipo_pagamento'=>$_POST['tipo_pagamento'], 'cliente_id'=>$_SESSION['id_cliente'], 'carrinho'=>$c, 'troco'=>$_POST['troco']), 'pedidos/finalizar');
+			if(!empty($_POST['troco']))
+			{
+				$troco = str_replace('.', '', $_POST['troco']);
+				$troco = str_replace(',', '.', $troco);				
+			}
+
+			$pedido = GoCURL(array('tipo_pagamento'=>$_POST['tipo_pagamento'], 'cliente_id'=>$_SESSION['id_cliente'], 'carrinho'=>$c, 'troco'=>$troco), 'pedidos/finalizar');
 
 			if(!$pedido['success'])
 			{

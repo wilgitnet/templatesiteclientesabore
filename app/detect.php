@@ -300,6 +300,7 @@ if(!empty($_SESSION['pedido']))
 }
 //testar funcionalidades em outras plataformas
 $browser_t = 'web';
+$percentual_definido = 3;
 
 //echo '<PRe>';print_r($_SESSION);exit;
 

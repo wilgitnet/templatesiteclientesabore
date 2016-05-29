@@ -1,6 +1,12 @@
 <?PHP require_once('app/controller/compra_controller.php'); ?>
 <?php require_once('header.php'); ?> 
-
+<script src="<?PHP echo $host; ?>/js/maskMoney.js" type="text/javascript"></script>
+<script>
+function returnendereco()
+{
+  location.href="<?PHP echo $host; ?>/compra"
+}	
+</script>
 <script src="<?PHP echo $host; ?>/js/compra.js"></script>
     <div class="nz-breadcrumbs">
         <div class="container">
@@ -25,13 +31,14 @@
 	        </table>                     
 	        <br>        
 	</div>
-	    
+	
+	<div class='alert' id="cep-alert" style="display: none">			
+	</div>  
     <div class="content content-checkout" id="endereco_completo">
         <div class="container">
         	<div class="data-delivery">        	
         		<div class="row">
-        			<div class="col-md-9">
-        				<div class='alert' id="cep-alert" style="display:none"></div>  
+        			<div class="col-md-9">        				
         				<h4 class="title-data-delivery">DIGITE AS INFORMAÇÕES PARA ENTREGA</h4>        				
         				<form id="endereco_compra">
 	        				<div class="row">
@@ -101,6 +108,65 @@
 					</div>	
         		</div>
         	</div>             
+        </div>
+    </div>
+
+    <div class="content content-checkout pdB60" id="pagamento_expand" style="display: none">
+        <div class="container">
+            <div class="data-delivery">
+                <div class="row">
+                    <div class="col-md-9">                    	
+                        <h4 class="title-data-delivery">ESCOLHA SEU MÉTODO DE PAGAMENTO</h4>
+                   
+                        <div class="options-checkout">
+                            <div class="col-md-4" id="dinheiro">
+                                <div class="money-option">
+                                    <div class="money">
+                                        <span>
+                                            <i class="fa fa-usd" aria-hidden="true"></i>
+                                        </span>                                    
+                                    </div>
+                                    <p class="sub-title-money">DINHEIRO</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" id="cartaocredito">
+                                <div class="cred">
+                                    <img class="cart-cred" src="<?PHP echo $host; ?>/web/images/cart2.png">
+                                    <p class="sub-title-cred">CARTÃO DE CRÉDITO</p>
+                                </div> 
+
+                            </div>
+                            <div class="col-md-4" id="cartaodebito">
+                                <div class="deb">
+                                    <img class="cart-deb" src="<?PHP echo $host; ?>/web/images/cart.png">
+                                    <p class="sub-title-deb">CARTÃO DE DÉBITO</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troco" style="display: none" id="dinheiro-troco">
+                            <p>Precisa de troco? </p>
+                            <input type="text" placeholder="R$" name="troco" id="troco">
+                        </div>                                              
+                        <div class="troco">
+                            <p>Valor Completo de Compra:</p>
+                            <P>R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></P>
+                        </div>
+                        <input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
+                        <input type="hidden" name="host" id="host" value="<?PHP echo $host; ?>">	
+                        <div class="troco" style="display: none" id="escolha-usuario"></div>
+                        <div class="buttons-cart">
+                            <input type="button" onclick="returnendereco()" class="button limpar-carrinho" value="Retornar ao endereço"> 
+                            <div id="realizar-checkout"  style="display: none">
+                            	<input type="submit" id="finalizar-pedido-compra" class="dados-de-entrega"  value="Finalizar pagamento">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <?PHP include('pedido.php'); ?>
+                    </div>  
+                </div>
+            </div>
         </div>
     </div>
  </div>

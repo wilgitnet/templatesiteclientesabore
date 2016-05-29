@@ -3,7 +3,7 @@
 <div class="feed2">
 <div class="feedback2">
 <script type="text/javascript">
-  function returnhome()
+function returnhome()
 {
 location.href="<?PHP echo $host; ?>/"
 }

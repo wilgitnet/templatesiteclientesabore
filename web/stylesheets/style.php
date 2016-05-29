@@ -3167,3 +3167,153 @@ color: #d91d1d;
     margin-bottom: 40px;
     height: 45PX;
 }
+
+.title-info {
+    font-size: 19px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.table-historic {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 20px
+}
+
+.historic-table th {
+    text-align: center !important;
+}
+
+.historic-table td {
+    text-align: center !important;
+    line-height: 50px;
+}
+
+.historic-table thead {
+    background: #eee;
+}
+
+.pdB150 {
+    padding-bottom: 150px;
+}
+
+.botao-voltar {
+    margin-top: 20px;
+}
+
+.cart-next h6 {
+    text-align: left;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    display: inline-block;
+    line-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
+.info-pedido h3{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+
+.info-pedido h4{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+
+.info-pedido h5{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.info-pedido {
+    padding: 20px;
+    background: #f1f1f1;
+    border: 1px solid #e1e1e1;
+    margin-top: -1px;
+}
+
+.info-pedido h4 span{
+    width: 100px;
+    display: inline-block;
+    color: #d91d1d;
+    font-size: 20px;
+}
+
+.info-pedido h5 span{
+    width: 100px;
+    display: inline-block;
+    color: #444;
+    font-size: 20px;
+}
+
+.info-cliente i {
+   color: #333;
+    margin-right: 5px;
+    font-size: 16px;
+    margin-left: 2px;
+
+}
+
+.info-cliente p {
+    display: inline;
+    margin-right: 30px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about h4 {
+    font-size: 22px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about img {
+    width: 342px;
+    margin: 0 auto;
+    display: block;
+}
+
+.carrinho-vazio h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #eee;
+    margin-top: 0px !important;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.dados-de-entrega:hover {
+    background-color: #FFF !important; 
+}

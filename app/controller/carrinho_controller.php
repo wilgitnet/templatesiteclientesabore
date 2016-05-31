@@ -144,4 +144,5 @@
 				header('LOCATION:'.$host.'/carrinho');	
 		}	
 	}
+	
 ?>

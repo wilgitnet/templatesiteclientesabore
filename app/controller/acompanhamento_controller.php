@@ -1,39 +1,61 @@
 <?php	
-	
-	if(!empty($_POST['ajax']))
+	if($part_url[1] == 'acompanhamento')
 	{
-		##para requisicoes ajax é necessário realizar inclue de funcao goCURL e session_start();		
-		if(!empty($_POST['acompanhamento']))
+	
+		if(!empty($_POST['ajax']))
 		{
-			$status = GoCURL(array('pedido_id'=>$_POST['pedido_id']), 
-							'pedidos/acompanhamento');						
-			echo json_encode($status['dados']['status']);
-			exit;
+			##para requisicoes ajax é necessário realizar inclue de funcao goCURL e session_start();		
+			if(!empty($_POST['acompanhamento']))
+			{
+				$status = GoCURL(array('pedido_id'=>$_POST['pedido_id']), 
+								'pedidos/acompanhamento');						
+				echo json_encode($status['dados']['status']);
+				exit;
+			}
+
+		}
+	
+		if($part_url[2] == 'not')
+		{
+			header('LOCATION:'.$host.'/home');
 		}
 
+		if(empty($_SESSION['Usuario']))
+		{	
+			header('LOCATION:'.$host.'/login');	
+		}
+
+		
+		$pedido_id = $part_url[2];	
+		
+		##realizar busca por dados de cliente aqui
+		$pedido = 
+			GoCURL(array('id_cliente'=>$_SESSION['id_cliente'], 'id_pedido'=>$pedido_id,'id_usuario'=>$_SESSION['Usuario']['id']), 'pedidos/validar');
+
+		if(!$pedido['success'])
+		{
+			header('LOCATION:'.$host.'/home');
+		}	
 	}
-	
-	if($part_url[2] == 'not')
+
+	##historico de pedidos
+	if($part_url[1] == 'historico')
 	{
-		header('LOCATION:'.$host.'/home');
-	}
 
-	if(empty($_SESSION['Usuario']))
-	{	
-		header('LOCATION:'.$host.'/login');	
-	}
+		if(empty($_SESSION['Usuario']))
+		{	
+			header('LOCATION:'.$host.'/login');	
+		}
 
+		##realizar busca por dados de cliente aqui
+		$pedidos = 
+			GoCURL(array('id_cliente'=>$_SESSION['id_cliente'], 'id_usuario'=>$_SESSION['Usuario']['id']), 'pedidos/buscar');
+		
+		if(!$pedidos)
+		{
+			echo "Ocorreu um erro na busca de pedidos. Tente novamente";
+			exit;
+		}				
+	}
 	
-	$pedido_id = $part_url[2];	
-	
-	##realizar busca por dados de cliente aqui
-	$pedido = 
-		GoCURL(array('id_cliente'=>$_SESSION['id_cliente'], 'id_pedido'=>$pedido_id,'id_usuario'=>$_SESSION['Usuario']['id']), 'pedidos/validar');
-
-	if(!$pedido['success'])
-	{
-		header('LOCATION:'.$host.'/home');
-	}
-
-
 ?>

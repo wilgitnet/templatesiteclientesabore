@@ -16,9 +16,12 @@
 
         <h4 class="title-info">
             <input type="hidden" name="pedido_id" id="pedido_id" value="<?PHP echo $pedido['dados']['Pedido']['id']; ?>">
+            <input type="hidden" name="acompanhamento" id="acompanhamento" value="<?PHP echo $pedido['dados']['Pedido']['acompanhamento']; ?>">
             DETALHES DO PEDIDO Nº <?PHP echo $pedido['dados']['Pedido']['id']; ?> - 
             Status -> <span id="status_online"><?PHP echo $pedido['dados']['SituacaoPedido']['descricao']; ?></span>
+            <?PHP if($pedido['dados']['Pedido']['acompanhamento'] == 'S'){ ?>
             <img src="<?PHP echo $host; ?>/web/images/update.png" onclick="atualizar();">
+            <?PHP } ?>
             <div id="loading" style="display: none">
                 Atualizando Status <img src="<?PHP echo $host; ?>/images/loading.gif" width="25" height="25">
             </div>        
@@ -110,7 +113,7 @@
                 <div class="col-md-12">
                     <h5>TROCO 
                         <span>
-                            R$ <?PHP echo number_format($pedido['dados']['Pedido']['forma_pagamento_id'], 2, ',', '.'); ?>
+                            R$ <?PHP echo number_format($pedido['dados']['Pedido']['troco'], 2, ',', '.'); ?>
                         </span>
                     </h5>  
                 </div>

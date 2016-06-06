@@ -460,6 +460,7 @@ input[type="color"],
     position: absolute;
     background-color: #000;
     z-index: 1000;
+    margin-top: 20px;
 }
 
 #mainnav-mobi ul {
@@ -1625,7 +1626,7 @@ content: "\f017";
 
     .contact-slider-inner span {
         padding: 0 30px 0 35px;
-        line-height: 50px;
+        line-height: 30px;
     }
 
     .contact-slider-inner span:before {
@@ -2154,6 +2155,7 @@ margin-top: 0px !important;
     height: 170px;
     background: #FFF;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .more-buy {
@@ -2162,7 +2164,7 @@ margin-top: 0px !important;
 
 .name-product {
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
 }
 
@@ -3316,4 +3318,40 @@ color: #d91d1d;
 
 .dados-de-entrega:hover {
     background-color: #FFF !important; 
+}
+
+@media only screen and (max-width: 479px) {
+    #mainnav-mobi {
+        margin-top: 35px !important;
+    }
+    .logo-img {
+        max-height: 70px;
+    }
+    .btn-menu {
+        margin-top: 15px;
+    }
+    .content-slider {
+    margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .border-right-color {
+    border-right: none;
+    }
+
+    .contact-slider-inner span {
+    height: 30px;
+    }
+    .control-slider p{
+    margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .contact-slider{
+    padding: 10px 0px !important;
+    }
+            
 }

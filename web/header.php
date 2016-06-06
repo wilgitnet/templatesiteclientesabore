@@ -114,10 +114,10 @@
                     <div class="col-md-12">
                         <div class="contact-slider-inner">
                             <div class="col-md-4 border-right-color">
-                            <span> 
-                                <i class="fa fa-paper-plane icon-banner-color"></i> 
-                                Pedidos online: <?PHP if($StatusSite['dados']['Cliente']['open'] == 'S'){ echo "Disponível";}else{ echo "F";} ?>
-                            </span>
+                                <span> 
+                                    <i class="fa fa-paper-plane icon-banner-color"></i> 
+                                    Pedidos online: <?PHP if($StatusSite['dados']['Cliente']['open'] == 'S'){ echo "Disponível";}else{ echo "F";} ?>
+                                </span>
                             </div>
                             <div class="col-md-4 border-right-color">
                             <span><i class="fa fa-clock-o icon-banner-color"></i></i>Entrega rápida, fácil e segura :) </span>

@@ -38,7 +38,7 @@
                 <h4>CONFIRA OS ITENS DE SUA COMPRA</h4> 
 
                 <select class="cardapio_rapido">
-                    <option>Cardápio Rápido</option>
+                    <option>CÁRDAPIO RÁPIDO</option>
                   <?PHP foreach($_SESSION['menu'] as $menu){ ?>
                       <option value="<?PHP echo $host."/categoria/".$menu['Categorias']['placeholder']; ?>">
                         <?PHP echo $menu['Categorias']['nome']; ?>

@@ -70,7 +70,7 @@
 		
 	</tbody>
 </table>
-<a class="finalizar-pedido" href="<?PHP echo $host; ?>/carrinho">Ver Pedido Completo</a>	
+<a class="finalizar-pedido" href="<?PHP echo $host; ?>/carrinho">VER PEDIDO COMPLETO</a>	
 <?PHP }else{ ?>
 
 <table class="meus-pedidos mgT50">

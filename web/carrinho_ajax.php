@@ -1,5 +1,6 @@
-<?PHP if(!empty($_SESSION['pedido'])){ ?>      
-  <table class="table-cart" cellspacing="0">
+<?PHP if(!empty($_SESSION['pedido'])){ ?>
+<div class="table-responsive">      
+  <table class="table-cart table" cellspacing="0">
         <thead>
             <tr>
                 <th class="product-type-th">Tipo</th>
@@ -67,6 +68,7 @@
            ?>                     
         </tbody>
     </table>
+    </div>
     <div class="options-cart">
     <?PHP if($_SESSION['pedido']['borda'] == 'S'){ ?>     
         <h6>Opções:</h6>

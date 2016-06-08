@@ -25,7 +25,7 @@
                                         <img class="img-product-cardapio" src="<?PHP echo $produto['Produto']['img']; ?>"/> 
                                     </div>
                                     <div class="col-md-9">
-                                        <div class="description pdL0">
+                                        <div class="description">
                                             <p class="name-product"><?PHP echo $produto['Produto']['nome']; ?></p>
                                             <p class="ingredientes-produto"><?PHP echo $produto['Produto']['descricao']; ?></p>
                                             <span class="preco-two">R$ <?PHP echo number_format($produto['Produto']['valor'], 2, ',', '.'); ?></span>

@@ -32,21 +32,24 @@
     
     <div class="content content-checkout">
         <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="cart-header">
 
-            <div class="cart-header">
+                  <h4>CONFIRA OS ITENS DE SUA COMPRA</h4> 
 
-                <h4>CONFIRA OS ITENS DE SUA COMPRA</h4> 
-
-                <select class="cardapio_rapido">
-                    <option>CÁRDAPIO RÁPIDO</option>
-                  <?PHP foreach($_SESSION['menu'] as $menu){ ?>
-                      <option value="<?PHP echo $host."/categoria/".$menu['Categorias']['placeholder']; ?>">
-                        <?PHP echo $menu['Categorias']['nome']; ?>
-                      </option>            
-                  <?PHP } ?>
-                </select>
-
+                  <select class="cardapio_rapido">
+                      <option>CÁRDAPIO RÁPIDO</option>
+                    <?PHP foreach($_SESSION['menu'] as $menu){ ?>
+                        <option value="<?PHP echo $host."/categoria/".$menu['Categorias']['placeholder']; ?>">
+                          <?PHP echo $menu['Categorias']['nome']; ?>
+                        </option>            
+                    <?PHP } ?>
+                  </select>
+            
+              </div>
             </div>
+          </div>
             <?php                            
                 if(!empty($_SESSION['mensagem_erro']))
                 {                        

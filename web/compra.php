@@ -65,31 +65,32 @@ function returnendereco()
 			        				<input type="text"  class="input-number pula" value="<?PHP if(!empty($_SESSION['pedido']['endereco']['numero'])) echo $_SESSION['pedido']['endereco']['numero']; ?>" placeholder="Número" name="numero" id="number" maxlength="10" />			        				
 			        				<input type="text" class="input-complement pula" value="<?PHP if(!empty($_SESSION['pedido']['endereco']['complemento'])) echo $_SESSION['pedido']['endereco']['complemento']; ?>" placeholder="Complemento" name="complemento" id="complement" maxlength="150" />
 		        				</div>
-	        				</div>
-	        				<?PHP if(empty($_SESSION['Usuario'])){ ?>
-	        				<div class="col-md-6">	        						
-		        				<label>Nome:</label>
-		        				<input type="text" class="pula" value="" placeholder="Nome" name="nome" id="nome" maxlength="50" />
+	        				
+    	        				<?PHP if(empty($_SESSION['Usuario'])){ ?>
+    	        				<div class="col-md-6">	        						
+    		        				<label>Nome:</label>
+    		        				<input type="text" class="pula" value="" placeholder="Nome" name="nome" id="nome" maxlength="50" />
 
-		        				<label>Sobrenome:</label>
-		        				<input type="text" class="pula" value="" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />	
+    		        				<label>Sobrenome:</label>
+    		        				<input type="text" class="pula" value="" placeholder="Sobrenome" name="sobrenome" id="sobrenome" maxlength="50" />	
 
-		        				<label>Email:</label>
-		        				<input type="text" class="pula" value="" placeholder="Endereço de email" name="email" id="email" maxlength="100" />
-		        				
-		        			</div>
+    		        				<label>Email:</label>
+    		        				<input type="text" class="pula" value="" placeholder="Endereço de email" name="email" id="email" maxlength="100" />
+    		        				
+    		        			</div>
 
-	        				<div class="col-md-6">	        						
-		        				<label>Celular:</label>
-		        				<input type="text" value="" class="pula" placeholder="Telefone celular" name="celular" id="celular" maxlength="30" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
+    	        				<div class="col-md-6">	        						
+    		        				<label>Celular:</label>
+    		        				<input type="text" value="" class="pula" placeholder="Telefone celular" name="celular" id="celular" maxlength="30" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
 
-		        				<label>Senha:</label>
-		        				<input type="password" class="pula" value="" placeholder="Senha para acompanhamento" name="senha" id="senha" maxlength="20" />	
+    		        				<label>Senha:</label>
+    		        				<input type="password" class="pula" value="" placeholder="Senha para acompanhamento" name="senha" id="senha" maxlength="20" />	
 
-		        				<label>Confirmar Senha:</label>
-								<input type="password" class="pula" id="senha1" value="" name="senha1" placeholder="Repita sua senha" maxlength="20" />            		        						        			
-		        			</div>
-	        				<?PHP } ?>					        			
+    		        				<label>Confirmar Senha:</label>
+    								<input type="password" class="pula" id="senha1" value="" name="senha1" placeholder="Repita sua senha" maxlength="20" />            		        						        			
+    		        			</div>
+    	        				<?PHP } ?>
+                            </div>					        			
 	        				<div class="row">
 	        					<div class="col-md-6">
 	        						<input type="submit" class="button btn-red" value="Retornar ao carrinho"> 

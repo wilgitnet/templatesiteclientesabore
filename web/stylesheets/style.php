@@ -2086,6 +2086,7 @@ content: "\f017";
 
 .logo-img {
     max-height: 110px;
+    width: auto !important;
 }
 
  .logo {
@@ -2152,14 +2153,15 @@ margin-top: 0px !important;
 
 .description {
     width: 100%;
-    height: 170px;
+    min-height: 155px;
     background: #FFF;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px 20px 20px 0px;
+    float: left;
 }
 
 .more-buy {
     box-shadow: 0px 0px 1px 1px #ddd;
+    float: left;
 }
 
 .name-product {
@@ -2171,6 +2173,12 @@ margin-top: 0px !important;
 .ingredientes-produto {
     font-size: 15px;
 }
+
+.ingredientes-produto-home {
+    font-size: 15px;
+    min-height: 48px;
+}
+
 
 .preco {
     color: #dc3522;
@@ -2516,6 +2524,7 @@ a:hover{
     color: #FFF;
     background-color: #d91d1d;
     padding: 7px 14px;
+    margin-top: 9px;
 }
 
 .comprar {
@@ -2523,7 +2532,7 @@ a:hover{
 }
 
 .img-product-cardapio{
-    height: 170px;
+    min-height: 155px;
 }
 
 .contact-form input {
@@ -2716,6 +2725,7 @@ a:hover{
 
 .product-type {
     width: 150px;
+    padding-top: 25px !important;
 }
 
 .product-type-th {
@@ -2734,6 +2744,14 @@ a:hover{
 
 .product-thumbnail a img {
     padding: 5px;
+    height: 100px;
+    width: 120px !important;
+}
+
+.product-thumbnail {
+    width: 120px !important;
+    display: block;
+    border: 0 none !important;
 }
 
 .options-cart {
@@ -3305,6 +3323,20 @@ color: #d91d1d;
     display: block;
 }
 
+.itens-produto-home {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.description-home {
+    width: 100%;
+    min-height: 155px;
+    background: #FFF;
+    padding: 20px 20px 20px 20px;
+    float: left;
+}
+
+
 .carrinho-vazio h3 {
     font-size: 20px;
     font-weight: bold;
@@ -3333,6 +3365,36 @@ color: #d91d1d;
     .content-slider {
     margin-top: 20px;
     }
+    .header-img {
+        height: 110px;
+    }
+    .others-pages {
+     height: 110px !important;
+    }
+    .sub-title-home {
+        text-align: center;
+    }
+
+    .product-type ul {
+    width: 120px;
+    padding: 0px 0px 0px 37px !important;
+    }
+    input[type="submit"] {
+    width: 100%;
+    margin-bottom: 13px;
+    }
+
+    .contact-slider-inner span {
+    padding-left: 0px !important;;
+    }
+    
+}
+
+
+@media only screen and (max-width: 689px) {
+    .cart-header select {
+    display: none;
+    }
 }
 
 
@@ -3347,6 +3409,56 @@ color: #d91d1d;
     .control-slider p{
     margin-bottom: 20px;
     }
+    .description {
+    padding-left: 20px;
+    }
+
+    .logo-img {
+        padding-left: 15px;
+    }
+
+    .btn-menu {
+    margin-right: 15px;
+    }
+
+    .cart-header h4 {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 30px;
+    
+    }
+
+    .cart-header select {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+    
+    .data-delivery input[type="submit"] {
+    width: 100%;
+    padding: 16px 34px;
+    }
+
+   .data-delivery input[type="button"] {
+    width: 100% !important;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    float: left;
+    padding: 16px 34px;
+    }
+
+    .data-delivery input[type="text"] {
+        width: 100%;
+    }
+
+    .data-delivery input[type="password"] {
+        width: 100% !important;
+    }
+
+    .input-complement {
+    width: 65% !important;
+    }
+
+
 }
 
 @media only screen and (max-width: 1199px){
@@ -3356,3 +3468,63 @@ color: #d91d1d;
             
 }
 
+
+.table-responsive {
+    margin-bottom: 0px !important;
+    border: 0px none;
+}
+
+.table-cart {
+    margin: 0px !important;
+}
+
+.table {
+    margin: 0px !important;
+}
+
+.table > tbody > tr > td {
+    padding: 0px;
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd !important;
+    line-height: 25px;
+}
+
+.product-type-th {
+    text-align: center !important;
+}
+
+.product-name {
+    line-height: 90px !important;
+    padding: 0px 15px !important;
+}
+
+.product-name-th {
+    padding-left: 15px !important;
+}
+
+.product-price {
+    line-height: 90px !important;
+    padding: 0px 15px !important;
+}
+
+.product-price-th {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.product-remove {
+    line-height: 90px !important;
+    padding: 0px 15px !important;
+}
+
+.product-remove-th {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.data-delivery input[type="password"] {
+    width: 90%;
+}

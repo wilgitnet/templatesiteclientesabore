@@ -19,21 +19,23 @@
 				<?php 
 					foreach ($pizzasHome['dados']['destaques'] as $pizza) 
 					{				
-				?>			
+				?>				
 					<div class="col-md-4">
-						<div class="more-buy">
-							<img class="img-pizza" src="<?PHP echo $pizza['Produto']['img']; ?>"/>
-							<div class="description">
-								<p class="name-product"><?PHP echo $pizza['Produto']['nome']; ?></p>
-								<p class="ingredientes-produto">
-								<?PHP 
-									echo substr($pizza['Produto']['descricao'], 0, 50);
-								?>
-								</p>
-								<a class="buy" href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">COMPRAR</a>	
-								<span class="preco">
-									R$ <?PHP echo number_format($pizza['Produto']['valor'], 2, ',', '.'); ?>
-								</span>								
+					    <div class="itens-produto-home">
+							<div class="more-buy">
+								<img class="img-pizza" src="<?PHP echo $pizza['Produto']['img']; ?>"/>
+								<div class="description-home">
+									<p class="name-product"><?PHP echo $pizza['Produto']['nome']; ?></p>
+									<p class="ingredientes-produto">
+									<?PHP 
+										echo substr($pizza['Produto']['descricao'], 0, 50);
+									?>
+									</p>
+									<a class="buy" href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">COMPRAR</a>	
+									<span class="preco">
+										R$ <?PHP echo number_format($pizza['Produto']['valor'], 2, ',', '.'); ?>
+									</span>								
+								</div>
 							</div>
 						</div>
 					</div>
@@ -51,19 +53,21 @@
 							{				
 						?>
 							<div class="col-md-4">
-								<div class="more-buy">
-									<img class="img-pizza" src="<?PHP echo $pizza['Produto']['img']; ?>"/>
-									<div class="description">
-										<p class="name-product"><?PHP echo $pizza['Produto']['nome']; ?></p>
-										<p class="ingredientes-produto">
-										<?PHP 
-											echo substr($pizza['Produto']['descricao'], 0, 50);
-										?>
-										</p>
-										<a class="buy" href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">COMPRAR</a>	
-										<span class="preco">
-											R$ <?PHP echo number_format($pizza['Produto']['valor'], 2, ',', '.'); ?>
-										</span>
+								<div class="itens-produto-home">
+									<div class="more-buy">
+										<img class="img-pizza" src="<?PHP echo $pizza['Produto']['img']; ?>"/>
+										<div class="description-home">
+											<p class="name-product"><?PHP echo $pizza['Produto']['nome']; ?></p>
+											<p class="ingredientes-produto-home">
+											<?PHP 
+												echo substr($pizza['Produto']['descricao'], 0, 50);
+											?>
+											</p>
+											<a class="buy" href="<?PHP echo $host; ?>/carrinho/<?PHP echo $pizza['Produto']['id']; ?>">COMPRAR</a>	
+											<span class="preco">
+												R$ <?PHP echo number_format($pizza['Produto']['valor'], 2, ',', '.'); ?>
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>

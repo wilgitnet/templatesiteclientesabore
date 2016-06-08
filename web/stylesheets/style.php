@@ -3387,7 +3387,27 @@ color: #d91d1d;
     .contact-slider-inner span {
     padding-left: 0px !important;;
     }
+
+    .info-cliente p {
+        display: block;
+    }
     
+    .info-pedido h4 {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .about {
+        margin-top: 0px;
+    }
+
+    .about img {
+    margin-top: 40px;
+    }
+
+    .title-info {
+    margin-top: 35px;
+    }
 }
 
 
@@ -3458,6 +3478,32 @@ color: #d91d1d;
     width: 65% !important;
     }
 
+    .title-data-delivery {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 30px;
+    }
+
+    .options-checkout .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .data-delivery .buttons-cart {
+        margin-bottom: 70px;
+        min-height: 100px;
+        float: left;
+        width: 100%;
+    }
+
+    .info-contact {
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+
+    .title-contact {
+        padding-top: 20px;
+        font-size: 23px;
+    }
 
 }
 
@@ -3490,6 +3536,11 @@ color: #d91d1d;
     vertical-align: bottom;
     border-bottom: 1px solid #ddd !important;
     line-height: 25px;
+}
+
+.historic-table > tbody > tr > td {
+    line-height: 50px !important;
+    padding: 0px 5px;
 }
 
 .product-type-th {
@@ -3527,4 +3578,54 @@ color: #d91d1d;
 
 .data-delivery input[type="password"] {
     width: 90%;
+}
+
+.mensagem-escolha-pagamento {
+    margin: 20px 0px;
+}
+
+.valor-total-compra {
+    margin-bottom: 20px;
+}
+
+.valor-total-compra p{
+    display: inline;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #222;
+}
+
+.status-pedido {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.info-cliente {
+    margin-bottom: 15px;
+}
+
+.title-register {
+    font-size: 22px;
+    color: #333333;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.button-regiter {
+    width: 230px;
+    margin-top: 30px;
+    float: right;
+}
+
+.mgT30 {
+    margin-top: 30px;
 }

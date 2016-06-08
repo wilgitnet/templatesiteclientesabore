@@ -3,6 +3,14 @@
 <?php require_once('app/controller/contato_controller.php'); ?>
 <script src="<?PHP echo $host; ?>/js/contato.js"></script>
 
+<div class="nz-breadcrumbs">
+        <div class="container">
+            <a href="">Inicio</a>
+            <i class="fa fa-angle-double-right"></i>
+            <span>Contato</span>
+        </div>
+    </div>
+
 <div class="feed">
 	<div class="feedback">        
         <?php 
@@ -19,8 +27,7 @@
             }
 
         ?>
-        <div class="content pdB60">
-        <div class="container">
+        <div class="container pdB60">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="title-contact">ENTRE EM CONTATO</h2>
@@ -66,7 +73,7 @@
     </div>
        
     <div class="maps">
-        <iframe width="1345" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.br/maps?q=<?PHP echo $endereco; ?>,%20Brasil&output=embed"></iframe>        
+        <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.br/maps?q=<?PHP echo $endereco; ?>,%20Brasil&output=embed"></iframe>        
     </div>
     <div class="clear"></div>
 </div>

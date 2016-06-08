@@ -149,13 +149,13 @@ function returnendereco()
                             <p>Precisa de troco? </p>
                             <input type="text" placeholder="R$" name="troco" id="troco">
                         </div>                                              
-                        <div class="troco">
+                        <div class="troco valor-total-compra">
                             <p>Valor Completo de Compra:</p>
                             <P>R$ <?PHP echo number_format($valor_total, 2, ',', '.'); ?></P>
                         </div>
                         <input type="hidden" name="tipo_pagamento" id="tipo_pagamento" value="">	
                         <input type="hidden" name="host" id="host" value="<?PHP echo $host; ?>">	
-                        <div class="troco" style="display: none" id="escolha-usuario"></div>
+                        <div class="mensagem-escolha-pagamento" style="display: none" id="escolha-usuario"></div>
                         <div class="buttons-cart">
                             <input type="button" onclick="returnendereco()" class="button limpar-carrinho" value="Retornar ao endereço"> 
                             <div id="realizar-checkout"  style="display: none">

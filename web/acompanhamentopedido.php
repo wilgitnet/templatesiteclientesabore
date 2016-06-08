@@ -17,11 +17,11 @@
         <h4 class="title-info">
             <input type="hidden" name="pedido_id" id="pedido_id" value="<?PHP echo $pedido['dados']['Pedido']['id']; ?>">
             <input type="hidden" name="acompanhamento" id="acompanhamento" value="<?PHP echo $pedido['dados']['Pedido']['acompanhamento']; ?>">
-            DETALHES DO PEDIDO Nº <?PHP echo $pedido['dados']['Pedido']['id']; ?> - 
-            Status -> <span id="status_online"><?PHP echo $pedido['dados']['SituacaoPedido']['descricao']; ?></span>
+            DETALHES DO PEDIDO Nº <?PHP echo $pedido['dados']['Pedido']['id']; ?> <br />
+            <p class="status-pedido">Status: <span id="status_online"><?PHP echo $pedido['dados']['SituacaoPedido']['descricao']; ?></span>
             <?PHP if($pedido['dados']['Pedido']['acompanhamento'] == 'S'){ ?>
             <img src="<?PHP echo $host; ?>/web/images/update.png" onclick="atualizar();">
-            <?PHP } ?>
+            <?PHP } ?></p>
             <div id="loading" style="display: none">
                 Atualizando Status <img src="<?PHP echo $host; ?>/images/loading.gif" width="25" height="25">
             </div>        
@@ -44,56 +44,58 @@
                 </div>
             </div>
         </div>
-        <table class="table-cart" cellspacing="0">
-            <thead>
-                <tr>
-                    <th class="product-type-th">Tipo</th>
-                    <th class="product-thumbnail-th"></th>
-                    <th class="product-name-th">Item</th>
-                    <th class="product-price-th">Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?PHP                                 
-                  $i = 0;  
-                  foreach($pedido['dados']['produtos'] as $produto){                     
-                    ?>                                    
-                    <tr class="cart_item">
-                        <td class="product-type">
-                            <ul>
-                                <?PHP if($produto['Produto']['metade'] == 'S'){ ?>
-                                <li>
-                                    <input type="checkbox" disabled 
-                                    <?PHP if($pedido['dados']['PedidoProduto'][$i]['metade'] == 'S') echo "checked" ?>
-                                    > 
-                                    Meia
-                                </li>
-                                <?PHP } ?>
-                                <?PHP if($produto['Produto']['mini'] == 'S'){ ?>
-                                <li>
-                                    <input type="checkbox" disabled 
-                                    <?PHP if($pedido['dados']['PedidoProduto'][$i]['mini'] == 'S') echo "checked" ?>
-                                    > 
-                                    Broto
-                                </li>
-                                <?PHP } ?>
-                            </ul>       
-                        </td>
-                        <td class="product-thumbnail">
-                            <a href="javascript:void(0);"><img width="120" src="<?PHP echo $produto['Produto']['img']; ?>"></a>                            
-                        </td>
-                        <td class="product-name">
-                            <a href="javascript:void(0);"><?PHP echo $produto['Produto']['nome']; ?></a>                    
-                        </td>
-                        <td class="product-price">
-                            <span class="amount">
-                                R$ <?PHP echo number_format($pedido['dados']['PedidoProduto'][$i]['valor'], 2, ',', '.'); ?>
-                            </span>                   
-                        </td>
-                    </tr>       
-               <?PHP $i++; } ?>
-            </tbody>
-        </table>
+        <div class="table-responsive">  
+            <table class="table-cart table" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="product-type-th">Tipo</th>
+                        <th class="product-thumbnail-th"></th>
+                        <th class="product-name-th">Item</th>
+                        <th class="product-price-th">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?PHP                                 
+                      $i = 0;  
+                      foreach($pedido['dados']['produtos'] as $produto){                     
+                        ?>                                    
+                        <tr class="cart_item">
+                            <td class="product-type">
+                                <ul>
+                                    <?PHP if($produto['Produto']['metade'] == 'S'){ ?>
+                                    <li>
+                                        <input type="checkbox" disabled 
+                                        <?PHP if($pedido['dados']['PedidoProduto'][$i]['metade'] == 'S') echo "checked" ?>
+                                        > 
+                                        Meia
+                                    </li>
+                                    <?PHP } ?>
+                                    <?PHP if($produto['Produto']['mini'] == 'S'){ ?>
+                                    <li>
+                                        <input type="checkbox" disabled 
+                                        <?PHP if($pedido['dados']['PedidoProduto'][$i]['mini'] == 'S') echo "checked" ?>
+                                        > 
+                                        Broto
+                                    </li>
+                                    <?PHP } ?>
+                                </ul>       
+                            </td>
+                            <td class="product-thumbnail">
+                                <a href="javascript:void(0);"><img width="120" src="<?PHP echo $produto['Produto']['img']; ?>"></a>                            
+                            </td>
+                            <td class="product-name">
+                                <a href="javascript:void(0);"><?PHP echo $produto['Produto']['nome']; ?></a>                    
+                            </td>
+                            <td class="product-price">
+                                <span class="amount">
+                                    R$ <?PHP echo number_format($pedido['dados']['PedidoProduto'][$i]['valor'], 2, ',', '.'); ?>
+                                </span>                   
+                            </td>
+                        </tr>       
+                   <?PHP $i++; } ?>
+                </tbody>
+            </table>
+        </div>
         <div class="options-cart">
             <h6>Opções:</h6><p><input type="checkbox" disabled> Borda recheada</p>                 
         </div>

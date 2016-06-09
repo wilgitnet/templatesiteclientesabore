@@ -67,7 +67,7 @@
                             <input type="hidden" name="cliente_id" id="cliente_id" value="<?PHP echo $_SESSION['id_cliente']; ?>">
                             
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 two-grid-register">
                             <label>CEP <span class="required">*</span></label>
                             <input type="text" value="<?PHP if(!empty($_POST['cep']))echo $_POST['cep']; ?>" placeholder="CEP" name="cep" id="cep" maxlength="9" />
                             <div id="loading" style="display:none">

@@ -2080,9 +2080,7 @@ content: "\f017";
 
 }
 
-.modal {
-    display: none;
-}
+
 
 .logo-img {
     max-height: 110px;
@@ -2103,11 +2101,16 @@ margin-top: 0px !important;
     margin-right: 10px;
 }
 
+.img-user-logado {
+    margin-right: -15px;
+}
+
 .img-user {
     width: 30px;
     height: 30px;
     border-radius: 15px;
     border: 2px solid #d91d1d;
+    margin-right: 5px; 
 }
 
 .img-user-logado a{
@@ -3505,6 +3508,10 @@ color: #d91d1d;
         font-size: 23px;
     }
 
+    .two-grid-register {
+    margin-top: 40px;
+    }
+
 }
 
 @media only screen and (max-width: 1199px){
@@ -3628,4 +3635,47 @@ color: #d91d1d;
 
 .mgT30 {
     margin-top: 30px;
+}
+
+.confirmar-add {
+    border-radius: 0px !important;
+}
+
+.confirmar-add h4{
+    font-size: 16px;
+    color: #d91d1d;
+    line-height: 26px;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.confirmar-add p{
+    font-family: 'Montserrat';
+    font-size: 17px;
+    color: #777;
+}
+
+.modal-confirma-add {
+    margin-top: 15% !important;
+}
+
+.finalizar-compra {
+    background-color: #6dab3c;
+    border-color: #6dab3c;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+}
+
+.finalizar-compra:hover {
+    color:  #6dab3c;
+}
+
+.continuar-comprando {
+    padding: 5px 15px;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
 }

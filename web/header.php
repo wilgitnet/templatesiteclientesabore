@@ -55,24 +55,28 @@
                                 <ul class="menu">
                                     <li><a class="active" href="<?PHP echo $host; ?>">Início</a></li>
                                     <li><a href="<?PHP echo $host; ?>/carrinho">Carrinho</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardapio</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardápio</a></li>
                                     <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre</a></li>
                                     <li><a href="<?PHP echo $host; ?>/contato">Contato</a></li>
-                                    <?PHP if(!empty($_SESSION['Usuario'])){ ?>
-                                        <li class="img-user-logado"><a href="#"><img src="web/images/user.jpg" class="img-user"></a></li>
-                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/meus-dados">
-                                            <?PHP echo $_SESSION['Usuario']['nome']; ?></a>
-                                        </li>
-                                        <li class="img-name-logado">
+                                     <?PHP if(!empty($_SESSION['Usuario'])){ ?>
+                                         <li>
                                             <a href="<?PHP echo $host; ?>/historico">                                            
-                                                Pedidos
+                                                Meus pedidos
                                             </a>
                                         </li>
-                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
+                                        <li class="img-user-logado">
+                                            <a href="<?PHP echo $host; ?>/meus-dados">
+                                               <img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user">
+                                                Olá <?PHP echo $_SESSION['Usuario']['nome']; ?>,
+                                            </a>
+                                        </li>
+                                        
+                                       
+                                        <li><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
                                     <?PHP } else { ?>
                                         <li><a href="<?PHP echo $host; ?>/registro">Cadastro</a></li>
                                         <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
-                                    <?PHP } ?>                                    
+                                    <?PHP } ?>                                      
                                  </ul>
                             </nav>
                         </div>
@@ -152,21 +156,25 @@
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
                                     <li><a class="active" href="<?PHP echo $host; ?>">Início</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/carrinho">Meu Pedido</a></li>
-                                    <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardapio</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/carrinho">Carrinho</a></li>
+                                    <li><a href="<?PHP echo $host; ?>/categoria/<?PHP echo $_SESSION['placeholder']; ?>">Cardápio</a></li>
                                     <li><a href="<?PHP echo $host; ?>/quem-somos">Sobre</a></li>
                                     <li><a href="<?PHP echo $host; ?>/contato">Contato</a></li>
                                     <?PHP if(!empty($_SESSION['Usuario'])){ ?>
-                                        <li class="img-user-logado"><a href="#"><img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user"></a></li>
-                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/meus-dados">
-                                            <?PHP echo $_SESSION['Usuario']['nome']; ?></a>
-                                        </li>
-                                        <li class="img-name-logado">
+                                         <li>
                                             <a href="<?PHP echo $host; ?>/historico">                                            
-                                                Pedidos
+                                                Meus pedidos
                                             </a>
                                         </li>
-                                        <li class="img-name-logado"><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
+                                        <li class="img-user-logado">
+                                            <a href="<?PHP echo $host; ?>/meus-dados">
+                                               <img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user">
+                                                Olá <?PHP echo $_SESSION['Usuario']['nome']; ?>,
+                                            </a>
+                                        </li>
+                                        
+                                       
+                                        <li><a href="<?PHP echo $host; ?>/login/sair">Sair</a></li>
                                     <?PHP } else { ?>
                                         <li><a href="<?PHP echo $host; ?>/registro">Cadastro</a></li>
                                         <li><a href="<?PHP echo $host; ?>/login">Login</a></li>                                
@@ -180,6 +188,7 @@
         </header>
     </div>
     <!-- HEADER SEM BANNER -->
+
 <?PHP } ?>
 
 

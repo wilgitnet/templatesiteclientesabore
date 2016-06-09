@@ -40,9 +40,9 @@
 			<div class="col-md-3">
 				<h6 class="widget_title">LINKS</h6>
 				<ul class="list-footer">
-					<li>MEUS PEDIDOS</li>
-					<li>MINHA CONTA</li>
-					<li>FALE CONOSCO</li>
+					<li><a href="carrinho">MEUS PEDIDOS</a></li>
+					<li><a href="categoria/pizzas">CARDAPIO</a></li>
+					<li><a href="contato">FALE CONOSCO</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3">

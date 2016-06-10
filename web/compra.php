@@ -19,16 +19,12 @@ function returnendereco()
     </div>
 
 <div class="grids" id="compra_expand">
-	<div class="feedback2" id="refresh" style="display:none">
+	<div class="feedback2" id="refresh" style="display:none" align="center">
 		<br>
-	      <table>
-	          <tr>
-	            <th>
+
 	              <h4>Aguarde, realizando sua solicitação</h4>              
 	              <img src="<?PHP echo $host; ?>/images/loading.gif" width="100" height="100">           
-	            </th>                          
-	          </tr>
-	        </table>                     
+            <br>
 	        <br>        
 	</div>
 	
@@ -43,8 +39,8 @@ function returnendereco()
         				<form id="endereco_compra">
 	        				<div class="row">
 	        					<div class="col-md-6">
-	        						<div id="loading" style="display:none">
-						                <img src="<?PHP echo $host; ?>/images/loading.gif" width="25" height="25" align="right">
+	        						<div id="loading" style="display:none" >
+						                <img src="<?PHP echo $host; ?>/images/loading.gif" width="25" height="25" >
 						            </div>   
 			        				<label>CEP:</label>
 			        				<input type="text" value="<?PHP if(!empty($_SESSION['pedido']['endereco']['cep'])) echo $_SESSION['pedido']['endereco']['cep']; ?>" placeholder="CEP" name="cep" class="pula" id="cep" maxlength="9" />      

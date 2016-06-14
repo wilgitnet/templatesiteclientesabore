@@ -142,10 +142,8 @@ $(document).ready( function() {
         
         $("#refresh").show();
         $("#endereco_completo").hide(); 
-        $("#cep-alert").hide();  
-
-      
-
+        $("#alert-error").hide();  
+    
         var dados = $("#endereco_compra").serialize();        
         
         //calculando valor de cep                       
@@ -163,8 +161,8 @@ $(document).ready( function() {
                 }
                 else
                 {                    
-                    $("#cep-alert").show();
-                    $("#cep-alert").html(data.mensagem);   
+                    $("#alert-error").show();
+                    $(".alert-message").html(data.mensagem);   
                     $("#refresh").hide();
                     $("#endereco_completo").show(); 
                 }

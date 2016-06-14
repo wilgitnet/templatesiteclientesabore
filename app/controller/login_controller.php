@@ -1,6 +1,7 @@
 <?PHP 	
 	$error = false;
 	$success = false;
+
 	if(!empty($_POST['submit_email']))
 	{
 		if(empty($_POST['email_troca']))
@@ -44,10 +45,11 @@
 	}
 
 	if(!empty($_POST['submit']))
-	{
+	{	
+		$dados = array('usuario'=>$_POST['usuario'], 'senha'=>md5($_POST['senha']));
+
 		//enviando requisicao para api	
-		$login = GoCURL(array('usuario'=>$_POST['usuario'], 'senha'=>md5($_POST['senha'])), 'usuario/login');
-		
+		$login = GoCURL($dados, 'usuario/login');		
 		if(!$login['success'])
 		{
 			$mensagem = 'Dados incorretos, Tente novamente';

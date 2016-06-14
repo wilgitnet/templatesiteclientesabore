@@ -6,6 +6,10 @@ function returnendereco()
 {
   location.href="<?PHP echo $host; ?>/compra"
 }	
+function returncarrinho()
+{
+  location.href="<?PHP echo $host; ?>/carrinho"
+}   
 </script>
 <script src="<?PHP echo $host; ?>/js/compra.js"></script>
     <div class="nz-breadcrumbs">
@@ -26,12 +30,14 @@ function returnendereco()
 	              <img src="<?PHP echo $host; ?>/images/loading.gif" width="100" height="100">           
             <br>
 	        <br>        
-	</div>
+	</div>	   
 	
-	<div class='alert' id="cep-alert" style="display: none">			
-	</div>  
     <div class="content content-checkout" id="endereco_completo">
         <div class="container">
+            <div class="alert error" id="alert-error" style="display: none">
+                <div class="alert-message">testando</div>
+                <span class="close-alert">X</span>
+            </div>
         	<div class="data-delivery">        	
         		<div class="row">
         			<div class="col-md-9">        				
@@ -89,7 +95,7 @@ function returnendereco()
                             </div>					        			
 	        				<div class="row">
 	        					<div class="col-md-6">
-	        						<input type="submit" class="button btn-red" value="Retornar ao carrinho"> 
+	        						<input type="button" onclick="returncarrinho()" class="button btn-red" value="Retornar ao carrinho"> 
 	        					</div>
 	        					<div class="col-md-6">
 	        						<input type="hidden" name="cliente_id" id="cliente_id" value="<?PHP echo $_SESSION['id_cliente']; ?>">			

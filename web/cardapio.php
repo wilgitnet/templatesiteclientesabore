@@ -1,7 +1,54 @@
 
 <?php require_once('app/controller/cardapio_controller.php'); ?>
 <?php require_once('header.php'); ?>
+<script>
+    var dominio = "<?PHP echo $host; ?>";
+    var percentual = "<?PHP echo $percentual_definido; ?>";
 
+    $(document).ready(function(){
+                        
+            $(".buy-two").click(function(){            
+
+                //realizar ajax para incluir valor no carrinho
+                var Modal = '#myModal_' + $(this).attr('id_modal');                
+                $.ajax({
+                    url : dominio + '/app/controller/carrinho_controller.php', 
+                    type : 'POST', 
+                    data: 'produto_id_add=' + $(this).attr('id_modal') + '&ajax=true', 
+                    dataType: 'json', 
+                    success: function(data)
+                    {
+                        if(data.sucesso == true)
+                        {                   
+                            $.ajax({
+                                url : dominio + '/app/controller/carrinho_controller.php', 
+                                type : 'POST', 
+                                data: 'pedido_loading=true&ajax=true&percentual_definido='+percentual+'&host='+dominio, 
+                                dataType: 'html', 
+                                success: function(data)
+                                {
+                                    //atualizando carrinho aqui 
+                                    $("#pedido-show").html(data);
+                                    $(Modal).modal();         
+                                }
+                            });             
+                            
+                        }
+                        else
+                        {
+                            alert(data.mensagem);
+                        }
+                        /*
+                        var Modal = '#myModal_' + $(this).attr('id_modal');
+                        $(Modal).modal();            
+                        */
+                    }
+                }); 
+                
+            });    
+            
+        });
+</script>
 <div class="content">
         <div class="container">
             <div class="row">
@@ -29,9 +76,28 @@
                                             <p class="name-product"><?PHP echo $produto['Produto']['nome']; ?></p>
                                             <p class="ingredientes-produto"><?PHP echo $produto['Produto']['descricao']; ?></p>
                                             <span class="preco-two">R$ <?PHP echo number_format($produto['Produto']['valor'], 2, ',', '.'); ?></span>
-                                            <a class="buy-two" href="<?PHP echo $host; ?>/carrinho/<?PHP echo $produto['Produto']['id']; ?>">
+
+                                            <a class="buy-two" href="javascript:void(0);" id="modalCardapio" id_modal="<?PHP echo $produto['Produto']['id']; ?>">
                                             	COMPRAR
-                                            </a>                            
+                                            </a>       
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal_<?PHP echo $produto['Produto']['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                              <div class="modal-dialog modal-confirma-add" role="document">
+                                                <div class="modal-content confirmar-add">
+                                                  <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Adicionado ao carrinho</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <p><?PHP echo $produto['Produto']['nome']; ?> - R$ <?PHP echo number_format($produto['Produto']['valor'], 2, ',', '.'); ?></p>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="continuar-comprando" data-dismiss="modal">CONTINUAR COMPRANDO</button>
+                                                    <button type="button" class="finalizar-compra">FINALIZAR PEDIDO</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>                     
                                         </div>
                                     </div>
                                 </div>
@@ -47,12 +113,11 @@
                     <?PHP 
                     	require_once('cardapioarq.php')
                     ?>
-
-                    
-                    <?PHP 
-						require_once('pedido.php');					
-					?>	
-
+                    <div id="pedido-show">
+                        <?PHP 
+    						require_once('pedido.php');					
+    					?>	
+                    </div>
                 </div>
             </div>              
         </div>

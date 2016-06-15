@@ -4,7 +4,7 @@
       location.href="<?PHP echo $host; ?>/categoria/"+categoria;
     }
 </script>
-<h2 class="sub-title-home">CÁRDAPIO</h2>
+<h2 class="sub-title-home">MENU </h2>
 <div class="nz-separator"></div>
 <?PHP foreach($_SESSION['menu'] as $menu){ ?>
 	<div class="acordion">

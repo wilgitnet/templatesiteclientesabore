@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="title-home ">O QUE VOCÊ DESEJA?</h2>
+                    <h3 class="title-home ">ESCOLHA SUA PIZZA</h2>                    
                 </div>
             </div>
             
@@ -44,6 +44,11 @@
                     
                 </div>
                 <div class="col-md-3">
+                    <h2 class="sub-title-home">PESQUISAR</h2>
+                    <div class="nz-separator"></div>
+                    <div class="search-grid">
+                        <input type="text" placeholder="Pesquise aqui">
+                    </div>
                     <?PHP 
                     	require_once('cardapioarq.php')
                     ?>

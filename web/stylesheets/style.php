@@ -2128,6 +2128,7 @@ margin-top: 0px !important;
     font-weight: bold;
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
 }
 
 .sub-title-home {
@@ -2145,13 +2146,9 @@ margin-top: 0px !important;
 }
 
 .nz-separator{
-    border-bottom-color: #ddd; 
-    width:100%; 
-    border-bottom-style:solid; 
+    width:100%;  
     margin-top:10px; 
-    margin-bottom:35px; 
-    height: 1px;
-    border-bottom-width: 1px;
+    margin-bottom:15px; 
 }
 
 .description {
@@ -3678,4 +3675,12 @@ color: #d91d1d;
     padding: 5px 15px;
     font-size: 14px;
     font-family: "Raleway", sans-serif;
+}
+
+.search-grid {
+    margin-bottom: 30px;
+}
+
+.search-grid input {
+    width: 100%;
 }

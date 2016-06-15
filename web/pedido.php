@@ -1,4 +1,5 @@
-<?php if(!empty($_SESSION['pedido'])){ 
+<?php 
+if(!empty($_SESSION['pedido'])){ 
 
 	$valor_borda = 0;
 	if(!empty($_SESSION['pedido']['valor_borda']))
@@ -16,7 +17,7 @@
 <table class="meus-pedidos mgT50">
 	<thead>
 		<tr>
-			<th>MEUS PEDIDO</th>
+			<th>MEU PEDIDO</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -70,13 +71,13 @@
 		
 	</tbody>
 </table>
-<a class="finalizar-pedido" href="<?PHP echo $host; ?>/carrinho">VER PEDIDO COMPLETO</a>	
+<a class="finalizar-pedido" href="<?PHP echo $host; ?>/carrinho">FINALIZAR PEDIDO</a>	
 <?PHP }else{ ?>
 
 <table class="meus-pedidos mgT50">
 	<thead>
 		<tr>
-			<th>MEUS PEDIDOS</th>
+			<th>MEU PEDIDOS</th>
 		</tr>
 	</thead>
 	<tbody>

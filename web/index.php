@@ -9,30 +9,7 @@
 				<h3 class="title-home ">ESCOLHA SUA PIZZA</h2>
 		    </div>
 		</div>
-					<!-- Button trigger modal -->
-		<button type="button" class="" data-toggle="modal" data-target="#myModal">
-		 MODAL PARA CONFIRMAR A COMPRA
-		</button>
-
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog modal-confirma-add" role="document">
-		    <div class="modal-content confirmar-add">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Adicionado ao carrinho</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>01 Pizza de Frango com Catupity </p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="continuar-comprando" data-dismiss="modal">CONTINUAR COMPRANDO</button>
-		        <button type="button" class="finalizar-compra">FINALIZAR PEDIDO</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		
+							
 		<div class="row">
 			<div class="col-md-9">
 				<h2 class="sub-title-home">PIZZAS MAIS COMPRADAS</h2>

@@ -12,7 +12,7 @@
 
    <!-- CSS  -->
    <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/bootstrap.css" >
-   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/style.php">
+   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/orange.css">
 
    <!-- Fonts -->
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
@@ -66,7 +66,6 @@
                                         </li>
                                         <li class="img-user-logado">
                                             <a href="<?PHP echo $host; ?>/meus-dados">
-                                               <img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user">
                                                 Olá <?PHP echo $_SESSION['Usuario']['nome']; ?>,
                                             </a>
                                         </li>
@@ -168,7 +167,6 @@
                                         </li>
                                         <li class="img-user-logado">
                                             <a href="<?PHP echo $host; ?>/meus-dados">
-                                               <img src="<?PHP echo $host; ?>/web/images/user.jpg" class="img-user">
                                                 Olá <?PHP echo $_SESSION['Usuario']['nome']; ?>,
                                             </a>
                                         </li>

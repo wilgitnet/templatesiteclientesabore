@@ -6,7 +6,7 @@ $banner2 = $_SESSION['banner2'];
 ?>
 
 /**
-  * Name: Saboreweb
+  * Name: Saboreweb 2016
   * Version: 1.0
   * Author: Allan Santos
   * Author URI: http://www.allandss.com.br

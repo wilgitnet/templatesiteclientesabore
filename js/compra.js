@@ -52,9 +52,9 @@ $(document).ready( function() {
     $('#cep').blur(function()
     {    
       if($('#cep').val() != '')
-      {                    
-        
+      {                            
         $("#cep-alert").hide();
+        $("#alert-error").hide();
         $("#loading").show(); 
 
         $.ajax({
@@ -115,9 +115,14 @@ $(document).ready( function() {
                                               
                   }
                   else
-                  {
+                  {                    
                     $("#cep-alert").show();
                     $("#cep-alert").html(data.message);
+
+                    $("#alert-error").show();
+                    $(".alert-message").html(data.message);   
+                    $("#refresh").hide();
+                    $("#endereco_completo").show(); 
                     
                     $('#endereco').val('');
                     $('#bairro').val('');

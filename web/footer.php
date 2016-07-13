@@ -1,3 +1,4 @@
+
 <div class="footer">
 	<div class="container border-footer">
 		<div class="row">
@@ -6,10 +7,10 @@
 				<ul class="list-footer">
 					<li><a href="<?PHP echo $host; ?>/quem-somos"><?PHP echo substr($_SESSION['quem_somos'], 0, 42); ?></a>...</li>
 					<li><div class="social-links">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>							
+
+							<a href="<?PHP echo $_SESSION['facebook']; ?>"><i class="fa fa-facebook"></i></a>
+							<a href="<?PHP echo $_SESSION['twitter']; ?>"><i class="fa fa-twitter"></i></i></a>
+							<a href="<?PHP echo $_SESSION['instagram']; ?>"><i class="fa fa-instagram"></i></a>							
 						</div>
 					</li>
 				</ul>

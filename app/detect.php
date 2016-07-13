@@ -228,7 +228,6 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
     $dadosDominio = GoCURL(array('dominio'=>$dominio), 'cliente/dominio');                
     if($dadosDominio['success'] && !empty($dadosDominio['dados']['Cliente']['id']))
     {        
-        
         $_SESSION['nome_fantasia']      = $dadosDominio['dados']['Cliente']['nome_fantasia'];
         $_SESSION['id_cliente']         = $dadosDominio['dados']['Cliente']['id'];
         $_SESSION['logo']               = $dadosDominio['dados']['Cliente']['logo'];                
@@ -247,6 +246,9 @@ if($buscarDominio || ($page_name == '' || $page_name == 'home'))
         $_SESSION['img_quem_somos']     = $dadosDominio['dados']['Cliente']['img_quem_somos'];
         $_SESSION['banner_info']        = $dadosDominio['dados']['banner_info'];
         $_SESSION['footer']             = $dadosDominio['dados']['Cliente']['footer'];
+        $_SESSION['facebook']           = $dadosDominio['dados']['Cliente']['facebook'];
+        $_SESSION['twitter']            = $dadosDominio['dados']['Cliente']['twitter'];
+        $_SESSION['instagram']          = $dadosDominio['dados']['Cliente']['instagram'];
         $_SESSION['endereco']           = $dadosDominio['dados']['Cliente']['endereco'].', '.$dadosDominio['dados']['Cliente']['numero'].' - '.$dadosDominio['dados']['Cliente']['cidade'];
 
 

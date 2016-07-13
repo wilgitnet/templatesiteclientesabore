@@ -12,7 +12,7 @@
 
    <!-- CSS  -->
    <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/bootstrap.css" >
-   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/orange.css">
+   <link rel="stylesheet" type="text/css" href="<?PHP echo $host; ?>/web/stylesheets/<?PHP echo $_SESSION['style']; ?>.php">
 
    <!-- Fonts -->
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>

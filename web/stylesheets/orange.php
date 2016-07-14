@@ -7,12 +7,13 @@ $banner2 = $_SESSION['banner2'];
 
 
 /**
-  * Name: Saboreweb
+  * Name: Saboreweb 
   * Version: 1.0
   * Author: Allan Santos
   * Author URI: http://www.allandss.com.br
 */
 
+@import url("flexslider.css");
 
 *,
 *:before,
@@ -2172,6 +2173,7 @@ margin-top: 0px !important;
 
 .ingredientes-produto {
     font-size: 15px;
+    min-height: 60px;
 }
 
 .ingredientes-produto-home {
@@ -3871,3 +3873,68 @@ html[xmlns] .slides {display: block;}
 .button-contact-form:hover{
     color: #ff6600 !important;
 }
+
+.item-meus-pedidos {
+    float: left;
+    line-height: 30px;   
+}
+
+.valor-meus-pedidos {
+    float: right;
+    color: #FF6600;
+    line-height: 30px;
+}
+
+.cardapio_rapido {
+    display: none;
+}
+
+.money-option {
+    cursor: pointer;
+}
+
+.cred {
+    cursor: pointer;
+}
+
+.deb {
+   cursor: pointer; 
+}
+
+.button-regiter {
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+}
+
+.button-regiter:hover {
+    color: #FF6600 !important;
+}
+
+.register button{
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+}
+
+.register button:hover{
+    color:  #FF6600 !important;
+}
+
+.login .button {
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+}
+
+.login .button:hover {
+    color: #FF6600 !important;
+}
+
+.register .button {
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+}
+
+.register .button:hover {
+    color: #FF6600 !important;
+}
+
+<!-- ORANGE COLOR   #FF6600 -->

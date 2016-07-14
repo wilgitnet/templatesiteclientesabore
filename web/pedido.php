@@ -17,27 +17,27 @@ if(!empty($_SESSION['pedido'])){
 <table class="meus-pedidos mgT50">
 	<thead>
 		<tr>
-			<th>MEU PEDIDO</th>
+			<th>CARRINHO</th>
 		</tr>
 	</thead>
 	<tbody>
 		<?PHP foreach($_SESSION['pedido']['item'] as $item){ ?>
 			<tr>
 				<td>
-					<?PHP echo $item['Produto']['nome']; ?> R$ :
-					<font color="red">
+					<p class="item-meus-pedidos"><?PHP echo $item['Produto']['nome']; ?> R$ :</p>
+					<span class="valor-meus-pedidos">
 						<?PHP echo number_format($item['Produto']['valor'], 2, ',', '.'); ?>
-					</font>
+					</span>
 				</td>
 			</tr>
 		<?PHP } ?>
 		<?PHP if($valor_borda > 0){ ?>
 		<tr>
 			<td>
-				Borda Recheada R$ :
-				<font color="red">
+				<p class="item-meus-pedidos">Borda Recheada R$ :</p>
+				<span class="valor-meus-pedidos">
 					<?PHP echo number_format($valor_borda, 2, ',', '.'); ?>
-				</font>
+				</span>
 			</td>
 		</tr>
 		<?PHP } ?>
@@ -50,22 +50,22 @@ if(!empty($_SESSION['pedido'])){
 		</tr>
 		<tr>
 			<td>
-				Frete: 
-				<font color="red">
+				<p class="item-meus-pedidos">Frete:</p> 
+				<span class="valor-meus-pedidos">
 					<span id="valor_cep">					
 						<?PHP echo number_format($_SESSION['pedido']['valor_cep'], 2, ',', '.'); ?>					
 					</span>
-				</font>
+				</span>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				Taxa do site: 
-				<font color="red">
+				<p class="item-meus-pedidos">Taxa do site: </p>
+				<span class="valor-meus-pedidos">
 					<span id="valor_cep">					
 						<?PHP echo number_format($valor_percentual, 2, ',', '.'); ?>					
 					</span>
-				</font>
+				</span>
 			</td>
 		</tr>
 		
@@ -77,7 +77,7 @@ if(!empty($_SESSION['pedido'])){
 <table class="meus-pedidos mgT50">
 	<thead>
 		<tr>
-			<th>MEU PEDIDOS</th>
+			<th>CARRINHO</th>
 		</tr>
 	</thead>
 	<tbody>

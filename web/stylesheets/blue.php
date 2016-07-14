@@ -13,6 +13,7 @@ $banner2 = $_SESSION['banner2'];
   * Author URI: http://www.allandss.com.br
 */
 
+@import url("flexslider.css");
 
 *,
 *:before,
@@ -2172,6 +2173,7 @@ margin-top: 0px !important;
 
 .ingredientes-produto {
     font-size: 15px;
+    min-height: 60px;
 }
 
 .ingredientes-produto-home {
@@ -3871,3 +3873,69 @@ html[xmlns] .slides {display: block;}
 .button-contact-form:hover{
     color: #0B588D !important;
 }
+
+.item-meus-pedidos {
+    float: left;
+    line-height: 30px;   
+}
+
+.valor-meus-pedidos {
+    float: right;
+    color: #0B588D;
+    line-height: 30px;
+}
+
+.cardapio_rapido {
+    display: none;
+}
+
+.money-option {
+    cursor: pointer;
+}
+
+.cred {
+    cursor: pointer;
+}
+
+.deb {
+   cursor: pointer; 
+}
+
+.button-regiter {
+    background-color: #0B588D !important;
+    border-color: #0B588D !important;
+}
+
+.button-regiter:hover {
+    color: #0B588D !important;
+}
+
+.register button{
+    background-color: #0B588D !important;
+    border-color: #0B588D !important;
+}
+
+.register button:hover{
+    color:  #0B588D !important;
+}
+
+.login .button {
+    background-color: #0B588D !important;
+    border-color: #0B588D !important;
+}
+
+.login .button:hover {
+    color: #0B588D !important;
+}
+
+.register .button {
+    background-color: #0B588D !important;
+    border-color: #0B588D !important;
+}
+
+.register .button:hover {
+    color: #0B588D !important;
+}
+
+
+<!-- BLUE COLOR   #0B588D -->

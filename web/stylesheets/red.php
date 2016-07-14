@@ -1,6 +1,6 @@
 <?PHP 
 session_start();
-header("Content-type: text/css");
+header("Content-type: text/css"); 
 $banner = $_SESSION['banner1'];
 $banner2 = $_SESSION['banner2'];
 ?>
@@ -8,7 +8,7 @@ $banner2 = $_SESSION['banner2'];
 /**
   * Name: Saboreweb 2016
   * Version: 1.0
-  * Author: Allan Santos
+  * Author: Allan Santos 
   * Author URI: http://www.allandss.com.br
 */
 
@@ -2172,6 +2172,7 @@ margin-top: 0px !important;
 
 .ingredientes-produto {
     font-size: 15px;
+    min-height: 60px;
 }
 
 .ingredientes-produto-home {
@@ -3684,3 +3685,33 @@ color: #d91d1d;
 .search-grid input {
     width: 100%;
 }
+
+.item-meus-pedidos {
+    float: left;
+    line-height: 30px;   
+}
+
+.valor-meus-pedidos {
+    float: right;
+    color: #d91d1d;
+    line-height: 30px;
+}
+
+.cardapio_rapido {
+    display: none;
+}
+
+.money-option {
+    cursor: pointer;
+}
+
+.cred {
+    cursor: pointer;
+}
+
+.deb {
+   cursor: pointer; 
+}
+
+
+<!-- RED COLOR  #d91d1d -->

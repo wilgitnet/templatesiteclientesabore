@@ -119,9 +119,6 @@
 					<?PHP } ?>
 					</div>		
 				
-				
-
-				<div class="row mgT50">
 					<div class="col-md-12">
 						<h2 class="sub-title-home">SUGESTÕES PARA VOCÊ</h2>
 						<div class="nz-separator"></div>
@@ -172,7 +169,7 @@
 
 					</div>
 					<div class="col-md-3">
-<div class="modal fade" id="FECHADO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal fade" id="FECHADO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog modal-confirma-add" role="document">
                     <div class="modal-content confirmar-add">
                       <div class="modal-header">
@@ -188,7 +185,6 @@
                     </div>
                   </div>
                 </div>  
-					</div>
 				</div>
 			</div>
 			</div>

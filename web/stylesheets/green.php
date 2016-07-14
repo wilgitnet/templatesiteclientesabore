@@ -3933,4 +3933,8 @@ html[xmlns] .slides {display: block;}
     border-color: #2E8B57 !important;
 }
 
+.register .button:hover {
+    color: #2E8B57 !important;
+}
+
 <!-- GREEN COLOR   #2E8B57 -->
